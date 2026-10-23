@@ -1,0 +1,1958 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Registration | GeneX Commercialization Summit 2027</title>
+    <meta
+      name="description"
+      content="Register for the GeneX Commercialization Summit 2027 in Melbourne, Australia. Choose your pass and complete your registration details."
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --gx-navy: #071526;
+        --gx-navy-light: #102941;
+        --gx-blue: #087ea4;
+        --gx-cyan: #35d5df;
+        --gx-bg: #f4f8fb;
+        --gx-text: #1b3043;
+        --gx-muted: #6c7e8f;
+        --gx-border: #e1e9f0;
+        --gx-white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--gx-bg);
+        color: var(--gx-text);
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.65;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* NAVBAR */
+
+      .gx-navbar {
+        padding: 12px 0;
+        background: rgba(7, 21, 38, 0.98);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .gx-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -1px;
+      }
+
+      .gx-brand:hover {
+        color: #fff;
+      }
+
+      .gx-brand-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        color: var(--gx-navy);
+        background: var(--gx-cyan);
+      }
+
+      .gx-navbar .nav-link {
+        padding: 10px 12px !important;
+        color: #d0dce7;
+        font-size: 13px;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-cyan);
+      }
+
+      .gx-nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 11px 17px;
+        border-radius: 8px;
+        color: var(--gx-navy);
+        background: var(--gx-cyan);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .gx-nav-cta:hover {
+        color: var(--gx-navy);
+        background: #82eff1;
+      }
+
+      .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+
+      /* HERO */
+
+      .gx-reg-hero {
+        position: relative;
+        overflow: hidden;
+        padding: 75px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 90% 15%,
+            rgba(53, 213, 223, 0.18),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 5% 100%,
+            rgba(8, 126, 164, 0.24),
+            transparent 35%
+          ),
+          linear-gradient(125deg, #061321, #0a2138 55%, #10384b);
+      }
+
+      .gx-reg-hero::after {
+        position: absolute;
+        top: -170px;
+        right: -100px;
+        width: 450px;
+        height: 450px;
+        border: 1px solid rgba(53, 213, 223, 0.14);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 55px rgba(53, 213, 223, 0.025),
+          0 0 0 110px rgba(53, 213, 223, 0.02);
+        content: "";
+      }
+
+      .gx-reg-hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        padding: 8px 13px;
+        border: 1px solid rgba(53, 213, 223, 0.3);
+        border-radius: 50px;
+        color: var(--gx-cyan);
+        background: rgba(53, 213, 223, 0.06);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      .gx-reg-hero h1 {
+        margin: 24px 0 17px;
+        font-size: clamp(36px, 5vw, 57px);
+        line-height: 1.15;
+        letter-spacing: -2px;
+      }
+
+      .gx-reg-hero h1 span {
+        color: var(--gx-cyan);
+      }
+
+      .gx-reg-hero p {
+        max-width: 670px;
+        margin: 0;
+        color: #bdcedb;
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+      .gx-hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 25px;
+        margin-top: 25px;
+      }
+
+      .gx-hero-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: #e4edf4;
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .gx-hero-meta i {
+        color: var(--gx-cyan);
+      }
+
+      /* PAGE LAYOUT */
+
+      .gx-registration-main {
+        position: relative;
+        z-index: 2;
+        padding-bottom: 85px;
+      }
+
+      .gx-registration-container {
+        margin-top: -42px;
+      }
+
+      .gx-reg-card {
+        margin-bottom: 26px;
+        padding: 32px;
+        border: 1px solid var(--gx-border);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 15px 45px rgba(14, 42, 64, 0.045);
+      }
+
+      .gx-card-heading {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 28px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid #e9eff4;
+      }
+
+      .gx-card-heading-icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        color: var(--gx-blue);
+        background: #e8f8fb;
+        font-size: 18px;
+      }
+
+      .gx-card-heading h2 {
+        margin: 0 0 7px;
+        color: var(--gx-navy);
+        font-size: 22px;
+        letter-spacing: -0.5px;
+      }
+
+      .gx-card-heading p {
+        margin: 0;
+        color: var(--gx-muted);
+        font-size: 12px;
+      }
+
+      /* FORM FIELDS */
+
+      .gx-field-label {
+        display: block;
+        margin-bottom: 8px;
+        color: #2c4154;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .gx-field-label .required {
+        color: #dc4b5a;
+      }
+
+      .gx-field-wrap {
+        position: relative;
+      }
+
+      .gx-field-wrap > i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        z-index: 2;
+        color: #8b9aa8;
+        font-size: 13px;
+        pointer-events: none;
+        transform: translateY(-50%);
+      }
+
+      .gx-form-control {
+        width: 100%;
+        min-height: 49px;
+        padding: 12px 14px 12px 41px;
+        border: 1px solid #dfe7ed;
+        border-radius: 8px;
+        color: #23394c;
+        background: #fbfcfd;
+        box-shadow: none;
+        font-family: "DM Sans", sans-serif;
+        font-size: 12px;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s,
+          background 0.2s;
+      }
+
+      .gx-form-control::placeholder {
+        color: #9aa8b4;
+        opacity: 1;
+      }
+
+      .gx-form-control:focus {
+        border-color: #35bcca;
+        background: #fff;
+        box-shadow: 0 0 0 4px rgba(53, 213, 223, 0.12);
+        outline: none;
+      }
+
+      select.gx-form-control {
+        padding-right: 35px;
+        cursor: pointer;
+      }
+
+      textarea.gx-form-control {
+        min-height: 95px;
+        resize: vertical;
+      }
+
+      .gx-field-help {
+        display: block;
+        margin-top: 7px;
+        color: #8796a4;
+        font-size: 10px;
+      }
+
+      /* PRICE INTRO */
+
+      .gx-pricing-intro {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 22px;
+      }
+
+      .gx-pricing-intro p {
+        max-width: 640px;
+        margin: 0;
+        color: var(--gx-muted);
+        font-size: 12px;
+      }
+
+      .gx-currency-note {
+        flex-shrink: 0;
+        padding: 7px 11px;
+        border: 1px solid #cceef0;
+        border-radius: 7px;
+        color: #087b98;
+        background: #effcfd;
+        font-size: 10px;
+        font-weight: 800;
+      }
+
+      /* RATE CARDS */
+
+      .gx-rate-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+        margin-bottom: 27px;
+      }
+
+      .gx-rate-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 23px 19px;
+        border: 1px solid #dfe7ed;
+        border-radius: 12px;
+        background: #fff;
+        cursor: pointer;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+
+      .gx-rate-card:hover {
+        border-color: #a9e5e9;
+        box-shadow: 0 9px 25px rgba(13, 61, 80, 0.06);
+        transform: translateY(-2px);
+      }
+
+      .gx-rate-card.selected {
+        border: 2px solid #16a7ba;
+        padding: 22px 18px;
+        background: linear-gradient(145deg, #f3feff, #fff);
+        box-shadow: 0 8px 25px rgba(53, 213, 223, 0.12);
+      }
+
+      .gx-rate-radio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+      }
+
+      .gx-rate-radio input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        accent-color: #087ea4;
+        cursor: pointer;
+      }
+
+      .gx-rate-badge {
+        padding: 5px 8px;
+        border-radius: 5px;
+        color: #087b98;
+        background: #e9f9fb;
+        font-size: 9px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .gx-rate-card h3 {
+        margin: 0 0 8px;
+        color: var(--gx-navy);
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .gx-rate-deadline {
+        min-height: 37px;
+        margin-bottom: 16px;
+        color: var(--gx-muted);
+        font-size: 11px;
+      }
+
+      .gx-rate-prices {
+        display: grid;
+        gap: 10px;
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid #e8eef3;
+      }
+
+      .gx-rate-price-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: baseline;
+      }
+
+      .gx-rate-price-row span {
+        color: #718293;
+        font-size: 10px;
+      }
+
+      .gx-rate-price-row strong {
+        color: #213c50;
+        font-family: "Manrope", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .gx-rate-card.selected .gx-rate-price-row strong {
+        color: #087b98;
+      }
+
+      /* COMPARISON TABLE */
+
+      .gx-pricing-table-wrap {
+        overflow-x: auto;
+        border: 1px solid #e2eaf0;
+        border-radius: 10px;
+      }
+
+      .gx-pricing-table {
+        width: 100%;
+        min-width: 600px;
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+
+      .gx-pricing-table thead th {
+        padding: 17px 15px;
+        border: 0;
+        color: #fff;
+        background: #0b263d;
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 1.6;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .gx-pricing-table thead th:first-child {
+        text-align: left;
+      }
+
+      .gx-pricing-table tbody td {
+        padding: 17px 15px;
+        border: 0;
+        border-bottom: 1px solid #e7edf2;
+        color: #30485b;
+        font-size: 12px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .gx-pricing-table tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .gx-pricing-table tbody td:first-child {
+        min-width: 160px;
+        color: var(--gx-navy);
+        font-weight: 800;
+        text-align: left;
+      }
+
+      .gx-pricing-table tbody tr {
+        transition: background 0.2s;
+      }
+
+      .gx-pricing-table tbody tr:hover {
+        background: #f3fbfc;
+      }
+
+      .gx-pricing-table tbody tr.active-rate {
+        background: #effcfd;
+      }
+
+      .gx-pricing-table .gx-price {
+        color: #087b98;
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      .gx-pricing-table .gx-rate-deadline-cell {
+        display: block;
+        margin-top: 4px;
+        color: #8291a0;
+        font-size: 10px;
+        font-weight: 500;
+      }
+
+      .gx-pricing-table tbody tr.active-rate td:first-child::before {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin: 0 8px 2px 0;
+        border-radius: 50%;
+        background: #16a7ba;
+        content: "";
+      }
+
+      .gx-price-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        margin-top: 15px;
+        padding: 12px 14px;
+        border: 1px solid #e2edf2;
+        border-radius: 8px;
+        color: #65798a;
+        background: #f8fbfd;
+        font-size: 11px;
+        line-height: 1.7;
+      }
+
+      .gx-price-note i {
+        margin-top: 4px;
+        color: var(--gx-blue);
+      }
+
+      /* SELECTION PANEL */
+
+      .gx-selection-panel {
+        margin-top: 27px;
+        padding: 24px;
+        border: 1px solid #dce9f1;
+        border-radius: 12px;
+        background: linear-gradient(120deg, #f5fcfd, #fff);
+      }
+
+      .gx-selection-panel h3 {
+        margin: 0 0 18px;
+        color: var(--gx-navy);
+        font-size: 17px;
+      }
+
+      .gx-selection-panel .gx-form-control {
+        background-color: #fff;
+      }
+
+      .gx-total-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 22px;
+        padding: 18px 20px;
+        border-radius: 10px;
+        color: #fff;
+        background: #0b263d;
+      }
+
+      .gx-total-label {
+        display: block;
+        color: #c0cfdd;
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .gx-total-detail {
+        display: block;
+        margin-top: 4px;
+        color: #9eb4c4;
+        font-size: 10px;
+      }
+
+      .gx-total-amount {
+        color: var(--gx-cyan);
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(23px, 3vw, 31px);
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      /* CONSENT + BUTTON */
+
+      .gx-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        margin-top: 24px;
+        padding: 15px;
+        border: 1px solid #e5ecf1;
+        border-radius: 9px;
+        background: #f9fbfc;
+      }
+
+      .gx-consent input {
+        flex-shrink: 0;
+        width: 17px;
+        height: 17px;
+        margin-top: 3px;
+        accent-color: #087ea4;
+        cursor: pointer;
+      }
+
+      .gx-consent label {
+        color: #65798a;
+        font-size: 11px;
+        line-height: 1.8;
+        cursor: pointer;
+      }
+
+      .gx-required-note {
+        margin: 14px 0 0;
+        color: #8796a4;
+        font-size: 10px;
+      }
+
+      .gx-submit-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        min-height: 55px;
+        margin-top: 20px;
+        padding: 15px 22px;
+        border: 1px solid var(--gx-cyan);
+        border-radius: 9px;
+        color: var(--gx-navy);
+        background: var(--gx-cyan);
+        font-family: "Manrope", sans-serif;
+        font-size: 14px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.25s ease;
+      }
+
+      .gx-submit-btn:hover {
+        border-color: #20c2ce;
+        background: #20c2ce;
+        box-shadow: 0 9px 25px rgba(53, 213, 223, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .gx-submit-btn:focus-visible {
+        outline: 3px solid rgba(8, 126, 164, 0.35);
+        outline-offset: 3px;
+      }
+
+      .gx-submit-btn:disabled {
+        opacity: 0.65;
+        cursor: wait;
+        transform: none;
+      }
+
+      .gx-payment-note {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 14px;
+        color: #8291a0;
+        font-size: 10px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .gx-payment-note i {
+        margin-top: 3px;
+        color: #238b74;
+      }
+
+      /* FOOTER */
+
+      .gx-footer {
+        padding: 35px 0;
+        color: #b7c6d3;
+        background: #06111e;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .gx-footer-brand span {
+        color: var(--gx-cyan);
+      }
+
+      .gx-footer p {
+        margin: 7px 0 0;
+        font-size: 11px;
+      }
+
+      .gx-footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 17px;
+      }
+
+      .gx-footer-links a {
+        color: #b7c6d3;
+        font-size: 11px;
+      }
+
+      .gx-footer-links a:hover {
+        color: var(--gx-cyan);
+      }
+
+      /* RESPONSIVE */
+
+      @media (max-width: 991.98px) {
+        .gx-rate-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .gx-rate-card {
+          padding: 20px;
+        }
+
+        .gx-rate-card.selected {
+          padding: 19px;
+        }
+
+        .gx-rate-prices {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 12px;
+        }
+
+        .gx-rate-price-row {
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .gx-pricing-intro {
+          flex-direction: column;
+          gap: 12px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .gx-reg-hero {
+          padding: 65px 0 85px;
+        }
+
+        .gx-reg-hero h1 {
+          letter-spacing: -1px;
+        }
+
+        .gx-reg-card {
+          padding: 23px 18px;
+          border-radius: 12px;
+        }
+
+        .gx-card-heading h2 {
+          font-size: 19px;
+        }
+
+        .gx-card-heading-icon {
+          width: 42px;
+          height: 42px;
+        }
+
+        .gx-rate-prices {
+          grid-template-columns: 1fr;
+        }
+
+        .gx-rate-price-row {
+          flex-direction: row;
+        }
+
+        .gx-selection-panel {
+          padding: 19px 15px;
+        }
+
+        .gx-total-box {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .gx-footer-links {
+          justify-content: flex-start;
+          margin-top: 20px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .gx-reg-hero h1 {
+          font-size: 34px;
+        }
+
+        .gx-hero-meta {
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .gx-card-heading {
+          gap: 11px;
+        }
+
+        .gx-card-heading h2 {
+          font-size: 17px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html">
+          <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          GeneX
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavbar"
+          aria-controls="gxNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="registration_form.html"
+                aria-current="page"
+              >
+                Registration
+              </a>
+            </li>
+
+            <li class="nav-item ms-lg-2">
+              <a class="gx-nav-cta" href="contact.html">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <header class="gx-reg-hero">
+      <div class="container">
+        <span class="gx-eyebrow">
+          <i class="fa-solid fa-ticket"></i>
+          Registration Open
+        </span>
+
+        <h1>Register for <span>GeneX 2027</span></h1>
+
+        <p>
+          Join the GeneX Commercialization Summit 2027 and connect with
+          researchers, biotechnology innovators, academic institutions, industry
+          leaders, and investors advancing the future of gene therapy.
+        </p>
+
+        <div class="gx-hero-meta">
+          <span>
+            <i class="fa-regular fa-calendar-days"></i>
+            September 20–22, 2027
+          </span>
+
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Melbourne, Australia
+          </span>
+
+          <span>
+            <i class="fa-solid fa-money-bill-wave"></i>
+            All prices in AUD
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= REGISTRATION CONTENT ================= -->
+
+    <main class="gx-registration-main">
+      <div class="container gx-registration-container">
+        <form
+          id="gxRegistrationForm"
+          action="registration_process.php"
+          method="POST"
+          accept-charset="UTF-8"
+        >
+          <!-- ================= PERSONAL DETAILS ================= -->
+
+          <section class="gx-reg-card">
+            <div class="gx-card-heading">
+              <div class="gx-card-heading-icon">
+                <i class="fa-regular fa-user"></i>
+              </div>
+
+              <div>
+                <h2>Personal & Contact Information</h2>
+                <p>
+                  Enter your details as you would like them to appear on your
+                  registration.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-3">
+              <!-- Title -->
+              <div class="col-md-3">
+                <label for="gx_title" class="gx-field-label">
+                  Title <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-solid fa-user-tie"></i>
+
+                  <select
+                    class="form-select gx-form-control"
+                    name="title"
+                    id="gx_title"
+                    required
+                  >
+                    <option value="" selected disabled>Select title</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Mx.">Mx.</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Name -->
+              <div class="col-md-9">
+                <label for="gx_name" class="gx-field-label">
+                  Name <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-regular fa-user"></i>
+
+                  <input
+                    type="text"
+                    class="form-control gx-form-control"
+                    name="name"
+                    id="gx_name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    maxlength="150"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <label for="gx_email" class="gx-field-label">
+                  Email <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+
+                  <input
+                    type="email"
+                    class="form-control gx-form-control"
+                    name="email"
+                    id="gx_email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    maxlength="254"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Telephone -->
+              <div class="col-md-6">
+                <label for="gx_phone" class="gx-field-label">
+                  Telephone <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-solid fa-phone"></i>
+
+                  <input
+                    type="tel"
+                    class="form-control gx-form-control"
+                    name="telephone"
+                    id="gx_phone"
+                    placeholder="Enter your phone number"
+                    autocomplete="tel"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Organization -->
+              <div class="col-md-12">
+                <label for="gx_organization" class="gx-field-label">
+                  Organization <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-regular fa-building"></i>
+
+                  <input
+                    type="text"
+                    class="form-control gx-form-control"
+                    name="organization"
+                    id="gx_organization"
+                    placeholder="Organization/Institution"
+                    autocomplete="organization"
+                    maxlength="200"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- City -->
+              <div class="col-md-6">
+                <label for="gx_city" class="gx-field-label">
+                  City <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-solid fa-city"></i>
+
+                  <input
+                    type="text"
+                    class="form-control gx-form-control"
+                    name="city"
+                    id="gx_city"
+                    placeholder="Enter your city name"
+                    autocomplete="address-level2"
+                    maxlength="120"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Country -->
+              <div class="col-md-6">
+                <label for="gx_country" class="gx-field-label">
+                  Country <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-solid fa-globe"></i>
+
+                  <select
+                    class="form-select gx-form-control"
+                    name="country"
+                    id="gx_country"
+                    autocomplete="country-name"
+                    required
+                  >
+                    <option value="" selected disabled>Select country</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Billing Address -->
+              <div class="col-12">
+                <label for="gx_billing_address" class="gx-field-label">
+                  Billing Address <span class="required">*</span>
+                </label>
+
+                <div class="gx-field-wrap">
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  <textarea
+                    class="form-control gx-form-control"
+                    name="billing_address"
+                    id="gx_billing_address"
+                    placeholder="Enter your complete billing address"
+                    autocomplete="street-address"
+                    maxlength="1000"
+                    required
+                  ></textarea>
+                </div>
+
+                <small class="gx-field-help">
+                  Please provide the address required for your registration
+                  invoice.
+                </small>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= PASS SELECTION ================= -->
+
+          <section class="gx-reg-card" id="pass-selection">
+            <div class="gx-card-heading">
+              <div class="gx-card-heading-icon">
+                <i class="fa-solid fa-ticket"></i>
+              </div>
+
+              <div>
+                <h2>Select Your Registration Pass</h2>
+                <p>Choose a registration rate and pass category.</p>
+              </div>
+            </div>
+
+            <div class="gx-pricing-intro">
+              <p>
+                Compare the available registration rates below. Your selected
+                rate and pass category determine the calculated registration
+                total.
+              </p>
+
+              <span class="gx-currency-note">
+                <i class="fa-solid fa-dollar-sign"></i>
+                PRICES IN AUD
+              </span>
+            </div>
+
+            <!-- Rate selection cards -->
+
+            <div class="gx-rate-grid">
+              <!-- Super Early Bird -->
+              <label class="gx-rate-card" data-rate-card="super_early_bird">
+                <div class="gx-rate-radio">
+                  <input
+                    type="radio"
+                    name="registration_rate"
+                    value="super_early_bird"
+                    aria-label="Super Early-Bird registration rate"
+                    required
+                  />
+
+                  <span class="gx-rate-badge">Super Early-Bird</span>
+                </div>
+
+                <h3>Super Early-Bird</h3>
+
+                <div class="gx-rate-deadline">Ends March 31, 2027</div>
+
+                <div class="gx-rate-prices">
+                  <div class="gx-rate-price-row">
+                    <span>Academic & Clinical</span>
+                    <strong>$1,119</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Corporate & Industry</span>
+                    <strong>$1,895</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Investor & VC</span>
+                    <strong>$2,095</strong>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Early Bird -->
+              <label class="gx-rate-card" data-rate-card="early_bird">
+                <div class="gx-rate-radio">
+                  <input
+                    type="radio"
+                    name="registration_rate"
+                    value="early_bird"
+                    aria-label="Early-Bird registration rate"
+                    required
+                  />
+
+                  <span class="gx-rate-badge">Early-Bird</span>
+                </div>
+
+                <h3>Early-Bird</h3>
+
+                <div class="gx-rate-deadline">Ends July 31, 2027</div>
+
+                <div class="gx-rate-prices">
+                  <div class="gx-rate-price-row">
+                    <span>Academic & Clinical</span>
+                    <strong>$1,399</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Corporate & Industry</span>
+                    <strong>$2,195</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Investor & VC</span>
+                    <strong>$2,395</strong>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Standard -->
+              <label class="gx-rate-card" data-rate-card="standard">
+                <div class="gx-rate-radio">
+                  <input
+                    type="radio"
+                    name="registration_rate"
+                    value="standard"
+                    aria-label="Standard registration rate"
+                    required
+                  />
+
+                  <span class="gx-rate-badge">Standard Rate</span>
+                </div>
+
+                <h3>Standard Rate</h3>
+
+                <div class="gx-rate-deadline">
+                  Standard registration pricing
+                </div>
+
+                <div class="gx-rate-prices">
+                  <div class="gx-rate-price-row">
+                    <span>Academic & Clinical</span>
+                    <strong>$1,695</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Corporate & Industry</span>
+                    <strong>$2,595</strong>
+                  </div>
+
+                  <div class="gx-rate-price-row">
+                    <span>Investor & VC</span>
+                    <strong>$2,795</strong>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <!-- Price comparison table -->
+
+            <h3 class="h6 fw-bold mb-3">Registration Fee Comparison</h3>
+
+            <div class="gx-pricing-table-wrap">
+              <table class="gx-pricing-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Pass Type</th>
+                    <th scope="col">Academic & Clinical Pass</th>
+                    <th scope="col">Corporate & Industry Pass</th>
+                    <th scope="col">Investor & VC Pass</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr data-rate-row="super_early_bird">
+                    <td>
+                      Super Early-Bird
+                      <span class="gx-rate-deadline-cell">
+                        Ends March 31, 2027
+                      </span>
+                    </td>
+                    <td class="gx-price">$1,119 AUD</td>
+                    <td class="gx-price">$1,895 AUD</td>
+                    <td class="gx-price">$2,095 AUD</td>
+                  </tr>
+
+                  <tr data-rate-row="early_bird">
+                    <td>
+                      Early-Bird
+                      <span class="gx-rate-deadline-cell">
+                        Ends July 31, 2027
+                      </span>
+                    </td>
+                    <td class="gx-price">$1,399 AUD</td>
+                    <td class="gx-price">$2,195 AUD</td>
+                    <td class="gx-price">$2,395 AUD</td>
+                  </tr>
+
+                  <tr data-rate-row="standard">
+                    <td>Standard Rate</td>
+                    <td class="gx-price">$1,695 AUD</td>
+                    <td class="gx-price">$2,595 AUD</td>
+                    <td class="gx-price">$2,795 AUD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="gx-price-note">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>
+                Select the applicable rate and pass category below. Registration
+                rates are presented as supplied. Please confirm applicable
+                taxes, inclusions, and payment terms before publishing the
+                registration page.
+              </span>
+            </div>
+
+            <!-- Selection and total -->
+
+            <div class="gx-selection-panel">
+              <h3>
+                <i class="fa-solid fa-sliders me-2" style="color: #087ea4"></i>
+                Complete Your Pass Selection
+              </h3>
+
+              <div class="row g-3">
+                <!-- Participants -->
+                <div class="col-md-4">
+                  <label for="gx_participants" class="gx-field-label">
+                    Participants <span class="required">*</span>
+                  </label>
+
+                  <div class="gx-field-wrap">
+                    <i class="fa-solid fa-users"></i>
+
+                    <select
+                      class="form-select gx-form-control"
+                      name="participants"
+                      id="gx_participants"
+                      required
+                    >
+                      <option value="1" selected>1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+
+                  <small class="gx-field-help">
+                    Number of participants being registered.
+                  </small>
+                </div>
+
+                <!-- Pass Type -->
+                <div class="col-md-8">
+                  <label for="gx_pass_type" class="gx-field-label">
+                    Pass Type <span class="required">*</span>
+                  </label>
+
+                  <div class="gx-field-wrap">
+                    <i class="fa-solid fa-id-card"></i>
+
+                    <select
+                      class="form-select gx-form-control"
+                      name="pass_type"
+                      id="gx_pass_type"
+                      required
+                    >
+                      <option value="" selected disabled>
+                        Select your pass type
+                      </option>
+                      <option value="academic_clinical">
+                        Academic & Clinical Pass
+                      </option>
+                      <option value="corporate_industry">
+                        Corporate & Industry Pass
+                      </option>
+                      <option value="investor_vc">Investor & VC Pass</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Total -->
+              <div class="gx-total-box" aria-live="polite" aria-atomic="true">
+                <div>
+                  <span class="gx-total-label"
+                    >Estimated Registration Total</span
+                  >
+
+                  <span class="gx-total-detail" id="gxTotalDetail">
+                    Select a rate and pass type to calculate your total.
+                  </span>
+                </div>
+
+                <output
+                  class="gx-total-amount"
+                  id="gxTotalAmount"
+                  for="gx_participants gx_pass_type"
+                >
+                  $0 AUD
+                </output>
+              </div>
+
+              <!-- Submitted amount is informational only.
+                         The server must recalculate the amount from trusted prices. -->
+              <input type="hidden" name="currency" value="AUD" />
+              <input
+                type="hidden"
+                name="displayed_total"
+                id="gx_displayed_total"
+                value="0"
+              />
+            </div>
+
+            <!-- Consent -->
+            <div class="gx-consent">
+              <input
+                type="checkbox"
+                id="gx_terms"
+                name="terms_accepted"
+                value="1"
+                required
+              />
+
+              <label for="gx_terms">
+                I confirm that the information provided is accurate, and I agree
+                to the registration terms and applicable payment conditions.
+                <span class="text-danger">*</span>
+              </label>
+            </div>
+
+            <p class="gx-required-note">
+              <span class="text-danger">*</span> Required fields
+            </p>
+
+            <button type="submit" class="gx-submit-btn">
+              Continue to Registration
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="gx-payment-note">
+              <i class="fa-solid fa-lock"></i>
+              <span>
+                Your registration details should be processed securely. Payment
+                processing must be configured on the server before accepting
+                payments.
+              </span>
+            </div>
+          </section>
+        </form>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="gx-footer">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-6">
+            <a href="index.html" class="gx-footer-brand">
+              Gene<span>X</span>
+            </a>
+
+            <p>GeneX Commercialization Summit 2027 · Melbourne, Australia</p>
+          </div>
+
+          <div class="col-lg-6">
+            <nav class="gx-footer-links" aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="key-topics.html">Key Topics</a>
+              <a href="program.html">Program</a>
+              <a href="registration_form.html">Registration</a>
+            </nav>
+          </div>
+        </div>
+
+        <hr class="border-secondary opacity-25 my-4" />
+
+        <p>© 2027 GeneX Commercialization Summit. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("gxRegistrationForm");
+        const countrySelect = document.getElementById("gx_country");
+        const participantsSelect = document.getElementById("gx_participants");
+        const passTypeSelect = document.getElementById("gx_pass_type");
+        const rateInputs = document.querySelectorAll(
+          'input[name="registration_rate"]',
+        );
+        const rateCards = document.querySelectorAll(".gx-rate-card");
+        const rateRows = document.querySelectorAll("[data-rate-row]");
+        const totalAmount = document.getElementById("gxTotalAmount");
+        const totalDetail = document.getElementById("gxTotalDetail");
+        const displayedTotal = document.getElementById("gx_displayed_total");
+
+        /*
+         * Price data is used for display only.
+         * The server must independently calculate and validate the final price.
+         */
+        const prices = {
+          super_early_bird: {
+            academic_clinical: 1119,
+            corporate_industry: 1895,
+            investor_vc: 2095,
+          },
+          early_bird: {
+            academic_clinical: 1399,
+            corporate_industry: 2195,
+            investor_vc: 2395,
+          },
+          standard: {
+            academic_clinical: 1695,
+            corporate_industry: 2595,
+            investor_vc: 2795,
+          },
+        };
+
+        const rateLabels = {
+          super_early_bird: "Super Early-Bird",
+          early_bird: "Early-Bird",
+          standard: "Standard Rate",
+        };
+
+        const passLabels = {
+          academic_clinical: "Academic & Clinical Pass",
+          corporate_industry: "Corporate & Industry Pass",
+          investor_vc: "Investor & VC Pass",
+        };
+
+        /*
+         * Country options.
+         * The country list is embedded so the form does not require an API call.
+         */
+        const countries = [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "Andorra",
+          "Angola",
+          "Antigua and Barbuda",
+          "Argentina",
+          "Armenia",
+          "Australia",
+          "Austria",
+          "Azerbaijan",
+          "Bahamas",
+          "Bahrain",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Benin",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "Brunei",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burundi",
+          "Cambodia",
+          "Cameroon",
+          "Canada",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "Chile",
+          "China",
+          "Colombia",
+          "Comoros",
+          "Congo",
+          "Costa Rica",
+          "Croatia",
+          "Cuba",
+          "Cyprus",
+          "Czechia",
+          "Democratic Republic of the Congo",
+          "Denmark",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Eswatini",
+          "Ethiopia",
+          "Fiji",
+          "Finland",
+          "France",
+          "Gabon",
+          "Gambia",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Greece",
+          "Grenada",
+          "Guatemala",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Indonesia",
+          "Iran",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Ivory Coast",
+          "Jamaica",
+          "Japan",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kiribati",
+          "Kuwait",
+          "Kyrgyzstan",
+          "Laos",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Liechtenstein",
+          "Lithuania",
+          "Luxembourg",
+          "Madagascar",
+          "Malawi",
+          "Malaysia",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Mauritania",
+          "Mauritius",
+          "Mexico",
+          "Micronesia",
+          "Moldova",
+          "Monaco",
+          "Mongolia",
+          "Montenegro",
+          "Morocco",
+          "Mozambique",
+          "Myanmar",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "North Korea",
+          "North Macedonia",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Palestine",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Russia",
+          "Rwanda",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Vincent and the Grenadines",
+          "Samoa",
+          "San Marino",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Serbia",
+          "Seychelles",
+          "Sierra Leone",
+          "Singapore",
+          "Slovakia",
+          "Slovenia",
+          "Solomon Islands",
+          "Somalia",
+          "South Africa",
+          "South Korea",
+          "South Sudan",
+          "Spain",
+          "Sri Lanka",
+          "Sudan",
+          "Suriname",
+          "Sweden",
+          "Switzerland",
+          "Syria",
+          "Taiwan",
+          "Tajikistan",
+          "Tanzania",
+          "Thailand",
+          "Timor-Leste",
+          "Togo",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Tunisia",
+          "Turkey",
+          "Turkmenistan",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Kingdom",
+          "United States",
+          "Uruguay",
+          "Uzbekistan",
+          "Vanuatu",
+          "Vatican City",
+          "Venezuela",
+          "Vietnam",
+          "Yemen",
+          "Zambia",
+          "Zimbabwe",
+        ];
+
+        countries.forEach(function (country) {
+          const option = document.createElement("option");
+          option.value = country;
+          option.textContent = country;
+          countrySelect.appendChild(option);
+        });
+
+        function getSelectedRate() {
+          const selected = document.querySelector(
+            'input[name="registration_rate"]:checked',
+          );
+
+          return selected ? selected.value : "";
+        }
+
+        function formatAUD(amount) {
+          return new Intl.NumberFormat("en-AU", {
+            style: "currency",
+            currency: "AUD",
+            maximumFractionDigits: 2,
+          }).format(amount);
+        }
+
+        function updatePricing() {
+          const selectedRate = getSelectedRate();
+          const selectedPass = passTypeSelect.value;
+          const participants = Number(participantsSelect.value) || 1;
+
+          // Highlight selected rate card.
+          rateCards.forEach(function (card) {
+            const radio = card.querySelector('input[type="radio"]');
+
+            card.classList.toggle("selected", Boolean(radio.checked));
+          });
+
+          // Highlight selected comparison table row.
+          rateRows.forEach(function (row) {
+            row.classList.toggle(
+              "active-rate",
+              row.dataset.rateRow === selectedRate,
+            );
+          });
+
+          // Calculate estimated total.
+          if (
+            selectedRate &&
+            selectedPass &&
+            prices[selectedRate] &&
+            prices[selectedRate][selectedPass]
+          ) {
+            const unitPrice = prices[selectedRate][selectedPass];
+            const total = unitPrice * participants;
+
+            totalAmount.textContent = formatAUD(total);
+
+            totalDetail.textContent =
+              rateLabels[selectedRate] +
+              " · " +
+              passLabels[selectedPass] +
+              " · " +
+              participants +
+              (participants === 1 ? " participant" : " participants");
+
+            displayedTotal.value = total.toFixed(2);
+          } else {
+            totalAmount.textContent = "$0 AUD";
+            totalDetail.textContent =
+              "Select a rate and pass type to calculate your total.";
+            displayedTotal.value = "0";
+          }
+        }
+
+        rateInputs.forEach(function (radio) {
+          radio.addEventListener("change", updatePricing);
+        });
+
+        participantsSelect.addEventListener("change", updatePricing);
+        passTypeSelect.addEventListener("change", updatePricing);
+
+        /*
+         * Client-side validation only.
+         * Server-side validation and price verification are still required.
+         */
+        form.addEventListener("submit", function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            form.reportValidity();
+            return;
+          }
+
+          if (!getSelectedRate() || !passTypeSelect.value) {
+            event.preventDefault();
+
+            document.getElementById("pass-selection").scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+
+        updatePricing();
+      });
+    </script>
+  </body>
+</html>
