@@ -1,0 +1,1560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the vision behind GeneX Commercialization Summit 2027, connecting academic discovery with commercial application."
+    />
+    <title>About Us | GeneX Commercialization Summit 2027</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --gx-navy: #071c38;
+        --gx-blue: #0878e8;
+        --gx-cyan: #36d3f4;
+        --gx-light: #f2f8ff;
+        --gx-text: #40536b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--gx-text);
+        line-height: 1.75;
+        background: #fff;
+      }
+
+      /* Navigation */
+      .gx-navbar {
+        background: #fff;
+        padding: 14px 0;
+        box-shadow: 0 4px 24px rgba(7, 28, 56, 0.07);
+      }
+
+      .gx-brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: var(--gx-navy);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      .gx-brand-icon {
+        width: 43px;
+        height: 43px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 13px;
+        background: linear-gradient(135deg, var(--gx-blue), var(--gx-cyan));
+      }
+
+      .gx-brand small {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.65rem;
+        letter-spacing: 0.7px;
+        font-weight: 700;
+      }
+
+      .gx-navbar .nav-link {
+        color: #233f5d;
+        font-size: 0.91rem;
+        font-weight: 650;
+        padding: 10px 12px !important;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-blue);
+      }
+
+      .gx-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 23px;
+        border: 1px solid var(--gx-blue);
+        border-radius: 50px;
+        background: var(--gx-blue);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .gx-btn:hover {
+        background: #0562c1;
+        border-color: #0562c1;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* About hero */
+      .about-hero {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: 110px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 85% 30%,
+            rgba(17, 143, 220, 0.25),
+            transparent 32%
+          ),
+          linear-gradient(120deg, #04152e 0%, #082c54 60%, #07518a 100%);
+      }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 480px;
+        height: 480px;
+        right: -120px;
+        top: -160px;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 45px rgba(54, 211, 244, 0.035),
+          0 0 0 95px rgba(54, 211, 244, 0.025);
+      }
+
+      .about-hero::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        left: -170px;
+        bottom: -200px;
+        border-radius: 50%;
+        background: rgba(8, 120, 232, 0.2);
+        filter: blur(25px);
+      }
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gx-cyan);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .gx-eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 2px;
+        background: currentColor;
+      }
+
+      .about-hero h1 {
+        max-width: 850px;
+        margin: 22px 0;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 850;
+        letter-spacing: -2px;
+        line-height: 1.12;
+      }
+
+      .about-hero h1 span {
+        color: var(--gx-cyan);
+      }
+
+      .about-hero .hero-description {
+        max-width: 720px;
+        color: #d5e6f7;
+        font-size: 1.12rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 30px;
+        margin-top: 32px;
+      }
+
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #edf7ff;
+        font-weight: 600;
+      }
+
+      .hero-meta-item i {
+        color: var(--gx-cyan);
+        font-size: 1.15rem;
+      }
+
+      /* Main content */
+      .about-content {
+        padding: 95px 0;
+        background: #fff;
+      }
+
+      .gx-section-label {
+        margin-bottom: 14px;
+        color: var(--gx-blue);
+        font-size: 0.76rem;
+        font-weight: 850;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .gx-heading {
+        margin-bottom: 25px;
+        color: var(--gx-navy);
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 850;
+        letter-spacing: -1.2px;
+        line-height: 1.2;
+      }
+
+      .gx-heading span {
+        color: var(--gx-blue);
+      }
+
+      .gx-copy p {
+        margin-bottom: 20px;
+        font-size: 1.02rem;
+        line-height: 1.9;
+      }
+
+      .gx-visual {
+        position: relative;
+        min-height: 450px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 24px;
+        background: #0a315b;
+        box-shadow: 0 25px 60px rgba(7, 28, 56, 0.13);
+      }
+
+      .gx-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gx-visual::after {
+        content: "";
+        position: absolute;
+        inset: 35% 0 0;
+        background: linear-gradient(transparent, rgba(3, 23, 48, 0.95));
+      }
+
+      .gx-visual-caption {
+        position: absolute;
+        z-index: 1;
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        border-radius: 15px;
+        color: #fff;
+        background: rgba(5, 31, 63, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      .gx-visual-caption i {
+        color: var(--gx-cyan);
+        font-size: 2rem;
+      }
+
+      .gx-visual-caption strong {
+        display: block;
+        line-height: 1.5;
+      }
+
+      .gx-visual-caption span {
+        color: #cce3f7;
+        font-size: 0.88rem;
+      }
+
+      /* Dark impact section */
+      .impact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0;
+        color: #fff;
+        background: var(--gx-navy);
+      }
+
+      .impact-section::before {
+        content: "";
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: -260px;
+        right: 8%;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow: 0 0 0 50px rgba(54, 211, 244, 0.025);
+      }
+
+      .impact-section .gx-heading {
+        color: #fff;
+        margin-bottom: 16px;
+      }
+
+      .impact-description {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #c8d9eb;
+        font-size: 1.06rem;
+      }
+
+      .impact-icon {
+        display: grid;
+        place-items: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(54, 211, 244, 0.35);
+        border-radius: 18px;
+        color: var(--gx-cyan);
+        background: rgba(54, 211, 244, 0.08);
+        font-size: 1.6rem;
+      }
+
+      /* Event information */
+      .event-info {
+        padding: 65px 0;
+        background: var(--gx-light);
+      }
+
+      .event-info-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        padding: 27px;
+        border: 1px solid #e0ebf7;
+        border-radius: 18px;
+        background: #fff;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .event-info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(7, 28, 56, 0.07);
+      }
+
+      .event-info-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        color: var(--gx-blue);
+        background: #e9f4ff;
+        font-size: 1.45rem;
+      }
+
+      .event-info-card h3 {
+        margin-bottom: 5px;
+        color: var(--gx-navy);
+        font-size: 0.83rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .event-info-card p {
+        margin: 0;
+        color: #405875;
+        font-weight: 650;
+      }
+
+      /* Footer */
+      .gx-footer {
+        padding: 30px 0;
+        color: #bdcfe3;
+        background: #031126;
+        font-size: 0.88rem;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .gx-footer a {
+        color: #d5e8fb;
+        text-decoration: none;
+      }
+
+      .gx-footer a:hover {
+        color: var(--gx-cyan);
+      }
+
+      @media (max-width: 991.98px) {
+        .about-hero {
+          padding: 90px 0 75px;
+        }
+
+        .about-content {
+          padding: 70px 0;
+        }
+
+        .gx-visual {
+          min-height: 390px;
+        }
+
+        .gx-navbar .navbar-collapse {
+          padding-top: 15px;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .gx-brand {
+          font-size: 1.2rem;
+        }
+
+        .gx-brand small {
+          font-size: 0.58rem;
+        }
+
+        .about-hero {
+          padding: 75px 0 65px;
+        }
+
+        .about-hero h1 {
+          letter-spacing: -1px;
+        }
+
+        .hero-meta {
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .about-content {
+          padding: 55px 0;
+        }
+
+        .gx-visual {
+          min-height: 340px;
+          border-radius: 18px;
+        }
+
+        .impact-section {
+          padding: 60px 0;
+        }
+
+        .event-info {
+          padding: 45px 0;
+        }
+
+        .event-info-card {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+
+
+<!-- ================= CONTACT SECTION STYLES ================= -->
+
+<style>
+    .gx-contact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 95px 0;
+        background: #f4f8fb;
+        font-family: "DM Sans", sans-serif;
+    }
+
+    .gx-contact-section * {
+        box-sizing: border-box;
+    }
+
+    .gx-contact-section a {
+        text-decoration: none;
+    }
+
+    .gx-contact-heading {
+        max-width: 760px;
+        margin: 0 auto 50px;
+    }
+
+    .gx-contact-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 17px;
+        padding: 9px 15px;
+        border: 1px solid #cbeef0;
+        border-radius: 50px;
+        color: #087e99;
+        background: #e8fafb;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+
+    .gx-contact-heading h2 {
+        margin: 0 0 16px;
+        color: #071526;
+        font-family: "Manrope", sans-serif;
+        font-size: clamp(30px, 4vw, 44px);
+        font-weight: 800;
+        line-height: 1.25;
+        letter-spacing: -1.5px;
+    }
+
+    .gx-contact-heading h2 span {
+        color: #087ea4;
+    }
+
+    .gx-contact-heading > p {
+        max-width: 660px;
+        margin: 0 auto;
+        color: #66788a;
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    /* LEFT CONTACT CARD */
+
+    .gx-contact-info {
+        height: 100%;
+        padding: 34px 30px;
+        border-radius: 18px;
+        color: #fff;
+        background:
+            radial-gradient(circle at 100% 0%, rgba(53, 213, 223, .13), transparent 30%),
+            linear-gradient(145deg, #071526 0%, #0b263d 60%, #103a4c 100%);
+        box-shadow: 0 18px 45px rgba(7, 21, 38, .12);
+    }
+
+    .gx-contact-info-heading {
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, .13);
+    }
+
+    .gx-info-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 49px;
+        height: 49px;
+        margin-bottom: 17px;
+        border-radius: 13px;
+        color: #071526;
+        background: #35d5df;
+        font-size: 20px;
+    }
+
+    .gx-contact-info-heading h3 {
+        margin: 0 0 10px;
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .gx-contact-info-heading p {
+        margin: 0;
+        color: #b8c9d6;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .gx-contact-detail {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 24px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .11);
+    }
+
+    .gx-detail-icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgba(53, 213, 223, .24);
+        border-radius: 11px;
+        color: #35d5df;
+        background: rgba(53, 213, 223, .08);
+        font-size: 16px;
+    }
+
+    .gx-detail-content {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .gx-detail-label {
+        display: block;
+        margin-bottom: 7px;
+        color: #35d5df;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        line-height: 1.7;
+        text-transform: uppercase;
+    }
+
+    .gx-detail-content h4 {
+        margin: 0 0 8px;
+        color: #fff;
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+
+    .gx-detail-content p {
+        margin: 0 0 12px;
+        color: #b8c9d6;
+        font-size: 12px;
+        line-height: 1.85;
+    }
+
+    .gx-deadline {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        margin: 13px 0;
+        padding: 11px 12px;
+        border: 1px solid rgba(53, 213, 223, .2);
+        border-radius: 8px;
+        color: #e6fbfc;
+        background: rgba(53, 213, 223, .08);
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .gx-deadline i {
+        margin-top: 3px;
+        color: #35d5df;
+    }
+
+    .gx-deadline strong {
+        color: #35d5df;
+    }
+
+    .gx-detail-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #35d5df;
+        font-size: 12px;
+        font-weight: 800;
+        transition: gap .2s ease;
+    }
+
+    .gx-detail-link:hover {
+        gap: 13px;
+        color: #8af2f3;
+    }
+
+    .gx-email-link {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 7px;
+        max-width: 100%;
+        color: #35d5df;
+        font-size: 12px;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+        transition: color .2s ease;
+    }
+
+    .gx-email-link:hover {
+        color: #8af2f3;
+    }
+
+    .gx-email-link i {
+        flex-shrink: 0;
+        margin-top: 4px;
+        font-size: 10px;
+    }
+
+    .gx-contact-footer-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 22px;
+        color: #b8c9d6;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .gx-contact-footer-note i {
+        flex-shrink: 0;
+        margin-top: 4px;
+        color: #35d5df;
+    }
+
+    /* RIGHT FORM CARD */
+
+    .gx-contact-form-card {
+        height: 100%;
+        padding: 36px;
+        border: 1px solid #e3ebf1;
+        border-radius: 18px;
+        background: #fff;
+        box-shadow: 0 15px 45px rgba(14, 42, 64, .055);
+        scroll-margin-top: 110px;
+    }
+
+    .gx-form-heading {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 28px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #e8eef3;
+    }
+
+    .gx-form-kicker {
+        display: block;
+        margin-bottom: 8px;
+        color: #087ea4;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+    }
+
+    .gx-form-heading h3 {
+        margin: 0 0 9px;
+        color: #071526;
+        font-family: "Manrope", sans-serif;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: -.6px;
+        line-height: 1.4;
+    }
+
+    .gx-form-heading p {
+        margin: 0;
+        color: #66788a;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .gx-form-heading-icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 13px;
+        color: #087ea4;
+        background: #e8f8fb;
+        font-size: 19px;
+    }
+
+    .gx-form-label {
+        display: block;
+        margin-bottom: 8px;
+        color: #263d51;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .gx-form-label > span,
+    .gx-consent label span {
+        color: #dc4b5a;
+    }
+
+    .gx-input-wrap {
+        position: relative;
+    }
+
+    .gx-input-wrap > i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        z-index: 2;
+        color: #8a9baa;
+        font-size: 13px;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    .gx-form-control {
+        width: 100%;
+        min-height: 49px;
+        padding: 12px 14px 12px 40px;
+        border: 1px solid #dfe7ed;
+        border-radius: 8px;
+        color: #23394c;
+        background-color: #fbfcfd;
+        box-shadow: none;
+        font-family: "DM Sans", sans-serif;
+        font-size: 12px;
+        transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .gx-form-control::placeholder {
+        color: #9aa8b4;
+        opacity: 1;
+    }
+
+    .gx-form-control:focus {
+        border-color: #35bcca;
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgba(53, 213, 223, .12);
+        outline: none;
+    }
+
+    select.gx-form-control {
+        padding-right: 35px;
+        cursor: pointer;
+    }
+
+    .gx-message-control {
+        min-height: 145px;
+        padding: 14px;
+        resize: vertical;
+        line-height: 1.7;
+    }
+
+    .gx-message-hint {
+        display: flex;
+        align-items: flex-start;
+        gap: 7px;
+        margin-top: 9px;
+        color: #8291a0;
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .gx-message-hint i {
+        margin-top: 3px;
+        color: #087ea4;
+    }
+
+    .gx-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 13px 14px;
+        border: 1px solid #e8eef3;
+        border-radius: 8px;
+        background: #f9fbfc;
+    }
+
+    .gx-consent .form-check-input {
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        margin: 3px 0 0;
+        cursor: pointer;
+    }
+
+    .gx-consent .form-check-input:checked {
+        border-color: #087ea4;
+        background-color: #087ea4;
+    }
+
+    .gx-consent .form-check-input:focus {
+        border-color: #35bcca;
+        box-shadow: 0 0 0 3px rgba(53, 213, 223, .16);
+    }
+
+    .gx-consent label {
+        color: #607385;
+        font-size: 11px;
+        line-height: 1.8;
+        cursor: pointer;
+    }
+
+    .gx-submit-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        width: 100%;
+        min-height: 53px;
+        padding: 14px 20px;
+        border: 1px solid #35d5df;
+        border-radius: 8px;
+        color: #071526;
+        background: #35d5df;
+        font-family: "Manrope", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    .gx-submit-btn:hover {
+        border-color: #20c2ce;
+        background: #20c2ce;
+        box-shadow: 0 9px 22px rgba(53, 213, 223, .2);
+        transform: translateY(-2px);
+    }
+
+    .gx-submit-btn:focus-visible {
+        outline: 3px solid rgba(8, 126, 164, .35);
+        outline-offset: 3px;
+    }
+
+    .gx-submit-btn:disabled {
+        opacity: .7;
+        cursor: wait;
+        transform: none;
+    }
+
+    .gx-form-privacy {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 7px;
+        margin: 13px 0 0;
+        color: #8291a0;
+        font-size: 10px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .gx-form-privacy i {
+        margin-top: 3px;
+        color: #248f78;
+    }
+
+    .gx-honeypot {
+        position: absolute !important;
+        left: -10000px !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 991.98px) {
+        .gx-contact-section {
+            padding: 75px 0;
+        }
+
+        .gx-contact-info {
+            padding: 30px 25px;
+        }
+
+        .gx-contact-form-card {
+            padding: 30px 25px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .gx-contact-section {
+            padding: 60px 0;
+        }
+
+        .gx-contact-heading {
+            margin-bottom: 35px;
+        }
+
+        .gx-contact-heading h2 {
+            letter-spacing: -.8px;
+        }
+
+        .gx-contact-info,
+        .gx-contact-form-card {
+            padding: 24px 20px;
+            border-radius: 13px;
+        }
+
+        .gx-form-heading h3 {
+            font-size: 21px;
+        }
+
+        .gx-form-heading-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .gx-contact-detail {
+            gap: 11px;
+        }
+
+        .gx-detail-icon {
+            width: 37px;
+            height: 37px;
+        }
+
+        .gx-email-link {
+            font-size: 11px;
+        }
+    }
+</style>
+  </head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html" aria-label="GeneX Summit home">
+          <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          <span>
+            GeneX
+            <small>COMMERCIALIZATION SUMMIT 2027</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavigation"
+          aria-controls="gxNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#chair">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#venue">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="gx-btn" href="">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    
+<!-- ================= CONTACT & ABSTRACT SUBMISSIONS ================= -->
+  <main>
+<section class="gx-contact-section" id="contact">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="gx-contact-heading text-center">
+            <span class="gx-contact-eyebrow">
+                <i class="fa-solid fa-paper-plane"></i>
+                CONTACT & ABSTRACT SUBMISSIONS
+            </span>
+
+            <h2>Get Involved with <span>GeneX 2027</span></h2>
+
+            <p>
+                Have a question, want to submit an abstract, or explore
+                sponsorship opportunities? Connect with our summit team.
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- LEFT: CONTACT INFORMATION -->
+            <div class="col-lg-5">
+
+                <div class="gx-contact-info">
+
+                    <div class="gx-contact-info-heading">
+                        <span class="gx-info-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </span>
+
+                        <h3>Let's Connect</h3>
+
+                        <p>
+                            We're here to help you take the next step toward
+                            participating in GeneX 2027.
+                        </p>
+                    </div>
+
+                    <!-- Abstract Submissions -->
+                    <div class="gx-contact-detail gx-abstract-detail">
+                        <div class="gx-detail-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="gx-detail-content">
+                            <span class="gx-detail-label">Abstract Submissions</span>
+
+                            <h4>Share Your Research</h4>
+
+                            <p>
+                                Now open for academic poster presentations
+                                and the Day 3 Startup Pitch Competition.
+                            </p>
+
+                            <div class="gx-deadline">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <span>
+                                    Deadline:
+                                    <strong>August 15, 2027</strong>
+                                </span>
+                            </div>
+
+                            <a href="#gx-contact-form" class="gx-detail-link">
+                                Submit Your Enquiry
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- General Enquiries -->
+                    <div class="gx-contact-detail">
+                        <div class="gx-detail-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="gx-detail-content">
+                            <span class="gx-detail-label">General Enquiries</span>
+
+                            <h4>Need Assistance?</h4>
+
+                            <p>
+                                Contact our team for general questions about
+                                the summit, registration, or participation.
+                            </p>
+
+                            <a href="mailto:info@genexsummit.com.au"
+                               class="gx-email-link">
+                                info@genexsummit.com.au
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sponsorship -->
+                    <div class="gx-contact-detail">
+                        <div class="gx-detail-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+
+                        <div class="gx-detail-content">
+                            <span class="gx-detail-label">
+                                Sponsorship & Exhibition Packages
+                            </span>
+
+                            <h4>Partner with GeneX</h4>
+
+                            <p>
+                                Explore opportunities to showcase your
+                                organization and connect with the gene therapy
+                                innovation community.
+                            </p>
+
+                            <a href="mailto:sponsors@genexsummit.com.au"
+                               class="gx-email-link">
+                                sponsors@genexsummit.com.au
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gx-contact-footer-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>
+                            For abstract-related questions, please mention
+                            whether your enquiry concerns an academic poster
+                            or the Startup Pitch Competition.
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div class="col-lg-7">
+
+                <div class="gx-contact-form-card" id="gx-contact-form">
+
+                    <div class="gx-form-heading">
+                        <div>
+                            <span class="gx-form-kicker">SEND US A MESSAGE</span>
+                            <h3>How Can We Help You?</h3>
+                            <p>Complete the form below and let us know how we can assist.</p>
+                        </div>
+
+                        <div class="gx-form-heading-icon">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+
+                    <!--
+                        IMPORTANT:
+                        Set action to your actual PHP processing endpoint.
+                        Example: action="contact_process.php"
+                    -->
+                    <form id="gxContactForm"
+                          action="contact_process.php"
+                          method="POST"
+                          accept-charset="UTF-8">
+
+                        <!-- Honeypot anti-spam field -->
+                        <div class="gx-honeypot" aria-hidden="true">
+                            <label for="gx_website">Leave this field empty</label>
+                            <input type="text"
+                                   name="website"
+                                   id="gx_website"
+                                   tabindex="-1"
+                                   autocomplete="off">
+                        </div>
+
+                        <div class="row g-3">
+
+                            <!-- Full Name -->
+                            <div class="col-md-6">
+                                <label for="gx_name" class="gx-form-label">
+                                    Full Name <span>*</span>
+                                </label>
+
+                                <div class="gx-input-wrap">
+                                    <i class="fa-regular fa-user"></i>
+
+                                    <input type="text"
+                                           class="form-control gx-form-control"
+                                           id="gx_name"
+                                           name="name"
+                                           placeholder="Enter your full name"
+                                           autocomplete="name"
+                                           maxlength="120"
+                                           required>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label for="gx_email" class="gx-form-label">
+                                    Email Address <span>*</span>
+                                </label>
+
+                                <div class="gx-input-wrap">
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                    <input type="email"
+                                           class="form-control gx-form-control"
+                                           id="gx_email"
+                                           name="email"
+                                           placeholder="you@example.com"
+                                           autocomplete="email"
+                                           maxlength="254"
+                                           required>
+                                </div>
+                            </div>
+
+                            <!-- Organization -->
+                            <div class="col-md-6">
+                                <label for="gx_organization" class="gx-form-label">
+                                    Organization
+                                </label>
+
+                                <div class="gx-input-wrap">
+                                    <i class="fa-regular fa-building"></i>
+
+                                    <input type="text"
+                                           class="form-control gx-form-control"
+                                           id="gx_organization"
+                                           name="organization"
+                                           placeholder="University or company"
+                                           autocomplete="organization"
+                                           maxlength="180">
+                                </div>
+                            </div>
+
+                            <!-- Enquiry Type -->
+                            <div class="col-md-6">
+                                <label for="gx_subject" class="gx-form-label">
+                                    Enquiry Type <span>*</span>
+                                </label>
+
+                                <div class="gx-input-wrap">
+                                    <i class="fa-solid fa-list-check"></i>
+
+                                    <select class="form-select gx-form-control"
+                                            id="gx_subject"
+                                            name="subject"
+                                            required>
+                                        <option value="" selected disabled>
+                                            Select enquiry type
+                                        </option>
+                                        <option value="Abstract Submission">
+                                            Abstract Submission
+                                        </option>
+                                        <option value="Academic Poster Presentation">
+                                            Academic Poster Presentation
+                                        </option>
+                                        <option value="Startup Pitch Competition">
+                                            Startup Pitch Competition
+                                        </option>
+                                        <option value="Registration">
+                                            Registration
+                                        </option>
+                                        <option value="Sponsorship">
+                                            Sponsorship
+                                        </option>
+                                        <option value="Exhibition Packages">
+                                            Exhibition Packages
+                                        </option>
+                                        <option value="General Enquiry">
+                                            General Enquiry
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Abstract Type -->
+                            <div class="col-12" id="gx-abstract-type-wrap" hidden>
+                                <label for="gx_abstract_type" class="gx-form-label">
+                                    Submission Category
+                                </label>
+
+                                <div class="gx-input-wrap">
+                                    <i class="fa-solid fa-microscope"></i>
+
+                                    <select class="form-select gx-form-control"
+                                            id="gx_abstract_type"
+                                            name="abstract_type"
+                                            disabled>
+                                        <option value="">
+                                            Select submission category
+                                        </option>
+                                        <option value="Academic Poster Presentation">
+                                            Academic Poster Presentation
+                                        </option>
+                                        <option value="Day 3 Startup Pitch Competition">
+                                            Day 3 Startup Pitch Competition
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <label for="gx_message" class="gx-form-label">
+                                    Your Message <span>*</span>
+                                </label>
+
+                                <textarea class="form-control gx-form-control gx-message-control"
+                                          id="gx_message"
+                                          name="message"
+                                          rows="5"
+                                          maxlength="5000"
+                                          placeholder="Tell us about your enquiry..."
+                                          required></textarea>
+
+                                <div class="gx-message-hint">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    Please do not include confidential or sensitive information.
+                                </div>
+                            </div>
+
+                            <!-- Consent -->
+                            <div class="col-12">
+                                <div class="gx-consent">
+                                    <input type="checkbox"
+                                           class="form-check-input"
+                                           id="gx_consent"
+                                           name="consent"
+                                           value="1"
+                                           required>
+
+                                    <label for="gx_consent">
+                                        I agree to be contacted by the GeneX
+                                        Summit team regarding this enquiry.
+                                        <span>*</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="gx-submit-btn"
+                                        id="gxSubmitButton">
+
+                                    <span>Send Your Enquiry</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+
+                                <p class="gx-form-privacy">
+                                    <i class="fa-solid fa-lock"></i>
+                                    Your information will be used to respond
+                                    to your enquiry.
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+  <!-- Footer -->
+    <footer class="gx-footer">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-7">
+            <div class="gx-footer-brand">
+              <i class="fa-solid fa-dna me-2"></i>
+              GeneX Commercialization Summit 2027
+            </div>
+            <div class="mt-1">
+              Connecting Academic Discovery with Biopharma Scale.
+            </div>
+          </div>
+
+          <div class="col-md-5 text-md-end">
+            <a href="index.html">Home</a>
+            <span class="mx-2">|</span>
+            <a href="about.html">About</a>
+            <span class="mx-2">|</span>
+            <a href="index.html#tickets">Registration</a>
+          </div>
+        </div>
+
+        <hr class="border-secondary opacity-25 my-4" />
+
+        <div class="small">
+          &copy; 2027 GeneX Commercialization Summit. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const subject = document.getElementById("gx_subject");
+    const abstractWrap = document.getElementById("gx-abstract-type-wrap");
+    const abstractType = document.getElementById("gx_abstract_type");
+    const form = document.getElementById("gxContactForm");
+    const website = document.getElementById("gx_website");
+
+    function updateAbstractField() {
+        const selectedSubject = subject.value;
+        const isAbstractEnquiry = [
+            "Abstract Submission",
+            "Academic Poster Presentation",
+            "Startup Pitch Competition"
+        ].includes(selectedSubject);
+
+        abstractWrap.hidden = !isAbstractEnquiry;
+        abstractType.disabled = !isAbstractEnquiry;
+        abstractType.required = isAbstractEnquiry;
+
+        if (!isAbstractEnquiry) {
+            abstractType.value = "";
+        } else if (selectedSubject === "Academic Poster Presentation") {
+            abstractType.value = "Academic Poster Presentation";
+        } else if (selectedSubject === "Startup Pitch Competition") {
+            abstractType.value = "Day 3 Startup Pitch Competition";
+        }
+    }
+
+    subject.addEventListener("change", updateAbstractField);
+    updateAbstractField();
+
+    /*
+     * The server must repeat all validation and spam checks.
+     * Client-side checks are only a usability aid.
+     */
+    form.addEventListener("submit", function (event) {
+        if (website.value.trim() !== "") {
+            event.preventDefault();
+            return;
+        }
+
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            form.reportValidity();
+        }
+    });
+});
+</script>
+  </body>
+</html>
+<!-- ================= FORM INTERACTION ================= -->
+
+
