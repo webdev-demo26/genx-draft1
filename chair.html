@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the vision behind GeneX Commercialization Summit 2027, connecting academic discovery with commercial application."
+    />
+    <title>About Us | GeneX Commercialization Summit 2027</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --gx-navy: #071c38;
+        --gx-blue: #0878e8;
+        --gx-cyan: #36d3f4;
+        --gx-light: #f2f8ff;
+        --gx-text: #40536b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--gx-text);
+        line-height: 1.75;
+        background: #fff;
+      }
+
+      /* Navigation */
+      .gx-navbar {
+        background: #fff;
+        padding: 14px 0;
+        box-shadow: 0 4px 24px rgba(7, 28, 56, 0.07);
+      }
+
+      .gx-brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: var(--gx-navy);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      .gx-brand-icon {
+        width: 43px;
+        height: 43px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 13px;
+        background: linear-gradient(135deg, var(--gx-blue), var(--gx-cyan));
+      }
+
+      .gx-brand small {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.65rem;
+        letter-spacing: 0.7px;
+        font-weight: 700;
+      }
+
+      .gx-navbar .nav-link {
+        color: #233f5d;
+        font-size: 0.91rem;
+        font-weight: 650;
+        padding: 10px 12px !important;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-blue);
+      }
+
+      .gx-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 23px;
+        border: 1px solid var(--gx-blue);
+        border-radius: 50px;
+        background: var(--gx-blue);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .gx-btn:hover {
+        background: #0562c1;
+        border-color: #0562c1;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* About hero */
+      .about-hero {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: 110px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 85% 30%,
+            rgba(17, 143, 220, 0.25),
+            transparent 32%
+          ),
+          linear-gradient(120deg, #04152e 0%, #082c54 60%, #07518a 100%);
+      }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 480px;
+        height: 480px;
+        right: -120px;
+        top: -160px;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 45px rgba(54, 211, 244, 0.035),
+          0 0 0 95px rgba(54, 211, 244, 0.025);
+      }
+
+      .about-hero::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        left: -170px;
+        bottom: -200px;
+        border-radius: 50%;
+        background: rgba(8, 120, 232, 0.2);
+        filter: blur(25px);
+      }
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gx-cyan);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .gx-eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 2px;
+        background: currentColor;
+      }
+
+      .about-hero h1 {
+        max-width: 850px;
+        margin: 22px 0;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 850;
+        letter-spacing: -2px;
+        line-height: 1.12;
+      }
+
+      .about-hero h1 span {
+        color: var(--gx-cyan);
+      }
+
+      .about-hero .hero-description {
+        max-width: 720px;
+        color: #d5e6f7;
+        font-size: 1.12rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 30px;
+        margin-top: 32px;
+      }
+
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #edf7ff;
+        font-weight: 600;
+      }
+
+      .hero-meta-item i {
+        color: var(--gx-cyan);
+        font-size: 1.15rem;
+      }
+
+      /* Main content */
+      .about-content {
+        padding: 95px 0;
+        background: #fff;
+      }
+
+      .gx-section-label {
+        margin-bottom: 14px;
+        color: var(--gx-blue);
+        font-size: 0.76rem;
+        font-weight: 850;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .gx-heading {
+        margin-bottom: 25px;
+        color: var(--gx-navy);
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 850;
+        letter-spacing: -1.2px;
+        line-height: 1.2;
+      }
+
+      .gx-heading span {
+        color: var(--gx-blue);
+      }
+
+      .gx-copy p {
+        margin-bottom: 20px;
+        font-size: 1.02rem;
+        line-height: 1.9;
+      }
+
+      .gx-visual {
+        position: relative;
+        min-height: 450px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 24px;
+        background: #0a315b;
+        box-shadow: 0 25px 60px rgba(7, 28, 56, 0.13);
+      }
+
+      .gx-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gx-visual::after {
+        content: "";
+        position: absolute;
+        inset: 35% 0 0;
+        background: linear-gradient(transparent, rgba(3, 23, 48, 0.95));
+      }
+
+      .gx-visual-caption {
+        position: absolute;
+        z-index: 1;
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        border-radius: 15px;
+        color: #fff;
+        background: rgba(5, 31, 63, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      .gx-visual-caption i {
+        color: var(--gx-cyan);
+        font-size: 2rem;
+      }
+
+      .gx-visual-caption strong {
+        display: block;
+        line-height: 1.5;
+      }
+
+      .gx-visual-caption span {
+        color: #cce3f7;
+        font-size: 0.88rem;
+      }
+
+      /* Dark impact section */
+      .impact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0;
+        color: #fff;
+        background: var(--gx-navy);
+      }
+
+      .impact-section::before {
+        content: "";
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: -260px;
+        right: 8%;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow: 0 0 0 50px rgba(54, 211, 244, 0.025);
+      }
+
+      .impact-section .gx-heading {
+        color: #fff;
+        margin-bottom: 16px;
+      }
+
+      .impact-description {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #c8d9eb;
+        font-size: 1.06rem;
+      }
+
+      .impact-icon {
+        display: grid;
+        place-items: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(54, 211, 244, 0.35);
+        border-radius: 18px;
+        color: var(--gx-cyan);
+        background: rgba(54, 211, 244, 0.08);
+        font-size: 1.6rem;
+      }
+
+      /* Event information */
+      .event-info {
+        padding: 65px 0;
+        background: var(--gx-light);
+      }
+
+      .event-info-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        padding: 27px;
+        border: 1px solid #e0ebf7;
+        border-radius: 18px;
+        background: #fff;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .event-info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(7, 28, 56, 0.07);
+      }
+
+      .event-info-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        color: var(--gx-blue);
+        background: #e9f4ff;
+        font-size: 1.45rem;
+      }
+
+      .event-info-card h3 {
+        margin-bottom: 5px;
+        color: var(--gx-navy);
+        font-size: 0.83rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .event-info-card p {
+        margin: 0;
+        color: #405875;
+        font-weight: 650;
+      }
+
+      /* Footer */
+      .gx-footer {
+        padding: 30px 0;
+        color: #bdcfe3;
+        background: #031126;
+        font-size: 0.88rem;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .gx-footer a {
+        color: #d5e8fb;
+        text-decoration: none;
+      }
+
+      .gx-footer a:hover {
+        color: var(--gx-cyan);
+      }
+
+      @media (max-width: 991.98px) {
+        .about-hero {
+          padding: 90px 0 75px;
+        }
+
+        .about-content {
+          padding: 70px 0;
+        }
+
+        .gx-visual {
+          min-height: 390px;
+        }
+
+        .gx-navbar .navbar-collapse {
+          padding-top: 15px;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .gx-brand {
+          font-size: 1.2rem;
+        }
+
+        .gx-brand small {
+          font-size: 0.58rem;
+        }
+
+        .about-hero {
+          padding: 75px 0 65px;
+        }
+
+        .about-hero h1 {
+          letter-spacing: -1px;
+        }
+
+        .hero-meta {
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .about-content {
+          padding: 55px 0;
+        }
+
+        .gx-visual {
+          min-height: 340px;
+          border-radius: 18px;
+        }
+
+        .impact-section {
+          padding: 60px 0;
+        }
+
+        .event-info {
+          padding: 45px 0;
+        }
+
+        .event-info-card {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+
+    
+/* ==========================================================
+   GENEX 2027 - CONFERENCE CHAIR
+   Responsive Bootstrap 5 compatible design
+   ========================================================== */
+
+.genex-chair-section {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    background: #f4f8fc;
+    font-family: inherit;
+}
+
+.genex-chair-section::before {
+    content: "";
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.genex-chair-section::after {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: -160px;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(14, 165, 233, 0.10);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Section Heading */
+
+.genex-chair-heading {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto 45px;
+}
+
+.genex-section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+    padding: 9px 16px;
+    color: #087ea4;
+    background: #e0f5fc;
+    border: 1px solid #c7edf8;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.genex-chair-heading h2 {
+    margin: 0 0 16px;
+    color: #10243e;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.genex-chair-heading h2 span {
+    color: #0798c4;
+}
+
+.genex-chair-heading > p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #617187;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Main Profile Card */
+
+.genex-chair-card {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5edf5;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(15, 39, 70, 0.09);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.genex-chair-card:hover {
+    box-shadow: 0 26px 70px rgba(15, 39, 70, 0.13);
+    transform: translateY(-3px);
+}
+
+/* Profile Image */
+
+
+/* ==========================================
+   CONFERENCE CHAIR - PHOTO HEIGHT FIX
+   ========================================== */
+
+.genex-chair-image-wrapper {
+    /* height: 100%; */
+    min-height: 0;
+    background: #10243e;
+}
+
+.genex-chair-image {
+    position: relative;
+    width: 100%;
+    height: 440px;       /* Desktop photo height */
+    min-height: 0;
+    overflow: hidden;
+    background: #10243e;
+    border-radius: 0;
+}
+
+.genex-chair-image img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    transition: transform 0.4s ease;
+}
+
+.genex-chair-card:hover .genex-chair-image img {
+    transform: scale(1.02);
+}
+
+/* Keep the chair label at the bottom of the photo */
+.genex-chair-image-label {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .genex-chair-image-wrapper {
+        height: auto;
+    }
+
+    .genex-chair-image {
+        height: 380px;
+    }
+
+    .genex-chair-content {
+        padding: 28px 24px;
+    }
+}
+
+/* Mobile: photo above biography */
+@media (max-width: 767.98px) {
+    .genex-chair-image-wrapper {
+        width: 100%;
+    }
+
+    .genex-chair-image {
+        width: 100%;
+        height: 320px;
+    }
+
+    .genex-chair-image img {
+        object-position: center 22%;
+    }
+
+    .genex-chair-content {
+        padding: 25px 20px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 479.98px) {
+    .genex-chair-image {
+        height: 280px;
+    }
+
+    .genex-chair-content {
+        padding: 22px 16px;
+    }
+}
+
+
+/* Image Label */
+
+.genex-chair-image-label {
+    position: absolute;
+    right: 22px;
+    bottom: 24px;
+    left: 22px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 16px;
+    color: #ffffff;
+    background: rgba(9, 31, 54, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 13px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.genex-chair-label-icon {
+    display: flex;
+    flex: 0 0 43px;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    color: #ffffff;
+    background: #0798c4;
+    border-radius: 11px;
+    font-size: 18px;
+}
+
+.genex-chair-image-label strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.genex-chair-image-label small {
+    display: block;
+    color: #c8e7f4;
+    font-size: 12px;
+}
+
+/* Profile Details */
+
+.genex-chair-content {
+    padding: 42px 40px;
+}
+
+.genex-chair-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    color: #078bb5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.genex-chair-content h3 {
+    margin: 0;
+    color: #10243e;
+    font-size: clamp(25px, 2.7vw, 34px);
+    font-weight: 800;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.genex-chair-divider {
+    width: 70px;
+    height: 4px;
+    margin: 20px 0 28px;
+    background: linear-gradient(90deg, #0798c4, #5bd3e7);
+    border-radius: 5px;
+}
+
+/* Institutional Affiliations */
+
+.genex-chair-affiliations {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 28px;
+    padding: 20px;
+    background: #f3f8fc;
+    border: 1px solid #e5edf5;
+    border-radius: 14px;
+}
+
+.genex-affiliation-icon {
+    display: flex;
+    flex: 0 0 43px;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    color: #078bb5;
+    background: #dff5fc;
+    border-radius: 11px;
+    font-size: 18px;
+}
+
+.genex-chair-affiliations h4 {
+    margin: 2px 0 10px;
+    color: #10243e;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+.genex-chair-affiliations p {
+    margin: 0;
+    color: #5d6d81;
+    font-size: 14px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+}
+
+/* Biography */
+
+.genex-chair-biography {
+    margin-bottom: 25px;
+}
+
+.genex-chair-biography h4 {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin: 0 0 17px;
+    color: #10243e;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.genex-biography-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: #078bb5;
+    background: #e3f6fc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.genex-chair-biography p {
+    margin: 0 0 14px;
+    color: #586b80;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.genex-chair-biography p:last-child {
+    margin-bottom: 0;
+}
+
+/* Expertise Tags */
+
+.genex-chair-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding-top: 23px;
+    border-top: 1px solid #e8eef5;
+}
+
+.genex-chair-expertise span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    color: #24516b;
+    background: #edf8fc;
+    border: 1px solid #d8edf6;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.genex-chair-expertise span i {
+    color: #078bb5;
+}
+
+/* Bottom Highlight */
+
+.genex-chair-highlight {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 28px;
+    padding: 25px 30px;
+    color: #ffffff;
+    background: linear-gradient(120deg, #10243e 0%, #124765 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(16, 36, 62, 0.12);
+}
+
+.genex-highlight-icon {
+    display: flex;
+    flex: 0 0 54px;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    color: #ffffff;
+    background: rgba(23, 190, 225, 0.18);
+    border: 1px solid rgba(91, 211, 231, 0.35);
+    border-radius: 14px;
+    font-size: 22px;
+}
+
+.genex-chair-highlight h4 {
+    margin: 0 0 7px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 750;
+    line-height: 1.5;
+}
+
+.genex-chair-highlight p {
+    margin: 0;
+    color: #c7d9e8;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991.98px) {
+    .genex-chair-section {
+        padding: 70px 0;
+    }
+
+    .genex-chair-content {
+        padding: 30px 26px;
+    }
+
+    /* .genex-chair-image-wrapper,
+    .genex-chair-image {
+        min-height: 520px;
+    } */
+
+    .genex-chair-image-label {
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .genex-chair-affiliations {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .genex-chair-section {
+        padding: 55px 0;
+    }
+
+    .genex-chair-heading {
+        margin-bottom: 30px;
+    }
+
+    .genex-chair-heading h2 {
+        letter-spacing: -0.5px;
+    }
+
+    .genex-chair-heading > p {
+        font-size: 15px;
+    }
+
+    .genex-chair-image-wrapper,
+    .genex-chair-image {
+        min-height: 420px;
+    }
+
+    .genex-chair-image img {
+        object-position: center 25%;
+    }
+
+    .genex-chair-content {
+        padding: 28px 22px;
+    }
+
+    .genex-chair-content h3 {
+        font-size: 27px;
+    }
+
+    .genex-chair-divider {
+        margin: 17px 0 22px;
+    }
+
+    .genex-chair-affiliations {
+        gap: 12px;
+        margin-bottom: 23px;
+    }
+
+    .genex-chair-biography h4 {
+        font-size: 19px;
+    }
+
+    .genex-chair-biography p {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    .genex-chair-highlight {
+        align-items: flex-start;
+        gap: 14px;
+        padding: 21px;
+    }
+
+    .genex-highlight-icon {
+        flex-basis: 45px;
+        width: 45px;
+        height: 45px;
+        font-size: 19px;
+    }
+
+    .genex-chair-highlight h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .genex-chair-section {
+        padding: 45px 0;
+    }
+
+    .genex-section-eyebrow {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .genex-chair-image-wrapper,
+    .genex-chair-image {
+        min-height: 350px;
+    }
+
+    .genex-chair-content {
+        padding: 24px 17px;
+    }
+
+    .genex-chair-content h3 {
+        font-size: 24px;
+    }
+
+    .genex-chair-role {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .genex-chair-affiliations {
+        padding: 14px;
+    }
+
+    .genex-affiliation-icon {
+        flex-basis: 36px;
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .genex-chair-affiliations h4 {
+        font-size: 15px;
+    }
+
+    .genex-chair-affiliations p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .genex-chair-expertise {
+        gap: 7px;
+    }
+
+    .genex-chair-expertise span {
+        padding: 8px 9px;
+        font-size: 11px;
+    }
+
+    .genex-chair-highlight {
+        padding: 17px;
+    }
+
+    .genex-highlight-icon {
+        flex-basis: 38px;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .genex-chair-highlight h4 {
+        font-size: 15px;
+    }
+
+    .genex-chair-highlight p {
+        font-size: 13px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .genex-chair-card,
+    .genex-chair-image img {
+        transition: none;
+    }
+
+    .genex-chair-card:hover {
+        transform: none;
+    }
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html" aria-label="GeneX Summit home">
+          <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          <span>
+            GeneX
+            <small>COMMERCIALIZATION SUMMIT 2027</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavigation"
+          aria-controls="gxNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" 
+                >About</a
+              >
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="chair.html" aria-current="page">Chair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html#chair">Speakers</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#venue">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="gx-btn" href="registration_form.html">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+    
+<!-- ================= CONFERENCE CHAIR SECTION ================= -->
+<section class="genex-chair-section" id="conference-chair">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="genex-chair-heading text-center">
+            <span class="genex-section-eyebrow">
+                <i class="fa-solid fa-user-tie"></i> MEET OUR LEADERSHIP
+            </span>
+
+            <h2>Conference <span>Chair</span></h2>
+
+            <p>
+                Guiding global collaboration in gene therapy, genetic innovation,
+                and the commercialization of transformative biomedical discoveries.
+            </p>
+        </div>
+
+        <!-- Chair Profile -->
+        <div class="genex-chair-card">
+
+            <div class="row g-0 align-items-stretch">
+
+                <!-- Profile Image -->
+                <div class="col-lg-4 col-md-5">
+                    <div class="genex-chair-image-wrapper">
+
+                        <div class="genex-chair-image">
+                            <img
+                                src="assets/conference-chair-placeholder.jpeg"
+                                alt="Prof. John Rasko AO FTSE FAHMS"
+                                loading="lazy"
+                            >
+
+                            <div class="genex-chair-image-overlay"></div>
+
+                            <div class="genex-chair-image-label">
+                                <span class="genex-chair-label-icon">
+                                    <i class="fa-solid fa-award"></i>
+                                </span>
+                                <div>
+                                    <strong>Conference Chair</strong>
+                                    <small>GeneX Summit 2027</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Profile Content -->
+                <div class="col-lg-8 col-md-7">
+                    <div class="genex-chair-content">
+
+                        <span class="genex-chair-role">
+                            <i class="fa-solid fa-microphone-lines"></i>
+                            OFFICIAL CONFERENCE CHAIR
+                        </span>
+
+                        <h3>Prof. John Rasko AO FTSE FAHMS</h3>
+
+                        <div class="genex-chair-divider"></div>
+
+                        <!-- Affiliations -->
+                        <div class="genex-chair-affiliations">
+                            <div class="genex-affiliation-icon">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+
+                            <div>
+                                <h4>Institutional Affiliations</h4>
+
+                                <p>
+                                    Biomedical Pioneering Innovation Center (BIOPIC),
+                                    and School of Life Sciences, Peking University,
+                                    Haidian, Beijing, China; AI Cross Disciplinary
+                                    Research Institute in Medicine, and Faculty of
+                                    Medicine, Macau University of Science and
+                                    Technology, Taipa, Macau, China; Royal Prince
+                                    Alfred Hospital, Sydney, Australia.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Biography -->
+                        <div class="genex-chair-biography">
+                            <h4>
+                                <span class="genex-biography-icon">
+                                    <i class="fa-solid fa-dna"></i>
+                                </span>
+                                Biography &amp; Focus
+                            </h4>
+
+                          <p>
+                  Professor John Rasko AO is an internationally recognised physician–scientist and leader in gene and cell therapy, regenerative medicine, and molecular biotechnology. A clinical haematologist, pathologist, and scientist, he has pioneered the global introduction of gene and cell therapies and regenerative medicine. From 1999 to 2024, he directed Cell & Molecular Therapies at Royal Prince Alfred Hospital and the Gene & Stem Cell Therapy Program at The University of Sydney, establishing acclaimed programs to integrate research, manufacturing, and clinical translation. 
+                </p>
+
+                <p>
+                  Professor Rasko chaired Australia’s Gene Technology Technical Advisory Committee
+                  (GTTAC) from 2008 to 2026, overseeing national scientific advice relating to genetically
+                  modified organisms and emerging biotechnologies, and serves on the World Health
+                  Organization International Nomenclature Committee. He co-founded the Australasian
+                  Gene and Cell Therapy Society and served as President of the International Society for Cell and Gene Therapy (2018–2020), contributing to global policy and standards for safe and effective gene-based medicines.
+
+                </p>
+
+                <p>At GeneX 2027, Prof. Rasko chairs discussions bringing together academic researchers, clinical leaders, regulatory experts, and industry partners to explore global pathways for translating genetic discoveries into safe, scalable clinical and commercial applications."</p>
+                <h4 class="fs-5 fw-bold text-primary mt-4">
+                  Key Appointments & Leadership Roles:
+                </h4>
+                <ul class="appointment-list">
+                  <li>High impact Under Prof. John Rasko AO at GeneX 2027?</li>
+                  <li>
+                    <b>Direct Access to Top Regulators:</b> As Chair of
+                    Australia's GTTAC and TGA Advisory Committee on Biologicals,
+                    Prof. Rasko brings real-time insights into clearing
+                    preclinical hurdles and IND/CTA filings.
+                  </li>
+                  <li>
+                    <b>Global Industry Authority:</b> Former President of ISCT
+                    and AGTS, ensuring GeneX 2027 aligns with international
+                    biomanufacturing and commercial standards.
+                  </li>
+                  <li>
+                    <b>Proven Clinical & Spin-off Expertise:</b> Clinical
+                    haematologist and head of Cell & Molecular Therapies at RPA
+                    Hospital, bridging the gap between hospital-bedside delivery
+                    and commercial venture scale.
+                  </li>
+                </ul>
+                        </div>
+
+                        <!-- Expertise Tags -->
+                        <div class="genex-chair-expertise">
+                            <span><i class="fa-solid fa-dna"></i> Gene Transfer</span>
+                            <span><i class="fa-solid fa-microscope"></i> Stem Cell Biology</span>
+                            <span><i class="fa-solid fa-heart-pulse"></i> Cellular Therapies</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Highlight -->
+        <div class="genex-chair-highlight">
+            <div class="genex-highlight-icon">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+
+            <div>
+                <h4>Advancing Gene Innovation Through Global Collaboration</h4>
+                <p>
+                    Bringing together scientific discovery, clinical expertise,
+                    regulatory insight, and commercial strategy at GeneX 2027.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+
+
+      <!-- Footer -->
+    <footer class="gx-footer">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-7">
+            <div class="gx-footer-brand">
+              <i class="fa-solid fa-dna me-2"></i>
+              GeneX Commercialization Summit 2027
+            </div>
+            <div class="mt-1">
+              Connecting Academic Discovery with Biopharma Scale.
+            </div>
+          </div>
+
+          <div class="col-md-5 text-md-end">
+            <a href="index.html">Home</a>
+            <span class="mx-2">|</span>
+            <a href="about.html">About</a>
+            <span class="mx-2">|</span>
+            <a href="registration_form.html">Registration</a>
+          </div>
+        </div>
+
+        <hr class="border-secondary opacity-25 my-4" />
+
+        <div class="small">
+          &copy; 2027 GeneX Commercialization Summit. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
