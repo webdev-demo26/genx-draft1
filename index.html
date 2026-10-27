@@ -16,6 +16,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
     <style>
       :root {
         --navy: #062650;
@@ -169,7 +171,6 @@
         transform: translateY(-5px);
         box-shadow: 0 18px 40px rgba(6, 38, 80, 0.1);
       }
-     
 
       .chair-card {
         border: 1px solid var(--line);
@@ -257,22 +258,8 @@
       .cta-band h2 {
         font-weight: 850;
       }
-      footer {
-        background: #031b38;
-        color: #d7e7f8;
-        padding: 2.5rem 0;
-      }
-      footer a {
-        color: #d7e7f8;
-        text-decoration: none;
-      }
-      .small-label {
-        font-size: 0.78rem;
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
-        font-weight: 800;
-        color: var(--blue);
-      }
+
+     
       @media (max-width: 767.98px) {
         .hero {
           min-height: 600px;
@@ -312,328 +299,327 @@
         }
       }
 
-
-      
-/* ==========================================
+      /* ==========================================
    GENEX 2027 TOPICS - VERTICAL SPLIT PANEL
    ========================================== */
 
-.genex-topics-section {
-    padding: 80px 0;
-    background: #f5f8fc;
-    color: #102b50;
-}
+      .genex-topics-section {
+        padding: 80px 0;
+        background: #f5f8fc;
+        color: #102b50;
+      }
 
-.genex-topics-heading {
-    max-width: 900px;
-    margin-bottom: 35px;
-}
+      .genex-topics-heading {
+        max-width: 900px;
+        margin-bottom: 35px;
+      }
 
-.genex-topics-eyebrow {
-    display: inline-block;
-    margin-bottom: 12px;
-    color: #008bbd;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-}
-
-.genex-topics-heading h2 {
-    margin: 0 0 14px;
-    color: #0d2b55;
-    font-size: clamp(28px, 3.5vw, 43px);
-    font-weight: 800;
-    line-height: 1.2;
-}
-
-.genex-topics-heading p {
-    margin: 0;
-    color: #5d718b;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-/* Main two-column layout */
-.genex-topics-layout {
-    display: grid;
-    grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.8fr);
-    align-items: start;
-    gap: 25px;
-}
-
-/* Left sidebar */
-.genex-topics-sidebar {
-    overflow: hidden;
-    background: #fff;
-    border: 1px solid #dce7f4;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(15, 42, 75, 0.05);
-}
-
-.genex-topics-sidebar-heading {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    color: #fff;
-    background: #102f58;
-    font-size: 15px;
-    font-weight: 800;
-}
-
-.genex-topics-sidebar-heading i {
-    color: #48d0ee;
-}
-
-.genex-topic-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-.genex-topic-nav-item {
-    display: grid;
-    grid-template-columns: 42px minmax(0, 1fr) 14px;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    padding: 15px 16px;
-    text-align: left;
-    color: #344b68;
-    background: #fff;
-    border: 0;
-    border-bottom: 1px solid #edf1f7;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.genex-topic-nav-item:last-child {
-    border-bottom: 0;
-}
-
-.genex-topic-nav-item:hover {
-    background: #f2f9fe;
-}
-
-.genex-topic-nav-item.active {
-    color: #07558b;
-    background: #eaf7fd;
-    box-shadow: inset 4px 0 0 #08a6d2;
-}
-
-.genex-topic-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    color: #067db0;
-    background: #e4f5fc;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 800;
-}
-
-.genex-topic-nav-item.active .genex-topic-number {
-    color: #fff;
-    background: linear-gradient(135deg, #0877cf, #12b8dd);
-}
-
-.genex-topic-nav-title {
-    font-size: 13px;
-    font-weight: 750;
-    line-height: 1.55;
-}
-
-.genex-topic-nav-item > i {
-    color: #6f8ba8;
-    font-size: 12px;
-}
-
-.genex-topic-nav-item.active > i {
-    color: #078bc4;
-}
-
-/* Right content panel */
-.genex-topics-content {
-    min-width: 0;
-    background: #fff;
-    border: 1px solid #dce7f4;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(15, 42, 75, 0.05);
-}
-
-.genex-topic-panel {
-    padding: 30px;
-}
-
-.genex-topic-panel[hidden] {
-    display: none !important;
-}
-
-.genex-topic-panel-header {
-    padding-bottom: 23px;
-    margin-bottom: 23px;
-    border-bottom: 1px solid #e6edf5;
-}
-
-.genex-topic-panel-number {
-    display: inline-block;
-    margin-bottom: 12px;
-    padding: 7px 11px;
-    color: #087fb3;
-    background: #e5f6fc;
-    border-radius: 6px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.genex-topic-panel-header h3 {
-    margin: 0 0 10px;
-    color: #102b50;
-    font-size: clamp(22px, 2.5vw, 30px);
-    font-weight: 800;
-    line-height: 1.4;
-}
-
-.genex-topic-panel-header > p {
-    margin: 0;
-    color: #63768d;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-.genex-topic-panel-body > ul {
-    padding-left: 21px;
-    margin: 0 0 25px;
-}
-
-.genex-topic-panel-body > ul li {
-    padding-left: 3px;
-    margin-bottom: 13px;
-    color: #435a76;
-    font-size: 14px;
-    line-height: 1.85;
-}
-
-.genex-topic-panel-body > ul li::marker {
-    color: #0b9ecb;
-}
-
-.genex-topic-insight,
-.genex-topic-why {
-    padding: 19px 20px;
-    margin-top: 17px;
-    border-radius: 11px;
-}
-
-.genex-topic-insight {
-    background: #eef8fd;
-    border: 1px solid #d8edf8;
-}
-
-.genex-topic-why {
-    background: #f7f8fc;
-    border: 1px solid #e7ebf3;
-}
-
-.genex-topic-insight h4,
-.genex-topic-why h4 {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    margin: 0 0 9px;
-    color: #12345b;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.genex-topic-insight h4 i {
-    color: #0797c3;
-}
-
-.genex-topic-why h4 i {
-    color: #5677ad;
-}
-
-.genex-topic-insight p,
-.genex-topic-why p {
-    margin: 0;
-    color: #4c627d;
-    font-size: 13px;
-    line-height: 1.85;
-}
-
-/* Tablet */
-@media (max-width: 991.98px) {
-    .genex-topics-layout {
-        grid-template-columns: minmax(230px, 0.9fr) minmax(0, 1.5fr);
-        gap: 16px;
-    }
-
-    .genex-topic-nav-item {
-        grid-template-columns: 36px minmax(0, 1fr) 12px;
-        gap: 9px;
-        padding: 13px 11px;
-    }
-
-    .genex-topic-number {
-        width: 35px;
-        height: 35px;
-    }
-
-    .genex-topic-nav-title {
+      .genex-topics-eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: #008bbd;
         font-size: 12px;
-    }
+        font-weight: 800;
+        letter-spacing: 1.5px;
+      }
 
-    .genex-topic-panel {
-        padding: 23px;
-    }
-}
+      .genex-topics-heading h2 {
+        margin: 0 0 14px;
+        color: #0d2b55;
+        font-size: clamp(28px, 3.5vw, 43px);
+        font-weight: 800;
+        line-height: 1.2;
+      }
 
-/* Mobile */
-@media (max-width: 767.98px) {
-    .genex-topics-section {
-        padding: 50px 0;
-    }
+      .genex-topics-heading p {
+        margin: 0;
+        color: #5d718b;
+        font-size: 16px;
+        line-height: 1.8;
+      }
 
-    .genex-topics-layout {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-    }
+      /* Main two-column layout */
+      .genex-topics-layout {
+        display: grid;
+        grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.8fr);
+        align-items: start;
+        gap: 25px;
+      }
 
-    .genex-topics-sidebar-heading {
-        padding: 16px;
-    }
+      /* Left sidebar */
+      .genex-topics-sidebar {
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid #dce7f4;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(15, 42, 75, 0.05);
+      }
 
-    .genex-topic-nav-item {
-        grid-template-columns: 38px minmax(0, 1fr) 14px;
-        padding: 12px 14px;
-    }
+      .genex-topics-sidebar-heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        color: #fff;
+        background: #102f58;
+        font-size: 15px;
+        font-weight: 800;
+      }
 
-    .genex-topic-nav-title {
+      .genex-topics-sidebar-heading i {
+        color: #48d0ee;
+      }
+
+      .genex-topic-nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .genex-topic-nav-item {
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr) 14px;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 15px 16px;
+        text-align: left;
+        color: #344b68;
+        background: #fff;
+        border: 0;
+        border-bottom: 1px solid #edf1f7;
+        cursor: pointer;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+
+      .genex-topic-nav-item:last-child {
+        border-bottom: 0;
+      }
+
+      .genex-topic-nav-item:hover {
+        background: #f2f9fe;
+      }
+
+      .genex-topic-nav-item.active {
+        color: #07558b;
+        background: #eaf7fd;
+        box-shadow: inset 4px 0 0 #08a6d2;
+      }
+
+      .genex-topic-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: #067db0;
+        background: #e4f5fc;
+        border-radius: 10px;
         font-size: 13px;
-    }
+        font-weight: 800;
+      }
 
-    .genex-topic-panel {
-        padding: 22px 18px;
-    }
+      .genex-topic-nav-item.active .genex-topic-number {
+        color: #fff;
+        background: linear-gradient(135deg, #0877cf, #12b8dd);
+      }
 
-    .genex-topic-panel-header h3 {
-        font-size: 23px;
-    }
-
-    .genex-topic-panel-body > ul li {
+      .genex-topic-nav-title {
         font-size: 13px;
-    }
-}
+        font-weight: 750;
+        line-height: 1.55;
+      }
 
-@media (prefers-reduced-motion: reduce) {
-    .genex-topic-nav-item {
-        transition: none;
-    }
-}
+      .genex-topic-nav-item > i {
+        color: #6f8ba8;
+        font-size: 12px;
+      }
 
+      .genex-topic-nav-item.active > i {
+        color: #078bc4;
+      }
+
+      /* Right content panel */
+      .genex-topics-content {
+        min-width: 0;
+        background: #fff;
+        border: 1px solid #dce7f4;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(15, 42, 75, 0.05);
+      }
+
+      .genex-topic-panel {
+        padding: 30px;
+      }
+
+      .genex-topic-panel[hidden] {
+        display: none !important;
+      }
+
+      .genex-topic-panel-header {
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+        border-bottom: 1px solid #e6edf5;
+      }
+
+      .genex-topic-panel-number {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 7px 11px;
+        color: #087fb3;
+        background: #e5f6fc;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+
+      .genex-topic-panel-header h3 {
+        margin: 0 0 10px;
+        color: #102b50;
+        font-size: clamp(22px, 2.5vw, 30px);
+        font-weight: 800;
+        line-height: 1.4;
+      }
+
+      .genex-topic-panel-header > p {
+        margin: 0;
+        color: #63768d;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .genex-topic-panel-body > ul {
+        padding-left: 21px;
+        margin: 0 0 25px;
+      }
+
+      .genex-topic-panel-body > ul li {
+        padding-left: 3px;
+        margin-bottom: 13px;
+        color: #435a76;
+        font-size: 14px;
+        line-height: 1.85;
+      }
+
+      .genex-topic-panel-body > ul li::marker {
+        color: #0b9ecb;
+      }
+
+      .genex-topic-insight,
+      .genex-topic-why {
+        padding: 19px 20px;
+        margin-top: 17px;
+        border-radius: 11px;
+      }
+
+      .genex-topic-insight {
+        background: #eef8fd;
+        border: 1px solid #d8edf8;
+      }
+
+      .genex-topic-why {
+        background: #f7f8fc;
+        border: 1px solid #e7ebf3;
+      }
+
+      .genex-topic-insight h4,
+      .genex-topic-why h4 {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 9px;
+        color: #12345b;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .genex-topic-insight h4 i {
+        color: #0797c3;
+      }
+
+      .genex-topic-why h4 i {
+        color: #5677ad;
+      }
+
+      .genex-topic-insight p,
+      .genex-topic-why p {
+        margin: 0;
+        color: #4c627d;
+        font-size: 13px;
+        line-height: 1.85;
+      }
+
+      /* Tablet */
+      @media (max-width: 991.98px) {
+        .genex-topics-layout {
+          grid-template-columns: minmax(230px, 0.9fr) minmax(0, 1.5fr);
+          gap: 16px;
+        }
+
+        .genex-topic-nav-item {
+          grid-template-columns: 36px minmax(0, 1fr) 12px;
+          gap: 9px;
+          padding: 13px 11px;
+        }
+
+        .genex-topic-number {
+          width: 35px;
+          height: 35px;
+        }
+
+        .genex-topic-nav-title {
+          font-size: 12px;
+        }
+
+        .genex-topic-panel {
+          padding: 23px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 767.98px) {
+        .genex-topics-section {
+          padding: 50px 0;
+        }
+
+        .genex-topics-layout {
+          grid-template-columns: minmax(0, 1fr);
+          gap: 18px;
+        }
+
+        .genex-topics-sidebar-heading {
+          padding: 16px;
+        }
+
+        .genex-topic-nav-item {
+          grid-template-columns: 38px minmax(0, 1fr) 14px;
+          padding: 12px 14px;
+        }
+
+        .genex-topic-nav-title {
+          font-size: 13px;
+        }
+
+        .genex-topic-panel {
+          padding: 22px 18px;
+        }
+
+        .genex-topic-panel-header h3 {
+          font-size: 23px;
+        }
+
+        .genex-topic-panel-body > ul li {
+          font-size: 13px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .genex-topic-nav-item {
+          transition: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -675,12 +661,13 @@
             <li class="nav-item">
               <a class="nav-link" href="key-topics.html">Key Topics</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="abstract-submission.html">Abstract Submisson</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="program.html">Program</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#tickets">Tickets</a>
-            </li> -->
+           
             <!-- <li class="nav-item">
               <a class="nav-link" href="#venue">Venue</a>
             </li> -->
@@ -903,496 +890,857 @@
       </div>
     </section>
 
-        
-<section class="genex-topics-section" id="topics">
-    <div class="container">
-
+    <section class="genex-topics-section" id="topics">
+      <div class="container">
         <div class="genex-topics-heading">
-            <span class="genex-topics-eyebrow">
-                10 KEY TOPICS &amp; DETAILED FOCUS AREAS
-            </span>
+          <span class="genex-topics-eyebrow">
+            10 KEY TOPICS &amp; DETAILED FOCUS AREAS
+          </span>
 
-            <h2>Shaping the Future of Gene Commercialization</h2>
+          <h2>Shaping the Future of Gene Commercialization</h2>
 
-            <p>
-                Explore the strategic and operational challenges involved
-                in moving genetic research from academic discovery into
-                commercial therapies.
-            </p>
+          <p>
+            Explore the strategic and operational challenges involved in moving
+            genetic research from academic discovery into commercial therapies.
+          </p>
         </div>
 
         <div class="genex-topics-layout">
-
-            <!-- LEFT: TOPIC NAVIGATION -->
-            <aside class="genex-topics-sidebar">
-                <div class="genex-topics-sidebar-heading">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <span>Explore Topics</span>
-                </div>
-
-                <div class="genex-topic-nav" role="tablist"
-                     aria-label="GeneX conference topics"
-                     aria-orientation="vertical">
-
-                    <button class="genex-topic-nav-item active"
-                        id="topic-tab-01" type="button" role="tab"
-                        aria-selected="true" aria-controls="topic-panel-01"
-                        data-topic="01">
-                        <span class="genex-topic-number">01</span>
-                        <span class="genex-topic-nav-title">
-                            Intellectual Property (IP) Strategy &amp;
-                            Spin-Off Mechanics
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-02" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-02"
-                        data-topic="02" tabindex="-1">
-                        <span class="genex-topic-number">02</span>
-                        <span class="genex-topic-nav-title">
-                            Preclinical-to-Clinical Regulatory Pathways
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-03" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-03"
-                        data-topic="03" tabindex="-1">
-                        <span class="genex-topic-number">03</span>
-                        <span class="genex-topic-nav-title">
-                            Commercialization Models &amp; Health Economics
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-04" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-04"
-                        data-topic="04" tabindex="-1">
-                        <span class="genex-topic-number">04</span>
-                        <span class="genex-topic-nav-title">
-                            Advanced Biomanufacturing &amp; Scalability (CMC)
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-05" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-05"
-                        data-topic="05" tabindex="-1">
-                        <span class="genex-topic-number">05</span>
-                        <span class="genex-topic-nav-title">
-                            Venture Capital, Investment &amp; Deal Structuring
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-06" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-06"
-                        data-topic="06" tabindex="-1">
-                        <span class="genex-topic-number">06</span>
-                        <span class="genex-topic-nav-title">
-                            Bioethics, Governance &amp; Public Trust
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-07" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-07"
-                        data-topic="07" tabindex="-1">
-                        <span class="genex-topic-number">07</span>
-                        <span class="genex-topic-nav-title">
-                            Next-Generation Gene Editing Platforms
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-08" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-08"
-                        data-topic="08" tabindex="-1">
-                        <span class="genex-topic-number">08</span>
-                        <span class="genex-topic-nav-title">
-                            Supply Chain, Logistics &amp; Clinical Integration
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-09" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-09"
-                        data-topic="09" tabindex="-1">
-                        <span class="genex-topic-number">09</span>
-                        <span class="genex-topic-nav-title">
-                            Academic-Industry Ecosystem Collaboration
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                    <button class="genex-topic-nav-item"
-                        id="topic-tab-10" type="button" role="tab"
-                        aria-selected="false" aria-controls="topic-panel-10"
-                        data-topic="10" tabindex="-1">
-                        <span class="genex-topic-number">10</span>
-                        <span class="genex-topic-nav-title">
-                            Indication Expansion Beyond Monogenic Rare Diseases
-                        </span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                </div>
-            </aside>
-
-            <!-- RIGHT: TOPIC CONTENT -->
-            <div class="genex-topics-content">
-
-                <!-- TOPIC 01 -->
-                <article class="genex-topic-panel active"
-                    id="topic-panel-01" role="tabpanel"
-                    aria-labelledby="topic-tab-01">
-
-                    <div class="genex-topic-panel-header">
-                        <span class="genex-topic-panel-number">TOPIC 01</span>
-                        <h3>Intellectual Property (IP) Strategy &amp; Spin-Off Mechanics</h3>
-                        <p>Protecting discoveries and building commercially viable academic spin-offs.</p>
-                    </div>
-
-                    <div class="genex-topic-panel-body">
-                        <ul>
-                            <li>Patentability of Genetic Vectors: Securing robust IP protection for modified viral vectors (AAVs, lentiviruses) vs. target gene constructs.</li>
-                            <li>Freedom to Operate (FTO) Analyses: Navigating complex global patent landscapes around core CRISPR/Cas9, base editing, and prime editing systems.</li>
-                            <li>University Technology Transfer: Structuring spin-off equity, exclusive vs. non-exclusive licenses, and anti-dilution clauses between academic institutions and founder scientists.</li>
-                            <li>Defensive Patent Thickets: Building patent portfolios around delivery systems, formulations, and novel manufacturing pathways.</li>
-                            <li>Trade Secret Protection: Balancing public academic publication pressures with proprietary manufacturing processes and bioengineering know-how.</li>
-                        </ul>
-
-                        <div class="genex-topic-insight">
-                            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-                            <p>CRISPR technology patent battles between UC Berkeley and the Broad Institute demonstrated that a single ambiguity in university technology licensing can delay multi-billion dollar clinical developments by years.</p>
-                        </div>
-
-                        <div class="genex-topic-why">
-                            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-                            <p>Academic founders frequently publish data before filing provisional patents, permanently destroying commercial patentability. Delegates must learn how to protect biological IP (like vectors and gRNAs) before entering the public domain.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- TOPIC 02 -->
-                <article class="genex-topic-panel"
-                    id="topic-panel-02" role="tabpanel"
-                    aria-labelledby="topic-tab-02" hidden>
-
-                    <div class="genex-topic-panel-header">
-                        <span class="genex-topic-panel-number">TOPIC 02</span>
-                        <h3>Preclinical-to-Clinical Regulatory Pathways</h3>
-                        <p>Understanding regulatory requirements for safe and efficient clinical translation.</p>
-                    </div>
-
-                    <div class="genex-topic-panel-body">
-                        <ul>
-                            <li>Accelerated Approval Mechanisms: Leveraging TGA provisional approvals (Australia), FDA Breakthrough/RMAT designations (US), and EMA PRIME frameworks (EU).</li>
-                            <li>Good Laboratory Practice (GLP) Biodistribution: Designing preclinical animal models to demonstrate on-target cell tropism and lack of off-target toxicity.</li>
-                            <li>Adaptive Clinical Trial Design: Structuring small-cohort, Phase I/II master protocols for rare monogenic diseases where standard placebo arms are unviable.</li>
-                            <li>Immunogenicity &amp; Off-Target Profiling: Meeting global regulatory standards for vector immunity and genomic integrity post-editing.</li>
-                            <li>Harmonization Across Jurisdictions: Managing multi-region IND/CTA filings for international, multi-center gene therapy clinical trials.</li>
-                        </ul>
-
-                        <div class="genex-topic-insight">
-                            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-                            <p>According to clinical trial statistics, over 80% of novel biotech platforms fail during the transition from animal models to Phase I trials due to unpredicted off-target toxicity or immunogenicity.</p>
-                        </div>
-
-                        <div class="genex-topic-why">
-                            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-                            <p>Regulatory agencies like the FDA, EMA, and Australia's TGA require complex, non-traditional trial designs for gene therapies. Understanding accelerated designations (such as RMAT or PRIME) cuts years off development timelines.</p>
-                        </div>
-                    </div>
-                </article>
-
-              
-<!-- TOPIC 03 -->
-<article class="genex-topic-panel"
-    id="topic-panel-03"
-    role="tabpanel"
-    aria-labelledby="topic-tab-03"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 03</span>
-        <h3>Commercialization Models &amp; Health Economics</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Value-Based &amp; Installment Pricing: Developing non-traditional reimbursement models for single-dose, curative gene therapies.</li>
-            <li>Payer &amp; HTA Strategy: Conducting Health Technology Assessments (HTA) to demonstrate long-term quality-adjusted life-year (QALY) gains to national insurers.</li>
-            <li>Orphan Drug Commercialization: Designing lean, targeted commercial sales forces and specialized center-of-excellence delivery networks.</li>
-            <li>Risk-Sharing Agreements: Structuring outcome-contingent rebates between biopharma firms and public healthcare bodies (e.g., Australian PBS, US Medicare).</li>
-            <li>Cross-Subsidization Strategies: Balancing ultra-rare pediatric indications with larger, polygenic adult therapeutic markets to maintain portfolio solvency.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>Early gene therapies like Glybera were commercially withdrawn from the market despite scientific efficacy because their single-dose $1 million+ upfront price tag was rejected by health insurers.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Gene therapies cure diseases in a single dose, which eliminates the recurring-revenue model traditional pharma relies on. Business leaders must master value-based annuity payments and risk-sharing models to survive.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 04 -->
-<article class="genex-topic-panel"
-    id="topic-panel-04"
-    role="tabpanel"
-    aria-labelledby="topic-tab-04"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 04</span>
-        <h3>Advanced Biomanufacturing &amp; Scalability (CMC)</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Viral Vector Yield Optimization: Transitioning from academic adherent cell culture flasks to industrial suspension bioreactors.</li>
-            <li>Non-Viral Delivery Innovations: Commercializing Lipid Nanoparticles (LNPs) and novel polymeric carriers to bypass viral vector shortages.</li>
-            <li>Autologous vs. Allogeneic Scaling: Managing the high cost and logistical complexity of patient-specific therapies vs. off-the-shelf donor lines.</li>
-            <li>Analytical Assay Development: Standardizing lot-release assays for viral full-to-empty capsid ratios and vector genome potency.</li>
-            <li>cGMP Compliance &amp; CDMO Selection: Deciding when to build internal GMP facilities vs. outsourcing to Contract Development and Manufacturing Organizations.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>Chemistry, Manufacturing, and Controls (CMC) issues cause over 50% of regulatory holds and trial delays in gene therapy clinical filings.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Moving a viral vector from an academic laboratory flask into an industrial 2,000-Liter suspension bioreactor frequently alters the purity and potency of the biological product, risking total trial failure if not managed early.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 05 -->
-<article class="genex-topic-panel"
-    id="topic-panel-05"
-    role="tabpanel"
-    aria-labelledby="topic-tab-05"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 05</span>
-        <h3>Venture Capital, Investment &amp; Deal Structuring</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Academic Seed &amp; Series A Pitching: Translating complex genomic mechanisms into commercial value propositions, market sizing, and milestone roadmaps.</li>
-            <li>Non-Dilutive Grant Leveraging: Combining government funding (e.g., MRFF, NHMRC, NIH) with early-stage venture capital.</li>
-            <li>Corporate Venture Capital (CVC): Partnering with major pharmaceutical venture arms early in academic discovery phases.</li>
-            <li>Valuation &amp; De-Risking Milestones: Setting scientific valuation inflection points (in vivo proof-of-concept, IND clearance, Phase I safety).</li>
-            <li>Strategic Licensing &amp; M&amp;A: Negotiating option agreements, co-development deals, and buyout terms with global biopharma players.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>Global venture capital investment in gene editing and cell therapies exceeds billions annually, but less than 5% of university spin-off proposals successfully secure Series A funding.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Academics often pitch scientific novelty rather than market size, regulatory milestones, and risk-mitigation strategies. This topic teaches researchers how to pitch in terms biopharma investors evaluate.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 06 -->
-<article class="genex-topic-panel"
-    id="topic-panel-06"
-    role="tabpanel"
-    aria-labelledby="topic-tab-06"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 06</span>
-        <h3>Bioethics, Governance &amp; Public Trust</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Somatic vs. Germline Editing Boundaries: Navigating international scientific consensus and regulatory prohibitions on inherited genetic modifications.</li>
-            <li>Global Health Equity &amp; Pricing Access: Addressing disparities in providing million-dollar gene therapies to low- and middle-income countries.</li>
-            <li>Informed Consent in Genetic Trials: Structuring long-term trial follow-ups (up to 15 years) for permanent genetic changes.</li>
-            <li>Data Privacy &amp; Genomic Biobanks: Managing patient privacy, genomic data ownership, and secondary research rights in commercial database partnerships.</li>
-            <li>Combatting Direct-to-Consumer Unregulated Therapies: Protecting market integrity against non-evidence-based cell and gene clinics.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>Regulatory crackdowns on unregulated stem cell clinics and public pushback against gene editing demonstrate that ethical missteps can trigger restrictive legislation that freezes whole sub-fields of research.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Navigating somatic versus germline boundaries and resolving genomic data privacy concerns are required to maintain the social license to operate and secure long-term public and institutional funding.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 07 -->
-<article class="genex-topic-panel"
-    id="topic-panel-07"
-    role="tabpanel"
-    aria-labelledby="topic-tab-07"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 07</span>
-        <h3>Next-Generation Gene Editing Platforms</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Base &amp; Prime Editing Platforms: Moving beyond double-stranded DNA breaks to precise single-nucleotide corrections without donor DNA.</li>
-            <li>Epigenetic Editing: Commercializing gene silencing and activation approaches that alter expression without modifying underlying DNA sequences.</li>
-            <li>In Vivo Gene Editing: Transitioning from expensive ex vivo cell manipulation to direct patient administration.</li>
-            <li>Multiplex Genome Engineering: Simultaneously knocking out or inserting multiple genes for complex biological targets (e.g., universal CAR-T cells).</li>
-            <li>AI-Guided Guide RNA (gRNA) Design: Utilizing machine learning models to predict on-target efficiency and minimize off-target genomic cleavage.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>The global CRISPR and next-generation gene-editing market is projected to expand significantly over the next decade.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Standard CRISPR-Cas9 creates double-stranded DNA breaks, which carry risks of large genomic deletions. Newer platforms like base editing, prime editing, and epigenetic editing represent the incoming wave of commercial investment.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 08 -->
-<article class="genex-topic-panel"
-    id="topic-panel-08"
-    role="tabpanel"
-    aria-labelledby="topic-tab-08"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 08</span>
-        <h3>Supply Chain, Logistics &amp; Clinical Integration</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Cryogenic Cold-Chain Logistics: Managing ultra-low temperature, uninterrupted supply chains for live genetic vector products.</li>
-            <li>Vein-to-Vein Logistics Tracking: Ensuring strict chain-of-custody and chain-of-identity protocols for patient-derived materials in autologous therapies.</li>
-            <li>Clinical Site Accreditation: Establishing specialized hospital infrastructure and training medical staff for safe vector administration.</li>
-            <li>Post-Market Pharmacovigilance: Building registry systems to track real-world safety and long-term durability over multi-decade periods.</li>
-            <li>Regional Hub Manufacturing: Setting up localized biomanufacturing nodes (e.g., Melbourne's Parkville precinct) to serve Asia-Pacific clinical hubs.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>For autologous (patient-specific) gene therapies, the "vein-to-vein" supply chain requires harvesting, modifying, and re-infusing patient cells within tight window constraints at ultra-low cryogenic temperatures.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>A single failure in cold-chain logistics or chain-of-custody tracking destroys the therapeutic batch, wastes hundreds of thousands of dollars, and directly jeopardizes patient lives.</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 09 -->
-<article class="genex-topic-panel"
-    id="topic-panel-09"
-    role="tabpanel"
-    aria-labelledby="topic-tab-09"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 09</span>
-        <h3>Academic-Industry Ecosystem Collaboration</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Co-Op Research Centres (CRCs): Establishing formal public-private partnerships between research universities, hospitals, and biotech enterprises.</li>
-            <li>Shared Infrastructure Models: Utilizing incubators, biofoundries, and core facilities to reduce capital expenditure for early-stage spin-offs.</li>
-            <li>Talent Pipelines &amp; Cross-Disciplinary Training: Bridging the gap between academic molecular biologists and commercial bioprocess engineers/executives.</li>
-            <li>Proof-of-Concept &amp; Accelerator Funds: Managing institutional venture funds designed to bridge the "Valley of Death" between paper publication and startup formation.</li>
-            <li>Consortium-Driven Precompetitive Research: Collaborating across competing biotech firms to standardize vector characterization and safety benchmarks.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>Regions with dedicated life-science hubs—such as Boston's Kendall Square or Melbourne's Parkville Biomedical Precinct—generate up to 4x more commercial biotech spin-offs per research dollar than isolated institutions.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>High capital costs make it impossible for early startups to buy their own equipment. Shared incubators, biofoundries, and public-private partnerships allow startups to bridge the "Valley of Death".</p>
-        </div>
-    </div>
-</article>
-
-
-<!-- TOPIC 10 -->
-<article class="genex-topic-panel"
-    id="topic-panel-10"
-    role="tabpanel"
-    aria-labelledby="topic-tab-10"
-    hidden>
-
-    <div class="genex-topic-panel-header">
-        <span class="genex-topic-panel-number">TOPIC 10</span>
-        <h3>Indication Expansion Beyond Monogenic Rare Diseases</h3>
-    </div>
-
-    <div class="genex-topic-panel-body">
-        <ul>
-            <li>Gene Therapy for Common Cardiovascular Diseases: Targeting lipid metabolism and cardiac tissue regeneration in mass-market populations.</li>
-            <li>Oncology &amp; Gene-Edited Immuno-Therapeutics: Developing next-generation CAR-T, CAR-NK, and TCR therapies for solid tumors.</li>
-            <li>Neurodegenerative Target Commercialization: Crossing the blood-brain barrier to treat Parkinson's, Alzheimer's, and ALS via viral and non-viral delivery.</li>
-            <li>Metabolic &amp; Age-Related Gene Targets: Commercializing therapies aimed at metabolic disorders, muscle wasting, and cellular senescence.</li>
-            <li>Polygenic Risk Score Application: Moving from single-gene defects to multi-gene risk mitigation in preventative health markets.</li>
-        </ul>
-
-        <div class="genex-topic-insight">
-            <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
-            <p>While early gene therapies targeted ultra-rare monogenic diseases affecting small patient populations, the largest growth opportunities lie in polygenic, common conditions like heart disease, oncology, and neurodegeneration.</p>
-        </div>
-
-        <div class="genex-topic-why">
-            <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
-            <p>Moving beyond niche markets into broad clinical applications is what transforms boutique biotechs into multi-billion-dollar enterprise leaders.</p>
-        </div>
-    </div>
-</article>
-
-
+          <!-- LEFT: TOPIC NAVIGATION -->
+          <aside class="genex-topics-sidebar">
+            <div class="genex-topics-sidebar-heading">
+              <i class="fa-solid fa-list-ul"></i>
+              <span>Explore Topics</span>
             </div>
-        </div>
-    </div>
-</section>
 
+            <div
+              class="genex-topic-nav"
+              role="tablist"
+              aria-label="GeneX conference topics"
+              aria-orientation="vertical"
+            >
+              <button
+                class="genex-topic-nav-item active"
+                id="topic-tab-01"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="topic-panel-01"
+                data-topic="01"
+              >
+                <span class="genex-topic-number">01</span>
+                <span class="genex-topic-nav-title">
+                  Intellectual Property (IP) Strategy &amp; Spin-Off Mechanics
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-02"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-02"
+                data-topic="02"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">02</span>
+                <span class="genex-topic-nav-title">
+                  Preclinical-to-Clinical Regulatory Pathways
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-03"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-03"
+                data-topic="03"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">03</span>
+                <span class="genex-topic-nav-title">
+                  Commercialization Models &amp; Health Economics
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-04"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-04"
+                data-topic="04"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">04</span>
+                <span class="genex-topic-nav-title">
+                  Advanced Biomanufacturing &amp; Scalability (CMC)
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-05"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-05"
+                data-topic="05"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">05</span>
+                <span class="genex-topic-nav-title">
+                  Venture Capital, Investment &amp; Deal Structuring
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-06"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-06"
+                data-topic="06"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">06</span>
+                <span class="genex-topic-nav-title">
+                  Bioethics, Governance &amp; Public Trust
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-07"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-07"
+                data-topic="07"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">07</span>
+                <span class="genex-topic-nav-title">
+                  Next-Generation Gene Editing Platforms
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-08"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-08"
+                data-topic="08"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">08</span>
+                <span class="genex-topic-nav-title">
+                  Supply Chain, Logistics &amp; Clinical Integration
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-09"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-09"
+                data-topic="09"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">09</span>
+                <span class="genex-topic-nav-title">
+                  Academic-Industry Ecosystem Collaboration
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <button
+                class="genex-topic-nav-item"
+                id="topic-tab-10"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="topic-panel-10"
+                data-topic="10"
+                tabindex="-1"
+              >
+                <span class="genex-topic-number">10</span>
+                <span class="genex-topic-nav-title">
+                  Indication Expansion Beyond Monogenic Rare Diseases
+                </span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </aside>
+
+          <!-- RIGHT: TOPIC CONTENT -->
+          <div class="genex-topics-content">
+            <!-- TOPIC 01 -->
+            <article
+              class="genex-topic-panel active"
+              id="topic-panel-01"
+              role="tabpanel"
+              aria-labelledby="topic-tab-01"
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 01</span>
+                <h3>
+                  Intellectual Property (IP) Strategy &amp; Spin-Off Mechanics
+                </h3>
+                <p>
+                  Protecting discoveries and building commercially viable
+                  academic spin-offs.
+                </p>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Patentability of Genetic Vectors: Securing robust IP
+                    protection for modified viral vectors (AAVs, lentiviruses)
+                    vs. target gene constructs.
+                  </li>
+                  <li>
+                    Freedom to Operate (FTO) Analyses: Navigating complex global
+                    patent landscapes around core CRISPR/Cas9, base editing, and
+                    prime editing systems.
+                  </li>
+                  <li>
+                    University Technology Transfer: Structuring spin-off equity,
+                    exclusive vs. non-exclusive licenses, and anti-dilution
+                    clauses between academic institutions and founder
+                    scientists.
+                  </li>
+                  <li>
+                    Defensive Patent Thickets: Building patent portfolios around
+                    delivery systems, formulations, and novel manufacturing
+                    pathways.
+                  </li>
+                  <li>
+                    Trade Secret Protection: Balancing public academic
+                    publication pressures with proprietary manufacturing
+                    processes and bioengineering know-how.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    CRISPR technology patent battles between UC Berkeley and the
+                    Broad Institute demonstrated that a single ambiguity in
+                    university technology licensing can delay multi-billion
+                    dollar clinical developments by years.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Academic founders frequently publish data before filing
+                    provisional patents, permanently destroying commercial
+                    patentability. Delegates must learn how to protect
+                    biological IP (like vectors and gRNAs) before entering the
+                    public domain.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 02 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-02"
+              role="tabpanel"
+              aria-labelledby="topic-tab-02"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 02</span>
+                <h3>Preclinical-to-Clinical Regulatory Pathways</h3>
+                <p>
+                  Understanding regulatory requirements for safe and efficient
+                  clinical translation.
+                </p>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Accelerated Approval Mechanisms: Leveraging TGA provisional
+                    approvals (Australia), FDA Breakthrough/RMAT designations
+                    (US), and EMA PRIME frameworks (EU).
+                  </li>
+                  <li>
+                    Good Laboratory Practice (GLP) Biodistribution: Designing
+                    preclinical animal models to demonstrate on-target cell
+                    tropism and lack of off-target toxicity.
+                  </li>
+                  <li>
+                    Adaptive Clinical Trial Design: Structuring small-cohort,
+                    Phase I/II master protocols for rare monogenic diseases
+                    where standard placebo arms are unviable.
+                  </li>
+                  <li>
+                    Immunogenicity &amp; Off-Target Profiling: Meeting global
+                    regulatory standards for vector immunity and genomic
+                    integrity post-editing.
+                  </li>
+                  <li>
+                    Harmonization Across Jurisdictions: Managing multi-region
+                    IND/CTA filings for international, multi-center gene therapy
+                    clinical trials.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    According to clinical trial statistics, over 80% of novel
+                    biotech platforms fail during the transition from animal
+                    models to Phase I trials due to unpredicted off-target
+                    toxicity or immunogenicity.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Regulatory agencies like the FDA, EMA, and Australia's TGA
+                    require complex, non-traditional trial designs for gene
+                    therapies. Understanding accelerated designations (such as
+                    RMAT or PRIME) cuts years off development timelines.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 03 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-03"
+              role="tabpanel"
+              aria-labelledby="topic-tab-03"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 03</span>
+                <h3>Commercialization Models &amp; Health Economics</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Value-Based &amp; Installment Pricing: Developing
+                    non-traditional reimbursement models for single-dose,
+                    curative gene therapies.
+                  </li>
+                  <li>
+                    Payer &amp; HTA Strategy: Conducting Health Technology
+                    Assessments (HTA) to demonstrate long-term quality-adjusted
+                    life-year (QALY) gains to national insurers.
+                  </li>
+                  <li>
+                    Orphan Drug Commercialization: Designing lean, targeted
+                    commercial sales forces and specialized center-of-excellence
+                    delivery networks.
+                  </li>
+                  <li>
+                    Risk-Sharing Agreements: Structuring outcome-contingent
+                    rebates between biopharma firms and public healthcare bodies
+                    (e.g., Australian PBS, US Medicare).
+                  </li>
+                  <li>
+                    Cross-Subsidization Strategies: Balancing ultra-rare
+                    pediatric indications with larger, polygenic adult
+                    therapeutic markets to maintain portfolio solvency.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    Early gene therapies like Glybera were commercially
+                    withdrawn from the market despite scientific efficacy
+                    because their single-dose $1 million+ upfront price tag was
+                    rejected by health insurers.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Gene therapies cure diseases in a single dose, which
+                    eliminates the recurring-revenue model traditional pharma
+                    relies on. Business leaders must master value-based annuity
+                    payments and risk-sharing models to survive.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 04 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-04"
+              role="tabpanel"
+              aria-labelledby="topic-tab-04"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 04</span>
+                <h3>Advanced Biomanufacturing &amp; Scalability (CMC)</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Viral Vector Yield Optimization: Transitioning from academic
+                    adherent cell culture flasks to industrial suspension
+                    bioreactors.
+                  </li>
+                  <li>
+                    Non-Viral Delivery Innovations: Commercializing Lipid
+                    Nanoparticles (LNPs) and novel polymeric carriers to bypass
+                    viral vector shortages.
+                  </li>
+                  <li>
+                    Autologous vs. Allogeneic Scaling: Managing the high cost
+                    and logistical complexity of patient-specific therapies vs.
+                    off-the-shelf donor lines.
+                  </li>
+                  <li>
+                    Analytical Assay Development: Standardizing lot-release
+                    assays for viral full-to-empty capsid ratios and vector
+                    genome potency.
+                  </li>
+                  <li>
+                    cGMP Compliance &amp; CDMO Selection: Deciding when to build
+                    internal GMP facilities vs. outsourcing to Contract
+                    Development and Manufacturing Organizations.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    Chemistry, Manufacturing, and Controls (CMC) issues cause
+                    over 50% of regulatory holds and trial delays in gene
+                    therapy clinical filings.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Moving a viral vector from an academic laboratory flask into
+                    an industrial 2,000-Liter suspension bioreactor frequently
+                    alters the purity and potency of the biological product,
+                    risking total trial failure if not managed early.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 05 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-05"
+              role="tabpanel"
+              aria-labelledby="topic-tab-05"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 05</span>
+                <h3>Venture Capital, Investment &amp; Deal Structuring</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Academic Seed &amp; Series A Pitching: Translating complex
+                    genomic mechanisms into commercial value propositions,
+                    market sizing, and milestone roadmaps.
+                  </li>
+                  <li>
+                    Non-Dilutive Grant Leveraging: Combining government funding
+                    (e.g., MRFF, NHMRC, NIH) with early-stage venture capital.
+                  </li>
+                  <li>
+                    Corporate Venture Capital (CVC): Partnering with major
+                    pharmaceutical venture arms early in academic discovery
+                    phases.
+                  </li>
+                  <li>
+                    Valuation &amp; De-Risking Milestones: Setting scientific
+                    valuation inflection points (in vivo proof-of-concept, IND
+                    clearance, Phase I safety).
+                  </li>
+                  <li>
+                    Strategic Licensing &amp; M&amp;A: Negotiating option
+                    agreements, co-development deals, and buyout terms with
+                    global biopharma players.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    Global venture capital investment in gene editing and cell
+                    therapies exceeds billions annually, but less than 5% of
+                    university spin-off proposals successfully secure Series A
+                    funding.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Academics often pitch scientific novelty rather than market
+                    size, regulatory milestones, and risk-mitigation strategies.
+                    This topic teaches researchers how to pitch in terms
+                    biopharma investors evaluate.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 06 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-06"
+              role="tabpanel"
+              aria-labelledby="topic-tab-06"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 06</span>
+                <h3>Bioethics, Governance &amp; Public Trust</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Somatic vs. Germline Editing Boundaries: Navigating
+                    international scientific consensus and regulatory
+                    prohibitions on inherited genetic modifications.
+                  </li>
+                  <li>
+                    Global Health Equity &amp; Pricing Access: Addressing
+                    disparities in providing million-dollar gene therapies to
+                    low- and middle-income countries.
+                  </li>
+                  <li>
+                    Informed Consent in Genetic Trials: Structuring long-term
+                    trial follow-ups (up to 15 years) for permanent genetic
+                    changes.
+                  </li>
+                  <li>
+                    Data Privacy &amp; Genomic Biobanks: Managing patient
+                    privacy, genomic data ownership, and secondary research
+                    rights in commercial database partnerships.
+                  </li>
+                  <li>
+                    Combatting Direct-to-Consumer Unregulated Therapies:
+                    Protecting market integrity against non-evidence-based cell
+                    and gene clinics.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    Regulatory crackdowns on unregulated stem cell clinics and
+                    public pushback against gene editing demonstrate that
+                    ethical missteps can trigger restrictive legislation that
+                    freezes whole sub-fields of research.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Navigating somatic versus germline boundaries and resolving
+                    genomic data privacy concerns are required to maintain the
+                    social license to operate and secure long-term public and
+                    institutional funding.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 07 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-07"
+              role="tabpanel"
+              aria-labelledby="topic-tab-07"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 07</span>
+                <h3>Next-Generation Gene Editing Platforms</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Base &amp; Prime Editing Platforms: Moving beyond
+                    double-stranded DNA breaks to precise single-nucleotide
+                    corrections without donor DNA.
+                  </li>
+                  <li>
+                    Epigenetic Editing: Commercializing gene silencing and
+                    activation approaches that alter expression without
+                    modifying underlying DNA sequences.
+                  </li>
+                  <li>
+                    In Vivo Gene Editing: Transitioning from expensive ex vivo
+                    cell manipulation to direct patient administration.
+                  </li>
+                  <li>
+                    Multiplex Genome Engineering: Simultaneously knocking out or
+                    inserting multiple genes for complex biological targets
+                    (e.g., universal CAR-T cells).
+                  </li>
+                  <li>
+                    AI-Guided Guide RNA (gRNA) Design: Utilizing machine
+                    learning models to predict on-target efficiency and minimize
+                    off-target genomic cleavage.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    The global CRISPR and next-generation gene-editing market is
+                    projected to expand significantly over the next decade.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Standard CRISPR-Cas9 creates double-stranded DNA breaks,
+                    which carry risks of large genomic deletions. Newer
+                    platforms like base editing, prime editing, and epigenetic
+                    editing represent the incoming wave of commercial
+                    investment.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 08 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-08"
+              role="tabpanel"
+              aria-labelledby="topic-tab-08"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 08</span>
+                <h3>Supply Chain, Logistics &amp; Clinical Integration</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Cryogenic Cold-Chain Logistics: Managing ultra-low
+                    temperature, uninterrupted supply chains for live genetic
+                    vector products.
+                  </li>
+                  <li>
+                    Vein-to-Vein Logistics Tracking: Ensuring strict
+                    chain-of-custody and chain-of-identity protocols for
+                    patient-derived materials in autologous therapies.
+                  </li>
+                  <li>
+                    Clinical Site Accreditation: Establishing specialized
+                    hospital infrastructure and training medical staff for safe
+                    vector administration.
+                  </li>
+                  <li>
+                    Post-Market Pharmacovigilance: Building registry systems to
+                    track real-world safety and long-term durability over
+                    multi-decade periods.
+                  </li>
+                  <li>
+                    Regional Hub Manufacturing: Setting up localized
+                    biomanufacturing nodes (e.g., Melbourne's Parkville
+                    precinct) to serve Asia-Pacific clinical hubs.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    For autologous (patient-specific) gene therapies, the
+                    "vein-to-vein" supply chain requires harvesting, modifying,
+                    and re-infusing patient cells within tight window
+                    constraints at ultra-low cryogenic temperatures.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    A single failure in cold-chain logistics or chain-of-custody
+                    tracking destroys the therapeutic batch, wastes hundreds of
+                    thousands of dollars, and directly jeopardizes patient
+                    lives.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 09 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-09"
+              role="tabpanel"
+              aria-labelledby="topic-tab-09"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 09</span>
+                <h3>Academic-Industry Ecosystem Collaboration</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Co-Op Research Centres (CRCs): Establishing formal
+                    public-private partnerships between research universities,
+                    hospitals, and biotech enterprises.
+                  </li>
+                  <li>
+                    Shared Infrastructure Models: Utilizing incubators,
+                    biofoundries, and core facilities to reduce capital
+                    expenditure for early-stage spin-offs.
+                  </li>
+                  <li>
+                    Talent Pipelines &amp; Cross-Disciplinary Training: Bridging
+                    the gap between academic molecular biologists and commercial
+                    bioprocess engineers/executives.
+                  </li>
+                  <li>
+                    Proof-of-Concept &amp; Accelerator Funds: Managing
+                    institutional venture funds designed to bridge the "Valley
+                    of Death" between paper publication and startup formation.
+                  </li>
+                  <li>
+                    Consortium-Driven Precompetitive Research: Collaborating
+                    across competing biotech firms to standardize vector
+                    characterization and safety benchmarks.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    Regions with dedicated life-science hubs—such as Boston's
+                    Kendall Square or Melbourne's Parkville Biomedical
+                    Precinct—generate up to 4x more commercial biotech spin-offs
+                    per research dollar than isolated institutions.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    High capital costs make it impossible for early startups to
+                    buy their own equipment. Shared incubators, biofoundries,
+                    and public-private partnerships allow startups to bridge the
+                    "Valley of Death".
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- TOPIC 10 -->
+            <article
+              class="genex-topic-panel"
+              id="topic-panel-10"
+              role="tabpanel"
+              aria-labelledby="topic-tab-10"
+              hidden
+            >
+              <div class="genex-topic-panel-header">
+                <span class="genex-topic-panel-number">TOPIC 10</span>
+                <h3>Indication Expansion Beyond Monogenic Rare Diseases</h3>
+              </div>
+
+              <div class="genex-topic-panel-body">
+                <ul>
+                  <li>
+                    Gene Therapy for Common Cardiovascular Diseases: Targeting
+                    lipid metabolism and cardiac tissue regeneration in
+                    mass-market populations.
+                  </li>
+                  <li>
+                    Oncology &amp; Gene-Edited Immuno-Therapeutics: Developing
+                    next-generation CAR-T, CAR-NK, and TCR therapies for solid
+                    tumors.
+                  </li>
+                  <li>
+                    Neurodegenerative Target Commercialization: Crossing the
+                    blood-brain barrier to treat Parkinson's, Alzheimer's, and
+                    ALS via viral and non-viral delivery.
+                  </li>
+                  <li>
+                    Metabolic &amp; Age-Related Gene Targets: Commercializing
+                    therapies aimed at metabolic disorders, muscle wasting, and
+                    cellular senescence.
+                  </li>
+                  <li>
+                    Polygenic Risk Score Application: Moving from single-gene
+                    defects to multi-gene risk mitigation in preventative health
+                    markets.
+                  </li>
+                </ul>
+
+                <div class="genex-topic-insight">
+                  <h4><i class="fa-solid fa-lightbulb"></i> The Proof</h4>
+                  <p>
+                    While early gene therapies targeted ultra-rare monogenic
+                    diseases affecting small patient populations, the largest
+                    growth opportunities lie in polygenic, common conditions
+                    like heart disease, oncology, and neurodegeneration.
+                  </p>
+                </div>
+
+                <div class="genex-topic-why">
+                  <h4><i class="fa-solid fa-bullseye"></i> Why Include It</h4>
+                  <p>
+                    Moving beyond niche markets into broad clinical applications
+                    is what transforms boutique biotechs into
+                    multi-billion-dollar enterprise leaders.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="program" class="soft-section">
       <div class="container">
@@ -1593,8 +1941,7 @@
       </div>
     </section>
 
-
-    <section id="tickets" style="display: none;">
+    <section id="tickets" style="display: none">
       <div class="container">
         <div class="small-label mb-2">Registration & Tickets</div>
         <h2 class="section-title display-6 mb-3">Choose Your Summit Pass</h2>
@@ -1661,7 +2008,6 @@
       </div>
     </section>
 
-
     <section id="venue" class="soft-section">
       <div class="container">
         <div class="small-label mb-2">Venue & Logistics</div>
@@ -1719,29 +2065,250 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <div class="row gy-3 align-items-center">
-          <div class="col-md-6">
-            <div class="fw-bold fs-5">
-              <i class="fa-solid fa-dna me-2"></i>GeneX Commercialization Summit
-              2027
+  
+<footer class="genex-footer">
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- COLUMN 1: COMPANY INFORMATION -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand">
+
+                    <!-- Company Logo -->
+                    <a href="https://www.scientificprism.com/" class="footer-logo">
+                        <img src="assets/prism_logo_footer.png"
+                             alt="Prism"
+                             class="img-fluid">
+                    </a>
+
+                    <!-- <h4 class="footer-company-name">
+                        GeneX Commercialization Summit 2027
+                    </h4> -->
+
+                    <p class="footer-description">
+                        PRISM takes pride to connect the empirical and systematic minds of both the budding researchers and the experience scientists help promote change in the world for a better human welfare.
+                    </p>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                 302/480 Collins Street, Melbourne, VIC 3000
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+61390163202">
+                                +61390163202
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:writeus@scientificprism.com">
+                                writeus@scientificprism.com
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Social Links -->
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <div class="small">
-              Connecting Academic Discovery with Biopharma Scale.
+
+
+            <!-- COLUMN 2: QUICK LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">Quick Links</h5>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About GeneX</a></li>
+                        <li><a href="topics.html">Key Topics</a></li>
+                        <li><a href="program.html">Conference Program</a></li>
+                        <li><a href="chair.html">Conference Chair</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 text-md-end small">
-            September 20–22, 2027 · Melbourne, Victoria, Australia
-          </div>
+
+
+            <!-- COLUMN 3: CONFERENCE INFORMATION -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">
+                        Conference Information
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="registration.html">
+                                Registration &amp; Passes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="abstract-submission.html">
+                                Abstract Submission
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="sponsorship.html">
+                                Sponsorship &amp; Exhibition
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="venue.html">
+                                Venue &amp; Accommodation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                General Enquiries
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="footer-event-info">
+                        <div class="footer-event-icon">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+
+                        <div>
+                            <span>Conference Dates</span>
+                            <strong>September 20–22, 2027</strong>
+                        </div>
+                    </div>
+
+                    <div class="footer-event-info">
+                        <div class="footer-event-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>Conference Location</span>
+                            <strong>Melbourne, Australia</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- COLUMN 4: NEWSLETTER -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">Stay Connected</h5>
+
+                    <p class="footer-newsletter-text">
+                        Stay informed about conference announcements,
+                        registration deadlines, speakers, and program updates.
+                    </p>
+
+                    <form class="footer-newsletter-form"
+                          action="newsletter.php"
+                          method="post">
+
+                        <label for="footer-newsletter-email"
+                               class="visually-hidden">
+                            Email address
+                        </label>
+
+                        <div class="footer-input-group">
+                            <input type="email"
+                                   id="footer-newsletter-email"
+                                   name="email"
+                                   placeholder="Enter your email address"
+                                   autocomplete="email"
+                                   required>
+
+                            <button type="submit"
+                                    aria-label="Subscribe to newsletter">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="footer-privacy-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Your email will be handled responsibly.
+                        </div>
+
+                    </form>
+
+                    <div class="footer-sponsor-contact">
+                        <span>Sponsorship Enquiries</span>
+                        <a href="mailto:sponsors@genexsummit.com.au">
+                            sponsors@genexsummit.com.au
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        <hr class="border-light opacity-25" />
-        <div class="small d-flex flex-wrap justify-content-between gap-2">
-          <span>© 2027 GeneX Commercialization Summit.</span
-          ><a href="index.html">Back to top ↑</a>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+            <div class="row align-items-center gy-3">
+
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2027 GeneX Commercialization Summit.
+                        All rights reserved.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                        <a href="#top" class="footer-back-top">
+                            Back to Top <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </footer>
+
+    </div>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.querySelectorAll("#mainNav .nav-link").forEach((link) =>
@@ -1754,63 +2321,62 @@
     </script>
 
     <script>
-      
-document.addEventListener("DOMContentLoaded", function () {
-    const topicButtons = document.querySelectorAll(".genex-topic-nav-item");
-    const topicPanels = document.querySelectorAll(".genex-topic-panel");
+      document.addEventListener("DOMContentLoaded", function () {
+        const topicButtons = document.querySelectorAll(".genex-topic-nav-item");
+        const topicPanels = document.querySelectorAll(".genex-topic-panel");
 
-    function activateTopic(button, moveFocus) {
-        const topicId = button.dataset.topic;
-        const targetPanel = document.getElementById("topic-panel-" + topicId);
+        function activateTopic(button, moveFocus) {
+          const topicId = button.dataset.topic;
+          const targetPanel = document.getElementById("topic-panel-" + topicId);
 
-        if (!targetPanel) return;
+          if (!targetPanel) return;
 
-        topicButtons.forEach(function (item) {
+          topicButtons.forEach(function (item) {
             const isActive = item === button;
 
             item.classList.toggle("active", isActive);
             item.setAttribute("aria-selected", String(isActive));
             item.tabIndex = isActive ? 0 : -1;
-        });
+          });
 
-        topicPanels.forEach(function (panel) {
+          topicPanels.forEach(function (panel) {
             const isActive = panel === targetPanel;
 
             panel.classList.toggle("active", isActive);
             panel.hidden = !isActive;
-        });
+          });
 
-        if (moveFocus) {
+          if (moveFocus) {
             button.focus();
+          }
         }
-    }
 
-    topicButtons.forEach(function (button, index) {
-        button.addEventListener("click", function () {
+        topicButtons.forEach(function (button, index) {
+          button.addEventListener("click", function () {
             activateTopic(button, false);
-        });
+          });
 
-        button.addEventListener("keydown", function (event) {
+          button.addEventListener("keydown", function (event) {
             let nextIndex = index;
 
             if (event.key === "ArrowDown" || event.key === "ArrowRight") {
-                nextIndex = (index + 1) % topicButtons.length;
+              nextIndex = (index + 1) % topicButtons.length;
             } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
-                nextIndex = (index - 1 + topicButtons.length) % topicButtons.length;
+              nextIndex =
+                (index - 1 + topicButtons.length) % topicButtons.length;
             } else if (event.key === "Home") {
-                nextIndex = 0;
+              nextIndex = 0;
             } else if (event.key === "End") {
-                nextIndex = topicButtons.length - 1;
+              nextIndex = topicButtons.length - 1;
             } else {
-                return;
+              return;
             }
 
             event.preventDefault();
             activateTopic(topicButtons[nextIndex], true);
+          });
         });
-    });
-});
-
+      });
     </script>
   </body>
 </html>

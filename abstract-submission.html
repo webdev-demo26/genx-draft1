@@ -1,0 +1,2224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the vision behind GeneX Commercialization Summit 2027, connecting academic discovery with commercial application."
+    />
+    <title>About Us | GeneX Commercialization Summit 2027</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+      :root {
+        --gx-navy: #071c38;
+        --gx-blue: #0878e8;
+        --gx-cyan: #36d3f4;
+        --gx-light: #f2f8ff;
+        --gx-text: #40536b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--gx-text);
+        line-height: 1.75;
+        background: #fff;
+      }
+
+      /* Navigation */
+      .gx-navbar {
+        background: #fff;
+        padding: 14px 0;
+        box-shadow: 0 4px 24px rgba(7, 28, 56, 0.07);
+      }
+
+      .gx-brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: var(--gx-navy);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      .gx-brand-icon {
+        width: 43px;
+        height: 43px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 13px;
+        background: linear-gradient(135deg, var(--gx-blue), var(--gx-cyan));
+      }
+
+      .gx-brand small {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.65rem;
+        letter-spacing: 0.7px;
+        font-weight: 700;
+      }
+
+      .gx-navbar .nav-link {
+        color: #233f5d;
+        font-size: 0.91rem;
+        font-weight: 650;
+        padding: 10px 12px !important;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-blue);
+      }
+
+      .gx-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 23px;
+        border: 1px solid var(--gx-blue);
+        border-radius: 50px;
+        background: var(--gx-blue);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .gx-btn:hover {
+        background: #0562c1;
+        border-color: #0562c1;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* About hero */
+      .about-hero {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: 110px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 85% 30%,
+            rgba(17, 143, 220, 0.25),
+            transparent 32%
+          ),
+          linear-gradient(120deg, #04152e 0%, #082c54 60%, #07518a 100%);
+      }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 480px;
+        height: 480px;
+        right: -120px;
+        top: -160px;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 45px rgba(54, 211, 244, 0.035),
+          0 0 0 95px rgba(54, 211, 244, 0.025);
+      }
+
+      .about-hero::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        left: -170px;
+        bottom: -200px;
+        border-radius: 50%;
+        background: rgba(8, 120, 232, 0.2);
+        filter: blur(25px);
+      }
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gx-cyan);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .gx-eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 2px;
+        background: currentColor;
+      }
+
+      .about-hero h1 {
+        max-width: 850px;
+        margin: 22px 0;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 850;
+        letter-spacing: -2px;
+        line-height: 1.12;
+      }
+
+      .about-hero h1 span {
+        color: var(--gx-cyan);
+      }
+
+      .about-hero .hero-description {
+        max-width: 720px;
+        color: #d5e6f7;
+        font-size: 1.12rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 30px;
+        margin-top: 32px;
+      }
+
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #edf7ff;
+        font-weight: 600;
+      }
+
+      .hero-meta-item i {
+        color: var(--gx-cyan);
+        font-size: 1.15rem;
+      }
+
+      /* Main content */
+      .about-content {
+        padding: 95px 0;
+        background: #fff;
+      }
+
+      .gx-section-label {
+        margin-bottom: 14px;
+        color: var(--gx-blue);
+        font-size: 0.76rem;
+        font-weight: 850;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .gx-heading {
+        margin-bottom: 25px;
+        color: var(--gx-navy);
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 850;
+        letter-spacing: -1.2px;
+        line-height: 1.2;
+      }
+
+      .gx-heading span {
+        color: var(--gx-blue);
+      }
+
+      .gx-copy p {
+        margin-bottom: 20px;
+        font-size: 1.02rem;
+        line-height: 1.9;
+      }
+
+      .gx-visual {
+        position: relative;
+        min-height: 450px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 24px;
+        background: #0a315b;
+        box-shadow: 0 25px 60px rgba(7, 28, 56, 0.13);
+      }
+
+      .gx-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gx-visual::after {
+        content: "";
+        position: absolute;
+        inset: 35% 0 0;
+        background: linear-gradient(transparent, rgba(3, 23, 48, 0.95));
+      }
+
+      .gx-visual-caption {
+        position: absolute;
+        z-index: 1;
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        border-radius: 15px;
+        color: #fff;
+        background: rgba(5, 31, 63, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      .gx-visual-caption i {
+        color: var(--gx-cyan);
+        font-size: 2rem;
+      }
+
+      .gx-visual-caption strong {
+        display: block;
+        line-height: 1.5;
+      }
+
+      .gx-visual-caption span {
+        color: #cce3f7;
+        font-size: 0.88rem;
+      }
+
+      /* Dark impact section */
+      .impact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0;
+        color: #fff;
+        background: var(--gx-navy);
+      }
+
+      .impact-section::before {
+        content: "";
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: -260px;
+        right: 8%;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow: 0 0 0 50px rgba(54, 211, 244, 0.025);
+      }
+
+      .impact-section .gx-heading {
+        color: #fff;
+        margin-bottom: 16px;
+      }
+
+      .impact-description {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #c8d9eb;
+        font-size: 1.06rem;
+      }
+
+      .impact-icon {
+        display: grid;
+        place-items: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(54, 211, 244, 0.35);
+        border-radius: 18px;
+        color: var(--gx-cyan);
+        background: rgba(54, 211, 244, 0.08);
+        font-size: 1.6rem;
+      }
+
+      /* Event information */
+      .event-info {
+        padding: 65px 0;
+        background: var(--gx-light);
+      }
+
+      .event-info-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        padding: 27px;
+        border: 1px solid #e0ebf7;
+        border-radius: 18px;
+        background: #fff;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .event-info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(7, 28, 56, 0.07);
+      }
+
+      .event-info-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        color: var(--gx-blue);
+        background: #e9f4ff;
+        font-size: 1.45rem;
+      }
+
+      .event-info-card h3 {
+        margin-bottom: 5px;
+        color: var(--gx-navy);
+        font-size: 0.83rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .event-info-card p {
+        margin: 0;
+        color: #405875;
+        font-weight: 650;
+      }
+
+      /* Footer */
+      .gx-footer {
+        padding: 30px 0;
+        color: #bdcfe3;
+        background: #031126;
+        font-size: 0.88rem;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .gx-footer a {
+        color: #d5e8fb;
+        text-decoration: none;
+      }
+
+      .gx-footer a:hover {
+        color: var(--gx-cyan);
+      }
+
+      @media (max-width: 991.98px) {
+        .about-hero {
+          padding: 90px 0 75px;
+        }
+
+        .about-content {
+          padding: 70px 0;
+        }
+
+        .gx-visual {
+          min-height: 390px;
+        }
+
+        .gx-navbar .navbar-collapse {
+          padding-top: 15px;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .gx-brand {
+          font-size: 1.2rem;
+        }
+
+        .gx-brand small {
+          font-size: 0.58rem;
+        }
+
+        .about-hero {
+          padding: 75px 0 65px;
+        }
+
+        .about-hero h1 {
+          letter-spacing: -1px;
+        }
+
+        .hero-meta {
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .about-content {
+          padding: 55px 0;
+        }
+
+        .gx-visual {
+          min-height: 340px;
+          border-radius: 18px;
+        }
+
+        .impact-section {
+          padding: 60px 0;
+        }
+
+        .event-info {
+          padding: 45px 0;
+        }
+
+        .event-info-card {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      
+/* ==========================================
+   GENE THERAPY FORUM 2027
+   ABSTRACT SUBMISSION PAGE
+   ========================================== */
+
+.gtf-abstract-section {
+    padding: 80px 0;
+    color: #173253;
+    background: #f4f7fb;
+    font-family: inherit;
+}
+
+.gtf-abstract-section * {
+    box-sizing: border-box;
+}
+
+/* Page heading */
+
+.gtf-page-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+.gtf-section-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 15px;
+    margin-bottom: 18px;
+    color: #087fba;
+    background: #e6f5fc;
+    border: 1px solid #ccebf8;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.gtf-page-heading h1 {
+    margin: 0 0 17px;
+    color: #102d52;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 850;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.gtf-page-heading > p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #61758d;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Shared cards */
+
+.gtf-topics-card,
+.gtf-form-card,
+.gtf-resources-card,
+.gtf-guidelines-card {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e1eaf4;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(16, 45, 82, 0.045);
+}
+
+/* Section card headings */
+
+.gtf-topics-heading,
+.gtf-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.gtf-heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #fff;
+    background: linear-gradient(135deg, #087bc1, #13b9d9);
+    border-radius: 13px;
+    font-size: 19px;
+}
+
+.gtf-topics-heading > div:last-child > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #0789bc;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.gtf-topics-heading h2,
+.gtf-card-heading h2 {
+    margin: 0;
+    color: #102d52;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.gtf-card-heading {
+    align-items: flex-start;
+}
+
+.gtf-card-heading h2 {
+    font-size: 21px;
+}
+
+.gtf-card-heading p {
+    margin: 6px 0 0;
+    color: #718197;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Key topic cards */
+
+.gtf-topic-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    height: 100%;
+    min-height: 80px;
+    padding: 17px;
+    background: #f8fbfe;
+    border: 1px solid #e6eef7;
+    border-radius: 12px;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.gtf-topic-item:hover {
+    background: #eef9fe;
+    border-color: #bde9f7;
+    box-shadow: 0 8px 20px rgba(7, 127, 186, 0.07);
+    transform: translateY(-3px);
+}
+
+.gtf-topic-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    color: #0787b9;
+    background: #e1f4fc;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 850;
+}
+
+.gtf-topic-item > span:last-child {
+    padding-top: 3px;
+    color: #29435f;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+/* Submission deadline */
+
+.gtf-deadline-banner {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 22px;
+    margin-top: 28px;
+    color: #fff;
+    background: linear-gradient(120deg, #08294e, #075985);
+    border-radius: 14px;
+}
+
+.gtf-deadline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #4dd9f2;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.gtf-deadline-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gtf-deadline-text span {
+    color: #b9d7ec;
+    font-size: 12px;
+}
+
+.gtf-deadline-text strong {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.gtf-deadline-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 17px;
+    color: #062849;
+    background: #4dd9f2;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.gtf-deadline-button:hover {
+    color: #062849;
+    background: #fff;
+}
+
+/* Form labels */
+
+.gtf-form-card {
+    margin-bottom: 25px;
+}
+
+.gtf-abstract-section .form-label {
+    margin-bottom: 8px;
+    color: #243e5b;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.gtf-abstract-section .form-control,
+.gtf-abstract-section .form-select {
+    min-height: 48px;
+    padding: 11px 13px;
+    color: #263e59;
+    background-color: #fff;
+    border: 1px solid #dce6f0;
+    border-radius: 9px;
+    box-shadow: none;
+    font-size: 13px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.gtf-abstract-section .form-control::placeholder {
+    color: #9aa9ba;
+}
+
+.gtf-abstract-section .form-control:focus,
+.gtf-abstract-section .form-select:focus {
+    border-color: #129dce;
+    box-shadow: 0 0 0 3px rgba(18, 157, 206, 0.12);
+}
+
+.gtf-abstract-section input[type="file"].form-control {
+    height: auto;
+    padding: 10px;
+}
+
+.gtf-abstract-section input[type="file"]::file-selector-button {
+    margin: -4px 12px -4px -4px;
+    padding: 10px 13px;
+    color: #086a9b;
+    background: #e8f6fc;
+    border: 0;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* File upload */
+
+.gtf-upload-box {
+    padding: 16px;
+    background: #f8fbfe;
+    border: 1px dashed #b9d4e8;
+    border-radius: 12px;
+}
+
+.gtf-upload-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+    color: #078dc2;
+    background: #e4f6fc;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.gtf-upload-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.gtf-upload-content strong {
+    color: #1a3555;
+    font-size: 13px;
+}
+
+.gtf-upload-content span {
+    color: #7c8ea3;
+    font-size: 11px;
+}
+
+.gtf-file-note {
+    margin-top: 9px;
+    color: #74869b;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* Consent */
+
+.gtf-consent-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 15px;
+    background: #f6f9fc;
+    border: 1px solid #e5edf5;
+    border-radius: 10px;
+}
+
+.gtf-consent-box .form-check-input {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.gtf-consent-box .form-check-input:checked {
+    background-color: #078fbd;
+    border-color: #078fbd;
+}
+
+.gtf-consent-box label {
+    color: #52677e;
+    font-size: 12px;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+/* Submit button */
+
+.gtf-submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    padding: 16px 20px;
+    color: #fff;
+    background: linear-gradient(120deg, #0879bc, #08a8ce);
+    border: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.gtf-submit-button:hover {
+    color: #fff;
+    box-shadow: 0 8px 22px rgba(8, 143, 194, 0.2);
+    transform: translateY(-2px);
+}
+
+.gtf-submit-button i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+}
+
+.gtf-submit-note {
+    margin: 13px 0 0;
+    color: #8796a8;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Resources */
+
+.gtf-resources-card {
+    margin-bottom: 25px;
+}
+
+.gtf-resource-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 0;
+    border-bottom: 1px solid #e9eff6;
+}
+
+.gtf-resource-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.gtf-resource-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    color: #0788ba;
+    background: #e6f6fc;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.gtf-resource-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.gtf-resource-info h3 {
+    margin: 0 0 5px;
+    color: #193858;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.gtf-resource-info p {
+    margin: 0;
+    color: #78899d;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.gtf-download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    color: #087db0;
+    background: #edf8fd;
+    border: 1px solid #d9edf8;
+    border-radius: 9px;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.gtf-download-button:hover {
+    color: #fff;
+    background: #078dc2;
+}
+
+/* Guidelines */
+
+.gtf-guidelines-card .gtf-card-heading {
+    margin-bottom: 20px;
+}
+
+.gtf-guidelines-list {
+    border-top: 1px solid #e8eef5;
+}
+
+.gtf-guideline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf1f6;
+}
+
+.gtf-guideline-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.gtf-guideline-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    color: #0789ba;
+    background: #e7f6fc;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.gtf-guideline-item p {
+    margin: 0;
+    color: #52677f;
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+    .gtf-abstract-section {
+        padding: 60px 0;
+    }
+
+    .gtf-topics-card,
+    .gtf-form-card,
+    .gtf-resources-card,
+    .gtf-guidelines-card {
+        padding: 24px;
+    }
+
+    .gtf-deadline-banner {
+        flex-wrap: wrap;
+    }
+
+    .gtf-deadline-button {
+        margin-left: 65px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .gtf-abstract-section {
+        padding: 42px 0;
+    }
+
+    .gtf-page-heading {
+        margin-bottom: 30px;
+    }
+
+    .gtf-page-heading h1 {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+    }
+
+    .gtf-page-heading > p {
+        font-size: 14px;
+    }
+
+    .gtf-topics-card,
+    .gtf-form-card,
+    .gtf-resources-card,
+    .gtf-guidelines-card {
+        padding: 19px;
+        border-radius: 14px;
+    }
+
+    .gtf-topics-heading,
+    .gtf-card-heading {
+        gap: 12px;
+    }
+
+    .gtf-heading-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .gtf-topics-heading h2,
+    .gtf-card-heading h2 {
+        font-size: 19px;
+    }
+
+    .gtf-topic-item {
+        min-height: 65px;
+        padding: 13px;
+    }
+
+    .gtf-topic-item > span:last-child {
+        font-size: 12px;
+    }
+
+    .gtf-deadline-banner {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .gtf-deadline-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .gtf-deadline-text strong {
+        font-size: 16px;
+    }
+
+    .gtf-deadline-button {
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gtf-resource-item {
+        gap: 10px;
+    }
+
+    .gtf-resource-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .gtf-download-button {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .gtf-abstract-section *,
+    .gtf-abstract-section *::before,
+    .gtf-abstract-section *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html" aria-label="GeneX Summit home">
+          <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          <span>
+            GeneX
+            <small>COMMERCIALIZATION SUMMIT 2027</small>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavigation"
+          aria-controls="gxNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="about.html" aria-current="page"
+                >About</a
+              >
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="chair.html">Chair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="abstract-submission.html">Abstract Submisson</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html#venue">Venue</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="gx-btn" href="registration_form.html">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="about-hero">
+      <div class="container">
+        <div class="gx-eyebrow">Executive Welcome &amp; Event Overview</div>
+
+        <h1>
+          Connecting Academic Discovery
+          <span>with Commercial Application</span>
+        </h1>
+
+        <p class="hero-description">
+          The GeneX Commercialization Summit 2027 addresses the critical
+          friction points preventing human-led academic genetic research from
+          becoming scalable commercial enterprises.
+        </p>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <i class="fa-regular fa-calendar-check"></i>
+            <span>September 20–22, 2027</span>
+          </div>
+
+          <div class="hero-meta-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Melbourne, Victoria, Australia</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+
+<!-- ==========================================
+     GENE THERAPY FORUM 2027
+     ABSTRACT SUBMISSION SECTION
+     Bootstrap 5
+=========================================== -->
+
+<section class="gtf-abstract-section" id="abstract-submission">
+
+    <div class="container">
+
+        <!-- PAGE HEADER -->
+        <div class="gtf-page-heading text-center">
+
+            <span class="gtf-section-label">
+                <i class="fa-solid fa-microscope me-2"></i>
+                SCIENTIFIC CONTRIBUTIONS
+            </span>
+
+            <h1>Call for Abstracts</h1>
+
+            <p>
+                Gene Therapy Forum 2027 conference encourages researchers
+                and practitioners to submit original contributions.
+            </p>
+
+        </div>
+
+
+        <!-- KEY TOPICS -->
+        <div class="gtf-topics-card">
+
+            <div class="gtf-topics-heading">
+                <div class="gtf-heading-icon">
+                    <i class="fa-solid fa-dna"></i>
+                </div>
+
+                <div>
+                    <span>SCIENTIFIC SESSION</span>
+                    <h2>Key Topics</h2>
+                </div>
+            </div>
+
+
+            <div class="row g-3">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">01</span>
+                        <span>Intellectual Property (IP) Strategy & Spin-Off Mechanics</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">02</span>
+                        <span>Preclinical-to-Clinical Regulatory Pathways</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">03</span>
+                        <span>Commercialization Models & Health Economics</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">04</span>
+                        <span>Advanced Biomanufacturing & Scalability (CMC)</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">05</span>
+                        <span>Venture Capital, Investment & Deal Structuring</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">06</span>
+                        <span>Bioethics, Governance & Public Trust</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">07</span>
+                        <span>Next-Generation Gene Editing Platforms</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">08</span>
+                        <span>Supply Chain, Logistics & Clinical Integration</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">09</span>
+                        <span>Academic-Industry Ecosystem Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gtf-topic-item">
+                        <span class="gtf-topic-number">10</span>
+                        <span>Indication Expansion Beyond Monogenic Rare Diseases</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- DEADLINE -->
+            <div class="gtf-deadline-banner">
+
+                <div class="gtf-deadline-icon">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+
+                <div class="gtf-deadline-text">
+                    <span>Abstract Submission Deadline</span>
+                    <strong>June 30, 2027</strong>
+                </div>
+
+                <a href="#gtf-abstract-form" class="gtf-deadline-button">
+                    Submit Your Abstract
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CONTENT GRID -->
+        <div class="row g-4 align-items-start mt-3">
+
+            <!-- ABSTRACT SUBMISSION FORM -->
+            <div class="col-lg-7" id="gtf-abstract-form">
+
+                <div class="gtf-form-card">
+
+                    <div class="gtf-card-heading">
+
+                        <div class="gtf-heading-icon">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+
+                        <div>
+                            <h2>Abstract Submission</h2>
+                            <p>
+                                Complete the form below to submit your
+                                scientific abstract.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <form id="gtfAbstractForm"
+                          action="abstract_submission_process.php"
+                          method="post"
+                          enctype="multipart/form-data">
+
+                        <!-- TITLE -->
+                        <div class="row g-3">
+
+                            <div class="col-md-4">
+                                <label for="gtf-title" class="form-label">
+                                    Title <span class="text-danger">*</span>
+                                </label>
+
+                                <select class="form-select"
+                                        name="title"
+                                        id="gtf-title"
+                                        required>
+
+                                    <option value="Dr." selected>Dr.</option>
+                                    <option value="Prof.">Prof.</option>
+                                    <option value="Mr.">Mr.</option>
+                                    <option value="Ms.">Ms.</option>
+                                    <option value="Mrs.">Mrs.</option>
+                                    <option value="Other">Other</option>
+
+                                </select>
+                            </div>
+
+
+                            <!-- NAME -->
+                            <div class="col-md-8">
+                                <label for="gtf-name" class="form-label">
+                                    Name <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       name="name"
+                                       id="gtf-name"
+                                       placeholder="Enter your name"
+                                       autocomplete="name"
+                                       required>
+                            </div>
+
+
+                            <!-- EMAIL -->
+                            <div class="col-md-6">
+                                <label for="gtf-email" class="form-label">
+                                    Email <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       name="email"
+                                       id="gtf-email"
+                                       placeholder="Enter your email"
+                                       autocomplete="email"
+                                       required>
+                            </div>
+
+
+                            <!-- ORGANIZATION -->
+                            <div class="col-md-6">
+                                <label for="gtf-organization" class="form-label">
+                                    Organization
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       name="organization"
+                                       id="gtf-organization"
+                                       placeholder="Organization/Institution"
+                                       required>
+                            </div>
+
+
+                            <!-- TELEPHONE -->
+                            <div class="col-md-6">
+                                <label for="gtf-telephone" class="form-label">
+                                    Telephone
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       name="telephone"
+                                       id="gtf-telephone"
+                                       placeholder="Enter your phone number"
+                                       autocomplete="tel"
+                                       required>
+                            </div>
+
+
+                            <!-- CITY -->
+                            <div class="col-md-6">
+                                <label for="gtf-city" class="form-label">
+                                    City <span class="text-danger">*</span>
+                                </label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       name="city"
+                                       id="gtf-city"
+                                       placeholder="Enter your city name"
+                                       autocomplete="address-level2"
+                                       required>
+                            </div>
+
+
+                            <!-- COUNTRY -->
+                            <div class="col-md-6">
+                                <label for="gtf-country" class="form-label">
+                                    Country <span class="text-danger">*</span>
+                                </label>
+
+                                <select class="form-select"
+                                        name="country"
+                                        id="gtf-country"
+                                        required>
+
+                                    <option value="" selected disabled>
+                                        Select country
+                                    </option>
+
+                                    <option>Australia</option>
+                                    <option>Austria</option>
+                                    <option>Bangladesh</option>
+                                    <option>Belgium</option>
+                                    <option>Brazil</option>
+                                    <option>Canada</option>
+                                    <option>China</option>
+                                    <option>Denmark</option>
+                                    <option>Egypt</option>
+                                    <option>Finland</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                    <option>Ghana</option>
+                                    <option>Hong Kong</option>
+                                    <option>India</option>
+                                    <option>Indonesia</option>
+                                    <option>Iran</option>
+                                    <option>Iraq</option>
+                                    <option>Ireland</option>
+                                    <option>Israel</option>
+                                    <option>Italy</option>
+                                    <option>Japan</option>
+                                    <option>Kenya</option>
+                                    <option>Malaysia</option>
+                                    <option>Mexico</option>
+                                    <option>Morocco</option>
+                                    <option>Nepal</option>
+                                    <option>Netherlands</option>
+                                    <option>New Zealand</option>
+                                    <option>Nigeria</option>
+                                    <option>Norway</option>
+                                    <option>Pakistan</option>
+                                    <option>Philippines</option>
+                                    <option>Poland</option>
+                                    <option>Portugal</option>
+                                    <option>Qatar</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Singapore</option>
+                                    <option>South Africa</option>
+                                    <option>South Korea</option>
+                                    <option>Spain</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Sweden</option>
+                                    <option>Switzerland</option>
+                                    <option>Thailand</option>
+                                    <option>Turkey</option>
+                                    <option>Ukraine</option>
+                                    <option>United Arab Emirates</option>
+                                    <option>United Kingdom</option>
+                                    <option>United States</option>
+                                    <option>Vietnam</option>
+
+                                    <option>Other</option>
+
+                                </select>
+                            </div>
+
+
+                            <!-- INTERESTED IN -->
+                            <div class="col-md-6">
+                                <label for="gtf-interest" class="form-label">
+                                    Interested In
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <select class="form-select"
+                                        name="interested_in"
+                                        id="gtf-interest"
+                                        required>
+
+                                    <option value="" selected disabled>
+                                        Select presentation type
+                                    </option>
+
+                                    <option value="Keynote Presentation">
+                                        Keynote Presentation
+                                    </option>
+
+                                    <option value="Oral Presentation">
+                                        Oral Presentation
+                                    </option>
+
+                                    <option value="Poster Presentation">
+                                        Poster Presentation
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <!-- SESSIONS -->
+                            <div class="col-md-6">
+                                <label for="gtf-session" class="form-label">
+                                    Sessions
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <select class="form-select"
+                                        name="session"
+                                        id="gtf-session"
+                                        required>
+
+                                    <option value="" selected disabled>
+                                        Select
+                                    </option>
+
+                                    <option>Intellectual Property (IP) Strategy & Spin-Off Mechanics</option>
+                                    <option>Preclinical-to-Clinical Regulatory Pathways</option>
+                                    <option>Commercialization Models & Health Economics</option>
+                                    <option>Advanced Biomanufacturing & Scalability (CMC)</option>
+                                    <option>Venture Capital, Investment & Deal Structuring</option>
+                                    <option>Bioethics, Governance & Public Trust</option>
+                                    <option>Next-Generation Gene Editing Platforms</option>
+                                    <option>Supply Chain, Logistics & Clinical Integration</option>
+                                    <option>Academic-Industry Ecosystem Collaboration</option>
+                                    <option>Indication Expansion Beyond Monogenic Rare Diseases</option>
+
+                                </select>
+                            </div>
+
+
+                            <!-- FILE UPLOAD -->
+                            <div class="col-12">
+
+                                <label for="gtf-abstract-file" class="form-label">
+                                    Attach File
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="gtf-upload-box">
+
+                                    <div class="gtf-upload-icon">
+                                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    </div>
+
+                                    <div class="gtf-upload-content">
+                                        <strong>Upload your abstract</strong>
+                                        <span>Accepted formats: DOC, DOCX, PDF</span>
+                                    </div>
+
+                                    <input type="file"
+                                           class="form-control"
+                                           name="abstract_file"
+                                           id="gtf-abstract-file"
+                                           accept=".doc,.docx,.pdf"
+                                           required>
+
+                                </div>
+
+                                <div class="gtf-file-note">
+                                    <i class="fa-solid fa-circle-info me-1"></i>
+                                    Please upload your abstract using the
+                                    required template.
+                                </div>
+
+                            </div>
+
+
+                            <!-- AGREEMENT -->
+                            <div class="col-12">
+
+                                <div class="gtf-consent-box">
+
+                                    <input type="checkbox"
+                                           class="form-check-input"
+                                           id="gtf-consent"
+                                           name="author_confirmation"
+                                           value="1"
+                                           required>
+
+                                    <label for="gtf-consent">
+                                        I confirm that all co-authors are aware
+                                        of the content of this abstract and
+                                        agree to its submission.
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SUBMIT -->
+                            <div class="col-12">
+
+                                <button type="submit"
+                                        class="gtf-submit-button">
+
+                                    <span>Submit Abstract</span>
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                                <p class="gtf-submit-note">
+                                    <i class="fa-solid fa-lock me-1"></i>
+                                    Please review your details before submitting.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT COLUMN: TEMPLATES + GUIDELINES -->
+            <div class="col-lg-5">
+
+                <!-- DOWNLOAD TEMPLATES -->
+                <div class="gtf-resources-card">
+
+                    <div class="gtf-card-heading">
+
+                        <div class="gtf-heading-icon">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                        </div>
+
+                        <div>
+                            <h2>Abstract Resources</h2>
+                            <p>Prepare your abstract for submission.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gtf-resource-item">
+
+                        <div class="gtf-resource-icon">
+                            <i class="fa-solid fa-file-word"></i>
+                        </div>
+
+                        <div class="gtf-resource-info">
+                            <h3>Sample Abstract File</h3>
+                            <p>Review the sample abstract before preparing yours.</p>
+                        </div>
+
+                        <a href="assets/documents/sample-abstract.docx"
+                           class="gtf-download-button"
+                           download
+                           aria-label="Download sample abstract file">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="gtf-resource-item">
+
+                        <div class="gtf-resource-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <div class="gtf-resource-info">
+                            <h3>Abstract Template</h3>
+                            <p>Use the official template when preparing your abstract.</p>
+                        </div>
+
+                        <a href="assets/documents/abstract-template.docx"
+                           class="gtf-download-button"
+                           download
+                           aria-label="Download abstract template">
+
+                            <i class="fa-solid fa-download"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMISSION GUIDELINES -->
+                <div class="gtf-guidelines-card">
+
+                    <div class="gtf-card-heading">
+
+                        <div class="gtf-heading-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <div>
+                            <h2>Abstract Submission Guidelines</h2>
+                            <p>
+                                Overview of Abstract Submission and Evaluation Process:
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gtf-guidelines-list">
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Abstracts submitted to the conference should
+                                be written in English only.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Abstracts should be submitted as per the
+                                template available above.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Authors can submit their abstracts in Doc,
+                                Docx and Pdf format.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Any act of plagiarism is totally unacceptable.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Each abstract should be contains about 500
+                                words, 400 abstract and 100 biography.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                The presenting author is required to ensure
+                                that all co-authors are aware of the content
+                                of the abstract before submission.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                The type of presentation should be nominated
+                                while submitting the abstract.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                The abstract submission should be made via
+                                conference website only.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Submissions not meeting these guidelines risk
+                                rejection without consideration of their merits.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                Notification of acceptance or rejection of the
+                                scientific committee will be given after a week
+                                of submission.
+                            </p>
+                        </div>
+
+                        <div class="gtf-guideline-item">
+                            <span class="gtf-guideline-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <p>
+                                All accepted abstracts will be published in the
+                                conference proceedings and the proceedings book
+                                will be distributed to all the conference
+                                attendees at the registration desk on the day
+                                of the conference.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+
+    <footer class="genex-footer">
+    <div class="container">
+
+        <div class="row gy-5">
+
+            <!-- COLUMN 1: COMPANY INFORMATION -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand">
+
+                    <!-- Company Logo -->
+                    <a href="https://www.scientificprism.com/" class="footer-logo">
+                        <img src="assets/prism_logo_footer.png"
+                             alt="Prism"
+                             class="img-fluid">
+                    </a>
+
+                    <!-- <h4 class="footer-company-name">
+                        GeneX Commercialization Summit 2027
+                    </h4> -->
+
+                    <p class="footer-description">
+                        PRISM takes pride to connect the empirical and systematic minds of both the budding researchers and the experience scientists help promote change in the world for a better human welfare.
+                    </p>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                 302/480 Collins Street, Melbourne, VIC 3000
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+61390163202">
+                                +61390163202
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:writeus@scientificprism.com">
+                                writeus@scientificprism.com
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Social Links -->
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- COLUMN 2: QUICK LINKS -->
+            <div class="col-lg-2 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">Quick Links</h5>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About GeneX</a></li>
+                        <li><a href="topics.html">Key Topics</a></li>
+                        <li><a href="program.html">Conference Program</a></li>
+                        <li><a href="chair.html">Conference Chair</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <!-- COLUMN 3: CONFERENCE INFORMATION -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">
+                        Conference Information
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="registration.html">
+                                Registration &amp; Passes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="abstract-submission.html">
+                                Abstract Submission
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="sponsorship.html">
+                                Sponsorship &amp; Exhibition
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="venue.html">
+                                Venue &amp; Accommodation
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                General Enquiries
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div class="footer-event-info">
+                        <div class="footer-event-icon">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+
+                        <div>
+                            <span>Conference Dates</span>
+                            <strong>September 20–22, 2027</strong>
+                        </div>
+                    </div>
+
+                    <div class="footer-event-info">
+                        <div class="footer-event-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>Conference Location</span>
+                            <strong>Melbourne, Australia</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- COLUMN 4: NEWSLETTER -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-column">
+
+                    <h5 class="footer-heading">Stay Connected</h5>
+
+                    <p class="footer-newsletter-text">
+                        Stay informed about conference announcements,
+                        registration deadlines, speakers, and program updates.
+                    </p>
+
+                    <form class="footer-newsletter-form"
+                          action="newsletter.php"
+                          method="post">
+
+                        <label for="footer-newsletter-email"
+                               class="visually-hidden">
+                            Email address
+                        </label>
+
+                        <div class="footer-input-group">
+                            <input type="email"
+                                   id="footer-newsletter-email"
+                                   name="email"
+                                   placeholder="Enter your email address"
+                                   autocomplete="email"
+                                   required>
+
+                            <button type="submit"
+                                    aria-label="Subscribe to newsletter">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="footer-privacy-note">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Your email will be handled responsibly.
+                        </div>
+
+                    </form>
+
+                    <div class="footer-sponsor-contact">
+                        <span>Sponsorship Enquiries</span>
+                        <a href="mailto:sponsors@genexsummit.com.au">
+                            sponsors@genexsummit.com.au
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+
+            <div class="row align-items-center gy-3">
+
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        &copy; 2027 GeneX Commercialization Summit.
+                        All rights reserved.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms &amp; Conditions</a>
+                        <a href="#top" class="footer-back-top">
+                            Back to Top <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
