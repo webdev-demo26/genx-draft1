@@ -513,11 +513,13 @@
     position: relative;
     overflow: hidden;
     padding: 90px 0;
-    background: #f4f8fc;
+    /* background: #f4f8fc; */
     font-family: inherit;
+      background: var(--gx-navy) url("assets/chair-bg.png") center/cover
+          no-repeat;
 }
 
-.genex-chair-section::before {
+/* .genex-chair-section::before {
     content: "";
     position: absolute;
     top: -150px;
@@ -527,9 +529,10 @@
     border: 1px solid rgba(14, 165, 233, 0.12);
     border-radius: 50%;
     pointer-events: none;
-}
+    
+} */
 
-.genex-chair-section::after {
+/* .genex-chair-section::after {
     content: "";
     position: absolute;
     bottom: -200px;
@@ -539,7 +542,7 @@
     border: 1px solid rgba(14, 165, 233, 0.10);
     border-radius: 50%;
     pointer-events: none;
-}
+} */
 
 /* Section Heading */
 
@@ -581,7 +584,7 @@
 .genex-chair-heading > p {
     max-width: 680px;
     margin: 0 auto;
-    color: #617187;
+    color: #02224e;
     font-size: 16px;
     line-height: 1.8;
 }

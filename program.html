@@ -85,31 +85,64 @@
 
       /* NAVBAR */
 
-      .gx-navbar {
-        /* background: rgba(7, 21, 38, .97); */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(14px);
+     .navbar {
         padding: 13px 0;
+        background: #fff;
+        box-shadow: 0 5px 25px rgba(5, 28, 56, 0.07);
       }
-
-      .gx-brand {
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--navy);
+        font-weight: 850;
+        font-size: 1.35rem;
+        text-decoration: none;
+        line-height: 1.05;
+      }
+      .brand-icon {
+        display: grid;
+        place-items: center;
+        width: 43px;
+        height: 43px;
+        color: #fff;
+        background: linear-gradient(135deg, var(--blue), var(--cyan));
+        border-radius: 13px;
+      }
+      .brand small {
+        display: block;
+        font-size: 0.61rem;
+        letter-spacing: 0.65px;
+        margin-top: 5px;
+      }
+      .navbar .nav-link {
+        font-size: 0.9rem;
+        font-weight: 650;
+        color: #25425f;
+        padding: 10px 12px !important;
+      }
+      .navbar .nav-link:hover,
+      .navbar .nav-link.active {
+        color: var(--blue);
+      }
+      .btn-gx {
         display: inline-flex;
         align-items: center;
-        gap: 11px;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 22px;
+        border-radius: 50px;
+        background: var(--blue);
+        border: 1px solid var(--blue);
         color: #fff;
-        font-family: "Manrope", sans-serif;
-        font-size: 25px;
-        font-weight: 800;
-        letter-spacing: -1px;
+        text-decoration: none;
+        font-weight: 750;
+        transition: 0.25s;
       }
-
-      .gx-brand:hover {
+      .btn-gx:hover {
+        background: #0563c5;
         color: #fff;
-      }
-
-      .navbar-expand-lg .nav-link:hover,
-      .navbar-expand-lg .nav-link.active {
-        color: var(--gx-blue);
+        transform: translateY(-2px);
       }
 
       .gx-brand-icon {
@@ -124,38 +157,11 @@
         font-size: 21px;
       }
 
-      .gx-navbar .nav-link {
-        color: #000000;
-        font-size: 13px;
-        font-weight: 600;
-        padding: 10px 12px !important;
-        transition: color 0.25s ease;
-      }
+    
 
-      /* .gx-navbar .nav-link:hover,
-        .gx-navbar .nav-link.active {
-            color: var(--gx-cyan);
-        } */
 
-      .gx-nav-cta {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 9px;
-        padding: 11px 18px;
-        border-radius: 8px;
-        color: var(--gx-navy);
-        background: var(--gx-cyan);
-        font-size: 13px;
-        font-weight: 800;
-        transition: 0.25s ease;
-      }
 
-      .gx-nav-cta:hover {
-        color: var(--gx-navy);
-        background: #75edf0;
-        transform: translateY(-2px);
-      }
+      
 
       .navbar-toggler {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1071,7 +1077,7 @@
 
       .nav-link:hover,
       .nav-link.active {
-        color: var(--blue);
+        color: var(--blue) !important;
       }
       .btn-primary {
         background: var(--blue);
@@ -1091,62 +1097,38 @@
   <body>
     <!-- ========================= NAVBAR ========================= -->
 
-    <nav class="navbar navbar-expand-lg  fixed-top">
+   <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html"
-          ><span class="brand-mark"><i class="fa-solid fa-dna"></i></span
-          ><span
-            >GeneX
-            <small
-              class="d-block fw-semibold"
-              style="font-size: 0.7rem; letter-spacing: 0.02em"
-              >COMMERCIALIZATION SUMMIT 2027</small
-            ></span
-          ></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="brand" href="index.html" aria-label="GeneX home"><span class="brand-icon"><i class="fa-solid fa-dna"></i></span><span>GeneX<small>COMMERCIALIZATION SUMMIT 2027</small></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+               <li class="nav-item">
               <a class="nav-link" href="chair.html">Chair</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="key-topics.html">Key Topics</a>
+              <a class="nav-link " aria-current="page" href="key-topics.html">Key Topics</a>
             </li>
+         
             <li class="nav-item">
               <a class="nav-link active" href="program.html">Program</a>
             </li>
             <!-- <li class="nav-item">
-              <a class="nav-link" href="#tickets">Tickets</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#venue">Venue</a>
+              <a class="nav-link" href="index.html#venue">Venue</a>
             </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item ms-lg-2">
-              <a
-                class="btn btn-primary btn-sm px-4"
-                href="registration_form.html"
-                >Register Now <i class="fa-solid fa-arrow-right ms-1"></i
-              ></a>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn-gx" href="registration_form.html">Register Now <i class="fa-solid fa-arrow-right"></i></a>
             </li>
           </ul>
         </div>
