@@ -44,7 +44,7 @@
         --gx-white: #ffffff;
       }
 
-        :root {
+      :root {
         --navy: #062650;
         --blue: #075dc5;
         --cyan: #19c6ed;
@@ -105,6 +105,11 @@
 
       .gx-brand:hover {
         color: #fff;
+      }
+
+      .navbar-expand-lg .nav-link:hover,
+      .navbar-expand-lg .nav-link.active {
+        color: var(--gx-blue);
       }
 
       .gx-brand-icon {
@@ -1063,6 +1068,11 @@
       .nav-link:hover {
         color: var(--blue) !important;
       }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--blue);
+      }
       .btn-primary {
         background: var(--blue);
         border-color: var(--blue);
@@ -1081,7 +1091,7 @@
   <body>
     <!-- ========================= NAVBAR ========================= -->
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg  fixed-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html"
           ><span class="brand-mark"><i class="fa-solid fa-dna"></i></span
@@ -1108,28 +1118,33 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
             <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-              <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="chair.html">Chair</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="key-topics.html">Key Topics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="program.html">Program</a>
+              <a class="nav-link active" href="program.html">Program</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#tickets">Tickets</a>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#venue">Venue</a>
-            </li>
-             <li class="nav-item">
+            </li> -->
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-primary btn-sm px-4" href="registration_form.html"
+              <a
+                class="btn btn-primary btn-sm px-4"
+                href="registration_form.html"
                 >Register Now <i class="fa-solid fa-arrow-right ms-1"></i
               ></a>
             </li>

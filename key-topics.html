@@ -179,7 +179,7 @@
         font-size: 0.74rem;
         font-weight: 850;
         letter-spacing: 2px;
-        color: var(--blue);
+        color: var(--line);
         text-transform: uppercase;
         margin-bottom: 12px;
       }
@@ -212,6 +212,21 @@
       .topic-section {
         padding: 78px 0;
         background: #fff;
+           background: var(--navy) url("assets/key-topic-bg.png") center/cover
+          no-repeat;
+      
+      }
+       .topic-section:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+          90deg,
+          rgba(3, 27, 58, 0.96) 0%,
+          rgba(4, 38, 78, 0.82) 44%,
+          rgba(4, 38, 78, 0.15) 100%
+        );
       }
       .topic-card {
         height: 100%;
@@ -406,15 +421,13 @@
                 >Key Topics</a
               >
             </li>
+         
             <li class="nav-item">
-              <a class="nav-link" href="index.html#chair">Speakers</a>
+              <a class="nav-link" href="program.html">Program</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#program">Program</a>
-            </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="index.html#venue">Venue</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
