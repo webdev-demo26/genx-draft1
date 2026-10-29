@@ -1,0 +1,1442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the vision behind GeneX Commercialization Summit 2027, connecting academic discovery with commercial application."
+    />
+    <title>About Us | GeneX Commercialization Summit 2027</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      :root {
+        --gx-navy: #071c38;
+        --gx-blue: #0878e8;
+        --gx-cyan: #36d3f4;
+        --gx-light: #f2f8ff;
+        --gx-text: #40536b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--gx-text);
+        line-height: 1.75;
+        background: #fff;
+      }
+
+      /* Navigation */
+      .gx-navbar {
+        background: #fff;
+        padding: 14px 0;
+        box-shadow: 0 4px 24px rgba(7, 28, 56, 0.07);
+      }
+
+      .gx-brand {
+        display: flex;
+        width: 50px;
+        align-items: center;
+        gap: 11px;
+        color: var(--gx-navy);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      .gx-brand-icon {
+        width: 43px;
+        height: 43px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 13px;
+        background: linear-gradient(135deg, var(--gx-blue), var(--gx-cyan));
+      }
+
+      .gx-brand small {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.65rem;
+        letter-spacing: 0.7px;
+        font-weight: 700;
+      }
+
+      .gx-navbar .nav-link {
+        color: #233f5d;
+        font-size: 0.91rem;
+        font-weight: 650;
+        padding: 10px 12px !important;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-blue);
+      }
+
+      .gx-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 23px;
+        border: 1px solid var(--gx-blue);
+        border-radius: 50px;
+        background: var(--gx-blue);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .gx-btn:hover {
+        background: #0562c1;
+        border-color: #0562c1;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+    
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gx-cyan);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .gx-eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 2px;
+        background: currentColor;
+      }
+
+     
+
+     
+
+      /* Footer */
+      .gx-footer {
+        padding: 30px 0;
+        color: #bdcfe3;
+        background: #031126;
+        font-size: 0.88rem;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .gx-footer a {
+        color: #d5e8fb;
+        text-decoration: none;
+      }
+
+      .gx-footer a:hover {
+        color: var(--gx-cyan);
+      }
+
+      @media (max-width: 991.98px) {
+
+
+        .gx-visual {
+          min-height: 390px;
+        }
+
+        .gx-navbar .navbar-collapse {
+          padding-top: 15px;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .gx-brand {
+          font-size: 1.2rem;
+        }
+
+        .gx-brand small {
+          font-size: 0.58rem;
+        }
+
+        
+        .hero-meta {
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .about-content {
+          padding: 55px 0;
+        }
+
+        .gx-visual {
+          min-height: 340px;
+          border-radius: 18px;
+        }
+
+        .impact-section {
+          padding: 60px 0;
+        }
+
+        .event-info {
+          padding: 45px 0;
+        }
+
+        .event-info-card {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ==========================================
+   GENEX 2027 - VENUE & DESTINATION
+=========================================== */
+
+      .genex-venue-page {
+        --genex-navy: #082b50;
+        --genex-blue: #087db8;
+        --genex-cyan: #13b8d7;
+        --genex-text: #38536f;
+        --genex-muted: #6c8096;
+        --genex-border: #e0eaf4;
+
+        color: var(--genex-text);
+        background: #fff;
+        overflow: hidden;
+      }
+
+      .genex-venue-page * {
+        box-sizing: border-box;
+      }
+
+      /* HERO */
+
+      .genex-venue-hero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 320px;
+        padding: 65px 0;
+        background-color: var(--genex-navy);
+        background-image:
+          linear-gradient(
+            90deg,
+            rgba(3, 29, 55, 0.97) 0%,
+            rgba(4, 44, 79, 0.87) 38%,
+            rgba(4, 44, 79, 0.24) 100%
+          ),
+          url("https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=2000&q=90");
+        background-position: center 52%;
+        background-size: cover;
+      }
+
+      .genex-venue-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          0deg,
+          rgba(3, 26, 48, 0.2),
+          transparent 65%
+        );
+        pointer-events: none;
+      }
+
+      .genex-venue-hero-content {
+        position: relative;
+        max-width: 760px;
+      }
+
+      .genex-venue-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #26d2f0;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.8px;
+      }
+
+      .genex-venue-hero h1 {
+        margin: 0 0 14px;
+        color: #fff;
+        font-size: clamp(36px, 5vw, 60px);
+        font-weight: 850;
+        line-height: 1.12;
+        letter-spacing: -1.5px;
+      }
+
+      .genex-venue-hero-content > p {
+        max-width: 650px;
+        margin: 0;
+        color: #e6f2ff;
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      .genex-hero-line {
+        width: 55px;
+        height: 4px;
+        margin-top: 25px;
+        background: var(--genex-cyan);
+        border-radius: 10px;
+      }
+
+      /* MAIN CONTAINER */
+
+      .genex-venue-container {
+        padding-top: 55px;
+        padding-bottom: 65px;
+      }
+
+      /* INFORMATION BLOCKS */
+
+      .genex-venue-block {
+        display: flex;
+        align-items: flex-start;
+        gap: 19px;
+        margin-bottom: 38px;
+      }
+
+      .genex-venue-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        flex-shrink: 0;
+        color: var(--genex-blue);
+        background: #e4f8fd;
+        border-radius: 50%;
+        font-size: 21px;
+      }
+
+      .genex-venue-content {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .genex-venue-content h2 {
+        margin: 2px 0 11px;
+        color: var(--genex-navy);
+        font-size: 23px;
+        font-weight: 800;
+        line-height: 1.4;
+      }
+
+      .genex-venue-content > p {
+        margin: 0;
+        color: var(--genex-text);
+        font-size: 14px;
+        line-height: 1.9;
+      }
+
+      /* LOCAL INSIGHTS */
+
+      .genex-local-grid {
+        margin-top: 18px;
+      }
+
+      .genex-local-item {
+        height: 100%;
+        padding-right: 14px;
+      }
+
+      .genex-local-grid > div:not(:last-child) .genex-local-item {
+        border-right: 1px solid var(--genex-border);
+      }
+
+      .genex-local-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .genex-local-title > i {
+        color: var(--genex-cyan);
+        font-size: 19px;
+      }
+
+      .genex-local-title h3 {
+        margin: 0;
+        color: var(--genex-navy);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .genex-local-item p {
+        margin: 0;
+        color: var(--genex-muted);
+        font-size: 12px;
+        line-height: 1.85;
+      }
+
+      /* HOTEL */
+
+      .genex-accommodation-block {
+        margin-bottom: 20px;
+      }
+
+      .genex-hotel-heading h2 {
+        font-size: 21px;
+      }
+
+      .genex-coming-soon {
+        display: inline-block;
+        padding: 5px 9px;
+        margin-left: 5px;
+        color: #0876a9;
+        background: #e7f7fd;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0;
+        vertical-align: middle;
+      }
+
+      .genex-hotel-features {
+        margin-top: 20px;
+      }
+
+      .genex-hotel-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        height: 100%;
+        padding: 10px 0;
+      }
+
+      .genex-feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 29px;
+        height: 29px;
+        flex-shrink: 0;
+        color: var(--genex-blue);
+        font-size: 15px;
+      }
+
+      .genex-hotel-feature h3 {
+        margin: 3px 0 7px;
+        color: var(--genex-navy);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .genex-hotel-feature p {
+        margin: 0;
+        color: var(--genex-muted);
+        font-size: 12px;
+        line-height: 1.8;
+      }
+
+      .genex-hotel-notice {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 13px 15px;
+        margin-top: 17px;
+        color: #0875a7;
+        background: #edf9fe;
+        border: 1px solid #e0f3fb;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 1.7;
+      }
+
+      .genex-hotel-notice i {
+        flex-shrink: 0;
+        font-size: 19px;
+      }
+
+      /* IMAGE GALLERY */
+
+      .genex-venue-gallery {
+        position: sticky;
+        top: 25px;
+      }
+
+      .genex-gallery-main,
+      .genex-gallery-image,
+      .genex-gallery-wide {
+        position: relative;
+        overflow: hidden;
+        background: #e8f0f7;
+        border-radius: 12px;
+      }
+
+      .genex-gallery-main {
+        height: 260px;
+        margin-bottom: 12px;
+      }
+
+      .genex-gallery-main img,
+      .genex-gallery-image img,
+      .genex-gallery-wide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .genex-gallery-main:hover img,
+      .genex-gallery-image:hover img,
+      .genex-gallery-wide:hover img {
+        transform: scale(1.05);
+      }
+
+      .genex-gallery-caption {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        padding: 10px 13px;
+        color: #fff;
+        background: rgba(4, 34, 62, 0.83);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 7px;
+        font-size: 12px;
+        font-weight: 700;
+        backdrop-filter: blur(8px);
+      }
+
+      .genex-gallery-caption i {
+        color: #39d4f0;
+      }
+
+      .genex-gallery-small {
+        margin-bottom: 12px;
+      }
+
+      .genex-gallery-image {
+        height: 180px;
+      }
+
+      .genex-gallery-wide {
+        height: 190px;
+      }
+
+      .genex-gallery-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 3px 0;
+        color: var(--genex-muted);
+        font-size: 12px;
+        line-height: 1.8;
+      }
+
+      .genex-gallery-note i {
+        margin-top: 3px;
+        color: var(--genex-blue);
+      }
+
+      /* WEATHER SECTION */
+
+      .genex-weather-section {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr 1fr 1fr;
+        gap: 22px;
+        padding: 30px;
+        margin-top: 35px;
+        background: linear-gradient(120deg, #effaff, #f5faff);
+        border: 1px solid #e2f1fa;
+        border-radius: 17px;
+      }
+
+      .genex-weather-main {
+        display: flex;
+        align-items: flex-start;
+        gap: 17px;
+      }
+
+      .genex-weather-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        flex-shrink: 0;
+        color: var(--genex-blue);
+        background: #d9f5fd;
+        border-radius: 50%;
+        font-size: 27px;
+      }
+
+      .genex-weather-main h2 {
+        margin: 5px 0 12px;
+        color: var(--genex-navy);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+
+      .genex-weather-main p {
+        margin: 0;
+        color: var(--genex-muted);
+        font-size: 12px;
+        line-height: 1.9;
+      }
+
+      .genex-weather-detail {
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        padding-left: 18px;
+        border-left: 1px solid #cfe4f1;
+      }
+
+      .genex-weather-detail-icon {
+        color: var(--genex-blue);
+        font-size: 21px;
+      }
+
+      .genex-weather-detail h3 {
+        margin: 4px 0 13px;
+        color: var(--genex-navy);
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 1.6;
+      }
+
+      .genex-weather-detail p {
+        margin: 0;
+        color: var(--genex-muted);
+        font-size: 11px;
+        line-height: 1.9;
+      }
+
+      /* TABLET */
+
+      @media (max-width: 1199.98px) {
+        .genex-weather-section {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .genex-weather-main {
+          grid-column: 1 / -1;
+        }
+
+        .genex-weather-detail:nth-child(2) {
+          padding-left: 0;
+          border-left: 0;
+        }
+
+        .genex-gallery-main {
+          height: 235px;
+        }
+
+        .genex-gallery-image {
+          height: 150px;
+        }
+      }
+
+      /* TABLET AND SMALL LAPTOP */
+
+      @media (max-width: 991.98px) {
+        .genex-venue-hero {
+          min-height: 290px;
+          padding: 55px 0;
+        }
+
+        .genex-venue-container {
+          padding-top: 40px;
+        }
+
+        .genex-venue-gallery {
+          position: static;
+        }
+
+        .genex-gallery-main {
+          height: 350px;
+        }
+
+        .genex-gallery-image {
+          height: 220px;
+        }
+
+        .genex-gallery-wide {
+          height: 230px;
+        }
+
+        .genex-venue-block {
+          margin-bottom: 32px;
+        }
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 575.98px) {
+        .genex-venue-hero {
+          min-height: 260px;
+          padding: 45px 0;
+          background-position: center;
+        }
+
+        .genex-venue-hero h1 {
+          font-size: 36px;
+          letter-spacing: -0.8px;
+        }
+
+        .genex-venue-hero-content > p {
+          font-size: 15px;
+        }
+
+        .genex-venue-eyebrow {
+          font-size: 10px;
+          letter-spacing: 1.3px;
+        }
+
+        .genex-venue-container {
+          padding-top: 35px;
+          padding-bottom: 40px;
+        }
+
+        .genex-venue-block {
+          gap: 13px;
+          margin-bottom: 30px;
+        }
+
+        .genex-venue-icon {
+          width: 42px;
+          height: 42px;
+          font-size: 17px;
+        }
+
+        .genex-venue-content h2 {
+          font-size: 20px;
+        }
+
+        .genex-venue-content > p {
+          font-size: 13px;
+          line-height: 1.85;
+        }
+
+        .genex-local-grid > div {
+          width: 100%;
+        }
+
+        .genex-local-grid > div:not(:last-child) .genex-local-item {
+          padding-bottom: 15px;
+          border-right: 0;
+          border-bottom: 1px solid var(--genex-border);
+        }
+
+        .genex-local-item {
+          padding-right: 0;
+        }
+
+        .genex-hotel-heading h2 {
+          font-size: 19px;
+        }
+
+        .genex-coming-soon {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+
+        .genex-gallery-main {
+          height: 240px;
+        }
+
+        .genex-gallery-image {
+          height: 145px;
+        }
+
+        .genex-gallery-wide {
+          height: 175px;
+        }
+
+        .genex-weather-section {
+          grid-template-columns: 1fr;
+          gap: 23px;
+          padding: 21px;
+          margin-top: 25px;
+        }
+
+        .genex-weather-main {
+          grid-column: auto;
+          gap: 13px;
+        }
+
+        .genex-weather-icon {
+          width: 48px;
+          height: 48px;
+          font-size: 21px;
+        }
+
+        .genex-weather-main h2 {
+          font-size: 17px;
+        }
+
+        .genex-weather-detail,
+        .genex-weather-detail:nth-child(2) {
+          padding-top: 17px;
+          padding-left: 0;
+          border-top: 1px solid #cfe4f1;
+          border-left: 0;
+        }
+
+        .genex-weather-detail h3 {
+          margin-bottom: 7px;
+        }
+
+        .genex-weather-detail p {
+          font-size: 12px;
+        }
+      }
+
+      /* ACCESSIBILITY */
+
+      @media (prefers-reduced-motion: reduce) {
+        .genex-venue-page *,
+        .genex-venue-page *::before,
+        .genex-venue-page *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html" aria-label="GeneX Summit home">
+          <!-- <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          <span>
+            GeneX
+            <small>COMMERCIALIZATION SUMMIT 2027</small>
+          </span> -->
+                    <span>  <img src="assets/prism_logo_dark.png" alt="" srcset="" style="width: 579%;"> </span>  
+
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavigation"
+          aria-controls="gxNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="about.html" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chair.html">Chair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="abstract-submission.html"
+                >Abstract Submisson</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="gx-btn" href="registration_form.html">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- venue content -->
+    <main>
+      <!-- ==========================================
+     GENEX 2027 - VENUE & DESTINATION
+     Bootstrap 5 Responsive Section
+=========================================== -->
+
+      <section class="genex-venue-page" id="venue-destination">
+        <!-- HERO SECTION -->
+        <div class="genex-venue-hero">
+          <div class="genex-venue-hero-overlay"></div>
+
+          <div class="container position-relative">
+            <div class="genex-venue-hero-content">
+              <span class="genex-venue-eyebrow">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                VENUE &amp; DESTINATION
+              </span>
+
+              <h1>Melbourne, Australia</h1>
+
+              <p>
+                A global hub for innovation, collaboration and life sciences.
+              </p>
+
+              <div class="genex-hero-line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="container genex-venue-container">
+          <div class="row g-5">
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-7">
+              <!-- WELCOME -->
+              <div class="genex-venue-block">
+                <div class="genex-venue-icon">
+                  <i class="fa-solid fa-city"></i>
+                </div>
+
+                <div class="genex-venue-content">
+                  <h2>Welcome to Melbourne</h2>
+
+                  <p>
+                    The GeneX Commercialization Summit 2027 takes place in
+                    Melbourne, Victoria, Australia's cultural capital and a
+                    globally renowned powerhouse for life sciences,
+                    biotechnology, and medical innovation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- LOCAL INSIGHTS -->
+              <div class="genex-venue-block">
+                <div class="genex-venue-icon">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+
+                <div class="genex-venue-content">
+                  <h2>Local Insights &amp; Essentials</h2>
+
+                  <div class="row g-3 genex-local-grid">
+                    <!-- LANGUAGE -->
+                    <div class="col-md-4">
+                      <div class="genex-local-item">
+                        <div class="genex-local-title">
+                          <i class="fa-solid fa-comments"></i>
+                          <h3>Language</h3>
+                        </div>
+
+                        <p>
+                          English is the official and universally spoken
+                          language across Australia and Melbourne.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- CURRENCY -->
+                    <div class="col-md-4">
+                      <div class="genex-local-item">
+                        <div class="genex-local-title">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                          <h3>Currency</h3>
+                        </div>
+
+                        <p>Australian Dollar (AUD $)</p>
+                      </div>
+                    </div>
+
+                    <!-- TRANSPORT -->
+                    <div class="col-md-4">
+                      <div class="genex-local-item">
+                        <div class="genex-local-title">
+                          <i class="fa-solid fa-train-tram"></i>
+                          <h3>Getting Around</h3>
+                        </div>
+
+                        <p>
+                          Melbourne features an exceptional public transport
+                          network consisting of trams, trains, and buses
+                          (accessible via a Myki card), alongside a highly
+                          walkable city center and dedicated bike lanes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ACCOMMODATION -->
+              <div class="genex-venue-block genex-accommodation-block">
+                <div class="genex-venue-icon">
+                  <i class="fa-solid fa-hotel"></i>
+                </div>
+
+                <div class="genex-venue-content">
+                  <div class="genex-hotel-heading">
+                    <h2>
+                      Official Hotel Accommodation
+                      <span class="genex-coming-soon"> Coming Soon (TBC) </span>
+                    </h2>
+                  </div>
+
+                  <p>
+                    We are currently finalizing partnerships with premium
+                    accommodation providers located in close proximity to the
+                    precinct and Melbourne's Central Business District (CBD).
+                  </p>
+
+                  <div class="row g-3 genex-hotel-features">
+                    <div class="col-md-6">
+                      <div class="genex-hotel-feature">
+                        <div class="genex-feature-icon">
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div>
+                          <h3>Exclusive Rates</h3>
+
+                          <p>
+                            Special discounted room blocks for GeneX 2027
+                            attendees will be announced shortly.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="genex-hotel-feature">
+                        <div class="genex-feature-icon">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                          <h3>Convenient Access</h3>
+
+                          <p>
+                            Recommended partner hotels will offer seamless
+                            transit connections or walking access to all
+                            conference sessions, networking events, and the Gala
+                            Dinner.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="genex-hotel-notice">
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                    <span>
+                      Check back soon for the official hotel partner reveal and
+                      booking link!
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: MELBOURNE IMAGE GALLERY -->
+            <div class="col-lg-5">
+              <div class="genex-venue-gallery">
+                <!-- IMAGE 1: MELBOURNE SKYLINE -->
+                <div class="genex-gallery-main">
+                  <img
+                    src="https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=1200&q=85"
+                    alt="Melbourne city skyline and Yarra River"
+                    loading="lazy"
+                  />
+
+                  <div class="genex-gallery-caption">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Melbourne City
+                  </div>
+                </div>
+
+                <!-- IMAGE 2: FLINDERS STREET STATION -->
+                <div class="row g-3 genex-gallery-small">
+                  <div class="col-6">
+                    <div class="genex-gallery-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1514395462725-fb4566210144?auto=format&fit=crop&w=600&q=80"
+                        alt="Melbourne city architecture"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- IMAGE 3: CITY TRAM -->
+                  <div class="col-6">
+                    <div class="genex-gallery-image">
+                      <img
+                        src="https://images.unsplash.com/photo-1545044846-351ba102b6d5?auto=format&fit=crop&w=600&q=80"
+                        alt="Melbourne urban streetscape"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- IMAGE 4: PARKS AND CITY -->
+                <div class="genex-gallery-wide">
+                  <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85"
+                    alt="City skyline and urban landscape"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="genex-gallery-note">
+                  <i class="fa-solid fa-camera"></i>
+
+                  <span>
+                    Discover Melbourne's architecture, urban spaces, and vibrant
+                    city atmosphere.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MELBOURNE WEATHER -->
+          <div class="genex-weather-section">
+            <div class="genex-weather-main">
+              <div class="genex-weather-icon">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+
+              <div>
+                <h2>Melbourne Weather in September (Early Spring)</h2>
+
+                <p>
+                  September marks the arrival of spring in Melbourne. The city
+                  begins to warm up after winter, bringing blooming gardens,
+                  longer daylight hours, and pleasant conditions for outdoor
+                  networking.
+                </p>
+              </div>
+            </div>
+
+            <div class="genex-weather-detail">
+              <div class="genex-weather-detail-icon">
+                <i class="fa-solid fa-temperature-half"></i>
+              </div>
+
+              <div>
+                <h3>Average Temperature</h3>
+
+                <p>
+                  Daily highs typically range around 16°C to 18°C (60°F to
+                  64°F), while overnight lows dip to around 8°C to 10°C (46°F to
+                  50°F).
+                </p>
+              </div>
+            </div>
+
+            <div class="genex-weather-detail">
+              <div class="genex-weather-detail-icon">
+                <i class="fa-solid fa-cloud-rain"></i>
+              </div>
+
+              <div>
+                <h3>What to Expect</h3>
+
+                <p>
+                  Melbourne is famous for its variable weather ("four seasons in
+                  one day"). While you can expect crisp, sunny spring days,
+                  occasional brisk winds or passing showers can occur.
+                </p>
+              </div>
+            </div>
+
+            <div class="genex-weather-detail">
+              <div class="genex-weather-detail-icon">
+                <i class="fa-solid fa-person-walking-luggage"></i>
+              </div>
+
+              <div>
+                <h3>What to Pack</h3>
+
+                <p>
+                  We recommend bringing layers, smart-casual blazers, cardigans,
+                  or a stylish overcoat for cooler mornings and evenings,
+                  alongside a light travel umbrella just in case!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="genex-footer">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- COLUMN 1: COMPANY INFORMATION -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <!-- Company Logo -->
+              <a href="https://www.scientificprism.com/" class="footer-logo">
+                <img
+                  src="assets/prism_logo_footer.png"
+                  alt="Prism"
+                  class="img-fluid"
+                />
+              </a>
+
+              <!-- <h4 class="footer-company-name">
+                        GeneX Commercialization Summit 2027
+                    </h4> -->
+
+              <p class="footer-description">
+                PRISM takes pride to connect the empirical and systematic minds
+                of both the budding researchers and the experience scientists
+                help promote change in the world for a better human welfare.
+              </p>
+
+              <ul class="footer-contact-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span> 302/480 Collins Street, Melbourne, VIC 3000 </span>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+61390163202"> +61390163202 </a>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:writeus@scientificprism.com">
+                    writeus@scientificprism.com
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Social Links -->
+              <div class="footer-social-links">
+                <a href="https://www.linkedin.com/company/genex-commercialization-summit-2027/posts/?viewAsMember=true" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <!-- <a href="#" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 2: QUICK LINKS -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Quick Links</h5>
+
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About GeneX</a></li>
+                <li><a href="topics.html">Key Topics</a></li>
+                <li><a href="program.html">Conference Program</a></li>
+                <li><a href="chair.html">Conference Chair</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- COLUMN 3: CONFERENCE INFORMATION -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Conference Information</h5>
+
+              <ul class="footer-links">
+                <li>
+                  <a href="registration.html"> Registration &amp; Passes </a>
+                </li>
+
+                <li>
+                  <a href="abstract-submission.html"> Abstract Submission </a>
+                </li>
+
+                <li>
+                  <a href="sponsorship.html"> Sponsorship &amp; Exhibition </a>
+                </li>
+
+                <li>
+                  <a href="venue.html"> Venue &amp; Accommodation </a>
+                </li>
+
+                <li>
+                  <a href="contact.html"> General Enquiries </a>
+                </li>
+              </ul>
+
+              <div class="footer-event-info">
+                <div class="footer-event-icon">
+                  <i class="fa-regular fa-calendar-days"></i>
+                </div>
+
+                <div>
+                  <span>Conference Dates</span>
+                  <strong>September 20–22, 2027</strong>
+                </div>
+              </div>
+
+              <div class="footer-event-info">
+                <div class="footer-event-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                  <span>Conference Location</span>
+                  <strong>Melbourne, Australia</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 4: NEWSLETTER -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Stay Connected</h5>
+
+              <p class="footer-newsletter-text">
+                Stay informed about conference announcements, registration
+                deadlines, speakers, and program updates.
+              </p>
+
+              <form
+                class="footer-newsletter-form"
+                action="newsletter.php"
+                method="post"
+              >
+                <label for="footer-newsletter-email" class="visually-hidden">
+                  Email address
+                </label>
+
+                <div class="footer-input-group">
+                  <input
+                    type="email"
+                    id="footer-newsletter-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                  />
+
+                  <button type="submit" aria-label="Subscribe to newsletter">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+
+                <div class="footer-privacy-note">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  Your email will be handled responsibly.
+                </div>
+              </form>
+
+              <div class="footer-sponsor-contact">
+                <span>Sponsorship Enquiries</span>
+                <a href="mailto:sponsors@genexsummit.com.au">
+                  sponsors@genexsummit.com.au
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-6">
+              <p class="footer-copyright">
+                &copy; 2027 GeneX Commercialization Summit. All rights reserved.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="#top" class="footer-back-top">
+                  Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the vision behind GeneX Commercialization Summit 2027, connecting academic discovery with commercial application."
+    />
+    <title>About Us | GeneX Commercialization Summit 2027</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+      :root {
+        --gx-navy: #071c38;
+        --gx-blue: #0878e8;
+        --gx-cyan: #36d3f4;
+        --gx-light: #f2f8ff;
+        --gx-text: #40536b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: var(--gx-text);
+        line-height: 1.75;
+        background: #fff;
+      }
+
+      /* Navigation */
+      .gx-navbar {
+        background: #fff;
+        padding: 14px 0;
+        box-shadow: 0 4px 24px rgba(7, 28, 56, 0.07);
+      }
+
+      .gx-brand {
+        display: flex;
+        width: 50px;
+        align-items: center;
+        gap: 11px;
+        color: var(--gx-navy);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      .gx-brand-icon {
+        width: 43px;
+        height: 43px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 13px;
+        background: linear-gradient(135deg, var(--gx-blue), var(--gx-cyan));
+      }
+
+      .gx-brand small {
+        display: block;
+        margin-top: 4px;
+        font-size: 0.65rem;
+        letter-spacing: 0.7px;
+        font-weight: 700;
+      }
+
+      .gx-navbar .nav-link {
+        color: #233f5d;
+        font-size: 0.91rem;
+        font-weight: 650;
+        padding: 10px 12px !important;
+      }
+
+      .gx-navbar .nav-link:hover,
+      .gx-navbar .nav-link.active {
+        color: var(--gx-blue);
+      }
+
+      .gx-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 23px;
+        border: 1px solid var(--gx-blue);
+        border-radius: 50px;
+        background: var(--gx-blue);
+        color: #fff;
+        font-size: 0.92rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.25s ease;
+      }
+
+      .gx-btn:hover {
+        background: #0562c1;
+        border-color: #0562c1;
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* About hero */
+      .about-hero {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        padding: 110px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 85% 30%,
+            rgba(17, 143, 220, 0.25),
+            transparent 32%
+          ),
+          linear-gradient(120deg, #04152e 0%, #082c54 60%, #07518a 100%);
+      }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 480px;
+        height: 480px;
+        right: -120px;
+        top: -160px;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow:
+          0 0 0 45px rgba(54, 211, 244, 0.035),
+          0 0 0 95px rgba(54, 211, 244, 0.025);
+      }
+
+      .about-hero::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        left: -170px;
+        bottom: -200px;
+        border-radius: 50%;
+        background: rgba(8, 120, 232, 0.2);
+        filter: blur(25px);
+      }
+
+      .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--gx-cyan);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+
+      .gx-eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 2px;
+        background: currentColor;
+      }
+
+      .about-hero h1 {
+        max-width: 850px;
+        margin: 22px 0;
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 850;
+        letter-spacing: -2px;
+        line-height: 1.12;
+      }
+
+      .about-hero h1 span {
+        color: var(--gx-cyan);
+      }
+
+      .about-hero .hero-description {
+        max-width: 720px;
+        color: #d5e6f7;
+        font-size: 1.12rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 30px;
+        margin-top: 32px;
+      }
+
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #edf7ff;
+        font-weight: 600;
+      }
+
+      .hero-meta-item i {
+        color: var(--gx-cyan);
+        font-size: 1.15rem;
+      }
+
+      /* Main content */
+      .about-content {
+        padding: 95px 0;
+        background: #fff;
+      }
+
+      .gx-section-label {
+        margin-bottom: 14px;
+        color: var(--gx-blue);
+        font-size: 0.76rem;
+        font-weight: 850;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .gx-heading {
+        margin-bottom: 25px;
+        color: var(--gx-navy);
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 850;
+        letter-spacing: -1.2px;
+        line-height: 1.2;
+      }
+
+      .gx-heading span {
+        color: var(--gx-blue);
+      }
+
+      .gx-copy p {
+        margin-bottom: 20px;
+        font-size: 1.02rem;
+        line-height: 1.9;
+      }
+
+      .gx-visual {
+        position: relative;
+        min-height: 450px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 24px;
+        background: #0a315b;
+        box-shadow: 0 25px 60px rgba(7, 28, 56, 0.13);
+      }
+
+      .gx-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gx-visual::after {
+        content: "";
+        position: absolute;
+        inset: 35% 0 0;
+        background: linear-gradient(transparent, rgba(3, 23, 48, 0.95));
+      }
+
+      .gx-visual-caption {
+        position: absolute;
+        z-index: 1;
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.17);
+        border-radius: 15px;
+        color: #fff;
+        background: rgba(5, 31, 63, 0.8);
+        backdrop-filter: blur(12px);
+      }
+
+      .gx-visual-caption i {
+        color: var(--gx-cyan);
+        font-size: 2rem;
+      }
+
+      .gx-visual-caption strong {
+        display: block;
+        line-height: 1.5;
+      }
+
+      .gx-visual-caption span {
+        color: #cce3f7;
+        font-size: 0.88rem;
+      }
+
+      /* Dark impact section */
+      .impact-section {
+        position: relative;
+        overflow: hidden;
+        padding: 80px 0;
+        color: #fff;
+        background: var(--gx-navy);
+      }
+
+      .impact-section::before {
+        content: "";
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        top: -260px;
+        right: 8%;
+        border: 1px solid rgba(54, 211, 244, 0.18);
+        border-radius: 50%;
+        box-shadow: 0 0 0 50px rgba(54, 211, 244, 0.025);
+      }
+
+      .impact-section .gx-heading {
+        color: #fff;
+        margin-bottom: 16px;
+      }
+
+      .impact-description {
+        max-width: 750px;
+        margin: 0 auto;
+        color: #c8d9eb;
+        font-size: 1.06rem;
+      }
+
+      .impact-icon {
+        display: grid;
+        place-items: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 20px;
+        border: 1px solid rgba(54, 211, 244, 0.35);
+        border-radius: 18px;
+        color: var(--gx-cyan);
+        background: rgba(54, 211, 244, 0.08);
+        font-size: 1.6rem;
+      }
+
+      /* Event information */
+      .event-info {
+        padding: 65px 0;
+        background: var(--gx-light);
+      }
+
+      .event-info-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        padding: 27px;
+        border: 1px solid #e0ebf7;
+        border-radius: 18px;
+        background: #fff;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+
+      .event-info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(7, 28, 56, 0.07);
+      }
+
+      .event-info-icon {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 16px;
+        color: var(--gx-blue);
+        background: #e9f4ff;
+        font-size: 1.45rem;
+      }
+
+      .event-info-card h3 {
+        margin-bottom: 5px;
+        color: var(--gx-navy);
+        font-size: 0.83rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .event-info-card p {
+        margin: 0;
+        color: #405875;
+        font-weight: 650;
+      }
+
+      /* Footer */
+      .gx-footer {
+        padding: 30px 0;
+        color: #bdcfe3;
+        background: #031126;
+        font-size: 0.88rem;
+      }
+
+      .gx-footer-brand {
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.1rem;
+      }
+
+      .gx-footer a {
+        color: #d5e8fb;
+        text-decoration: none;
+      }
+
+      .gx-footer a:hover {
+        color: var(--gx-cyan);
+      }
+
+      @media (max-width: 991.98px) {
+        .about-hero {
+          padding: 90px 0 75px;
+        }
+
+        .about-content {
+          padding: 70px 0;
+        }
+
+        .gx-visual {
+          min-height: 390px;
+        }
+
+        .gx-navbar .navbar-collapse {
+          padding-top: 15px;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .gx-brand {
+          font-size: 1.2rem;
+        }
+
+        .gx-brand small {
+          font-size: 0.58rem;
+        }
+
+        .about-hero {
+          padding: 75px 0 65px;
+        }
+
+        .about-hero h1 {
+          letter-spacing: -1px;
+        }
+
+        .hero-meta {
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .about-content {
+          padding: 55px 0;
+        }
+
+        .gx-visual {
+          min-height: 340px;
+          border-radius: 18px;
+        }
+
+        .impact-section {
+          padding: 60px 0;
+        }
+
+        .event-info {
+          padding: 45px 0;
+        }
+
+        .event-info-card {
+          padding: 20px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+
+    <style>
+      /* =========================================================
+   GENEX 2027 - SPONSOR & EXHIBIT PAGE
+   Bootstrap 5 Compatible
+   ========================================================= */
+
+      .genex-sponsor-page {
+        --gx-navy: #0b1f3a;
+        --gx-navy-light: #142f50;
+        --gx-blue: #1769aa;
+        --gx-cyan: #25c2dc;
+        --gx-text: #34445a;
+        --gx-muted: #6b7a90;
+        --gx-light: #f4f8fc;
+        --gx-border: #e2eaf2;
+        --gx-white: #ffffff;
+
+        font-family: inherit;
+        color: var(--gx-text);
+        background: #fff;
+        overflow: hidden;
+      }
+
+      .genex-sponsor-page * {
+        box-sizing: border-box;
+      }
+
+      .genex-sponsor-page a {
+        text-decoration: none;
+      }
+
+      .genex-sponsor-page .gx-container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .genex-sponsor-page .gx-section {
+        padding: 85px 0;
+      }
+
+      .genex-sponsor-page .gx-section-light {
+        background: var(--gx-light);
+      }
+
+      .genex-sponsor-page .gx-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 17px;
+        color: var(--gx-blue);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .genex-sponsor-page .gx-eyebrow::before {
+        content: "";
+        width: 25px;
+        height: 3px;
+        border-radius: 5px;
+        background: var(--gx-cyan);
+      }
+
+      .genex-sponsor-page .gx-section-title {
+        margin: 0 0 18px;
+        color: var(--gx-navy);
+        font-size: clamp(29px, 4vw, 43px);
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -1.2px;
+      }
+
+      .genex-sponsor-page .gx-section-description {
+        max-width: 780px;
+        margin: 0 auto;
+        color: var(--gx-muted);
+        font-size: 16px;
+        line-height: 1.9;
+      }
+
+      .genex-sponsor-page .gx-section-heading {
+        margin-bottom: 48px;
+      }
+
+      /* =========================
+   HERO SECTION
+   ========================= */
+
+      .genex-sponsor-page .gx-sponsor-hero {
+        position: relative;
+        isolation: isolate;
+        padding: 105px 0 100px;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 85% 15%,
+            rgba(37, 194, 220, 0.2),
+            transparent 29%
+          ),
+          radial-gradient(
+            circle at 5% 100%,
+            rgba(23, 105, 170, 0.35),
+            transparent 35%
+          ),
+          linear-gradient(125deg, #071629 0%, #102c4d 55%, #123b5b 100%);
+      }
+
+      .genex-sponsor-page .gx-sponsor-hero::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        opacity: 0.16;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 45px 45px;
+        mask-image: linear-gradient(to bottom, #000, transparent);
+      }
+
+      .genex-sponsor-page .gx-hero-content {
+        max-width: 920px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .genex-sponsor-page .gx-hero-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 18px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        color: #a9f2ff;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+      }
+
+      .genex-sponsor-page .gx-hero-label i {
+        color: var(--gx-cyan);
+      }
+
+      .genex-sponsor-page .gx-hero-title {
+        margin: 0 0 23px;
+        color: #fff;
+        font-size: clamp(37px, 5.5vw, 64px);
+        font-weight: 850;
+        line-height: 1.1;
+        letter-spacing: -2px;
+      }
+
+      .genex-sponsor-page .gx-hero-title span {
+        color: #65e0f0;
+      }
+
+      .genex-sponsor-page .gx-hero-subtitle {
+        max-width: 790px;
+        margin: 0 auto 28px;
+        color: #dbe8f5;
+        font-size: clamp(17px, 2.3vw, 23px);
+        font-weight: 500;
+        line-height: 1.6;
+      }
+
+      .genex-sponsor-page .gx-hero-meta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px 25px;
+        margin: 0 0 32px;
+        color: #e0ebf6;
+        font-size: 14px;
+      }
+
+      .genex-sponsor-page .gx-hero-meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+      }
+
+      .genex-sponsor-page .gx-hero-meta i {
+        color: var(--gx-cyan);
+      }
+
+      .genex-sponsor-page .gx-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        min-height: 52px;
+        padding: 14px 25px;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: 800;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
+      }
+
+      .genex-sponsor-page .gx-btn-primary {
+        color: var(--gx-navy);
+        background: #6be3f1;
+        box-shadow: 0 9px 24px rgba(37, 194, 220, 0.17);
+      }
+
+      .genex-sponsor-page .gx-btn-primary:hover {
+        color: var(--gx-navy);
+        background: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 13px 28px rgba(0, 0, 0, 0.18);
+      }
+
+      .genex-sponsor-page .gx-btn-outline {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.35);
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .genex-sponsor-page .gx-btn-outline:hover {
+        color: var(--gx-navy);
+        background: #fff;
+        transform: translateY(-3px);
+      }
+
+      .genex-sponsor-page .gx-hero-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* =========================
+   WHY PARTNER
+   ========================= */
+
+      .genex-sponsor-page .gx-intro-copy {
+        max-width: 970px;
+        margin: 0 auto 36px;
+        color: var(--gx-text);
+        font-size: 16px;
+        line-height: 1.95;
+      }
+
+      .genex-sponsor-page .gx-intro-copy strong {
+        color: var(--gx-navy);
+      }
+
+      .genex-sponsor-page .gx-audience-panel {
+        position: relative;
+        padding: 32px;
+        border: 1px solid var(--gx-border);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 10px 35px rgba(13, 37, 67, 0.04);
+      }
+
+      .genex-sponsor-page .gx-benefit-card {
+        display: flex;
+        gap: 18px;
+        height: 100%;
+        padding: 23px 19px;
+        border: 1px solid var(--gx-border);
+        border-radius: 12px;
+        background: #fff;
+        transition:
+          transform 0.25s ease,
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .genex-sponsor-page .gx-benefit-card:hover {
+        transform: translateY(-5px);
+        border-color: #a9dfe9;
+        box-shadow: 0 14px 30px rgba(13, 37, 67, 0.07);
+      }
+
+      .genex-sponsor-page .gx-benefit-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        color: var(--gx-blue);
+        background: #eaf6fc;
+        font-size: 19px;
+      }
+
+      .genex-sponsor-page .gx-benefit-card h3 {
+        margin: 2px 0 10px;
+        color: var(--gx-navy);
+        font-size: 17px;
+        font-weight: 800;
+      }
+
+      .genex-sponsor-page .gx-benefit-card p {
+        margin: 0;
+        color: var(--gx-muted);
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      /* =========================
+   SPONSORSHIP COMPARISON
+   ========================= */
+
+      .genex-sponsor-page .gx-comparison-wrap {
+        overflow: hidden;
+        border: 1px solid var(--gx-border);
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 0 14px 45px rgba(13, 37, 67, 0.06);
+      }
+
+      .genex-sponsor-page .gx-table-note {
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--gx-border);
+        color: var(--gx-muted);
+        background: #fff;
+        font-size: 13px;
+      }
+
+      .genex-sponsor-page .gx-table-scroll {
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table {
+        width: 100%;
+        min-width: 1050px;
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        font-size: 13px;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table th,
+      .genex-sponsor-page .gx-sponsor-table td {
+        padding: 17px 16px;
+        border-right: 1px solid var(--gx-border);
+        border-bottom: 1px solid var(--gx-border);
+        vertical-align: middle;
+        text-align: center;
+        line-height: 1.65;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table th:last-child,
+      .genex-sponsor-page .gx-sponsor-table td:last-child {
+        border-right: 0;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table tbody tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table thead th {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        color: #fff;
+        background: var(--gx-navy);
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table thead th:first-child {
+        min-width: 205px;
+        text-align: left;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table thead th:not(:first-child) {
+        min-width: 168px;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table thead th.gx-principal {
+        color: var(--gx-navy);
+        background: #b8f1f8;
+      }
+
+      .genex-sponsor-page .gx-tier-price {
+        display: block;
+        margin-top: 8px;
+        font-size: 19px;
+        font-weight: 850;
+        letter-spacing: -0.3px;
+      }
+
+      .genex-sponsor-page .gx-tier-price small {
+        display: block;
+        margin-top: 3px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table tbody td:first-child {
+        text-align: left;
+        color: var(--gx-navy);
+        background: #f7fafd;
+        font-weight: 800;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table tbody td {
+        color: #526176;
+        background: #fff;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table tbody tr:hover td {
+        background: #f5fbfe;
+      }
+
+      .genex-sponsor-page .gx-sponsor-table tbody tr:hover td:first-child {
+        background: #edf6fc;
+      }
+
+      .genex-sponsor-page .gx-dash {
+        color: #a3afbd;
+        font-size: 18px;
+      }
+
+      .genex-sponsor-page .gx-table-footnote {
+        padding: 15px 20px;
+        color: var(--gx-muted);
+        background: #fff;
+        font-size: 12px;
+      }
+
+      /* =========================
+   PACKAGE CARDS
+   ========================= */
+
+      .genex-sponsor-page .gx-package-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        border: 1px solid var(--gx-border);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 8px 28px rgba(13, 37, 67, 0.035);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .genex-sponsor-page .gx-package-card:hover {
+        transform: translateY(-5px);
+        border-color: #acdfe8;
+        box-shadow: 0 17px 38px rgba(13, 37, 67, 0.09);
+      }
+
+      .genex-sponsor-page .gx-package-top {
+        padding: 25px 25px 23px;
+        border-bottom: 1px solid var(--gx-border);
+        background: #fff;
+      }
+
+      .genex-sponsor-page .gx-package-card.gx-package-principal {
+        border-color: #79dce9;
+        box-shadow: 0 12px 35px rgba(37, 194, 220, 0.1);
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-top {
+        color: #fff;
+        background: linear-gradient(130deg, #0b1f3a, #16466a);
+      }
+
+      .genex-sponsor-page .gx-package-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 15px;
+        padding: 6px 10px;
+        border-radius: 50px;
+        color: var(--gx-blue);
+        background: #eaf6fc;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-label {
+        color: var(--gx-navy);
+        background: #80e9f3;
+      }
+
+      .genex-sponsor-page .gx-package-title {
+        margin: 0 0 9px;
+        color: var(--gx-navy);
+        font-size: 22px;
+        font-weight: 850;
+        line-height: 1.3;
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-title {
+        color: #fff;
+      }
+
+      .genex-sponsor-page .gx-package-price {
+        color: var(--gx-blue);
+        font-size: 29px;
+        font-weight: 850;
+        letter-spacing: -1px;
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-price {
+        color: #7ce8f4;
+      }
+
+      .genex-sponsor-page .gx-package-price small {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+
+      .genex-sponsor-page .gx-package-availability {
+        margin-top: 9px;
+        color: var(--gx-muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-availability {
+        color: #d6e9f6;
+      }
+
+      .genex-sponsor-page .gx-package-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 25px;
+      }
+
+      .genex-sponsor-page .gx-package-list {
+        flex-grow: 1;
+        margin: 0 0 25px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .genex-sponsor-page .gx-package-list li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 16px;
+        color: var(--gx-muted);
+        font-size: 13px;
+        line-height: 1.8;
+      }
+
+      .genex-sponsor-page .gx-package-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      .genex-sponsor-page .gx-package-list li::before {
+        content: "\f00c";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        color: #12a7b9;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 12px;
+      }
+
+      .genex-sponsor-page .gx-package-list strong {
+        color: var(--gx-navy);
+      }
+
+      .genex-sponsor-page .gx-package-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+        width: 100%;
+        padding: 13px 15px;
+        border: 1px solid #d5e3ef;
+        border-radius: 7px;
+        color: var(--gx-navy);
+        background: #fff;
+        font-size: 13px;
+        font-weight: 800;
+        transition: all 0.25s ease;
+      }
+
+      .genex-sponsor-page .gx-package-btn:hover {
+        color: #fff;
+        border-color: var(--gx-blue);
+        background: var(--gx-blue);
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-btn {
+        color: var(--gx-navy);
+        border-color: #6be3f1;
+        background: #6be3f1;
+      }
+
+      .genex-sponsor-page .gx-package-principal .gx-package-btn:hover {
+        border-color: #fff;
+        background: #fff;
+      }
+
+      /* =========================
+   TARGETED OPPORTUNITIES
+   ========================= */
+
+      .genex-sponsor-page .gx-opportunity-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 25px;
+        border: 1px solid var(--gx-border);
+        border-radius: 13px;
+        background: #fff;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      .genex-sponsor-page .gx-opportunity-card:hover {
+        transform: translateY(-5px);
+        border-color: #a9dfe9;
+        box-shadow: 0 12px 28px rgba(13, 37, 67, 0.06);
+      }
+
+      .genex-sponsor-page .gx-opportunity-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        color: var(--gx-blue);
+        background: #eaf6fc;
+        font-size: 20px;
+      }
+
+      .genex-sponsor-page .gx-opportunity-title {
+        margin: 0 0 12px;
+        color: var(--gx-navy);
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+
+      .genex-sponsor-page .gx-opportunity-price {
+        margin-bottom: 13px;
+        color: var(--gx-blue);
+        font-size: 22px;
+        font-weight: 850;
+      }
+
+      .genex-sponsor-page .gx-opportunity-card p {
+        flex-grow: 1;
+        margin: 0;
+        color: var(--gx-muted);
+        font-size: 13px;
+        line-height: 1.85;
+      }
+
+      /* =========================
+   RESERVE PACKAGE CTA
+   ========================= */
+
+      .genex-sponsor-page .gx-reserve-section {
+        position: relative;
+        isolation: isolate;
+        padding: 75px 0;
+        color: #fff;
+        background:
+          radial-gradient(
+            circle at 90% 10%,
+            rgba(37, 194, 220, 0.18),
+            transparent 30%
+          ),
+          linear-gradient(125deg, #08192e, #123b5c);
+      }
+
+      .genex-sponsor-page .gx-reserve-content {
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .genex-sponsor-page .gx-reserve-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 66px;
+        height: 66px;
+        margin: 0 auto 23px;
+        border: 1px solid rgba(107, 227, 241, 0.35);
+        border-radius: 18px;
+        color: #76e6f3;
+        background: rgba(107, 227, 241, 0.08);
+        font-size: 26px;
+      }
+
+      .genex-sponsor-page .gx-reserve-title {
+        margin: 0 0 20px;
+        color: #fff;
+        font-size: clamp(29px, 4vw, 43px);
+        font-weight: 850;
+        line-height: 1.2;
+        letter-spacing: -1px;
+      }
+
+      .genex-sponsor-page .gx-reserve-copy {
+        margin: 0 auto 23px;
+        color: #d8e6f3;
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+      .genex-sponsor-page .gx-reserve-copy strong {
+        color: #fff;
+      }
+
+      .genex-sponsor-page .gx-email-label {
+        margin-bottom: 10px;
+        color: #b7d0e5;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      .genex-sponsor-page .gx-email-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 28px;
+        color: #78e7f4;
+        font-size: clamp(17px, 2.5vw, 23px);
+        font-weight: 800;
+        overflow-wrap: anywhere;
+      }
+
+      .genex-sponsor-page .gx-email-link:hover {
+        color: #fff;
+      }
+
+      .genex-sponsor-page .gx-reserve-note {
+        margin-top: 20px;
+        color: #b8cde0;
+        font-size: 12px;
+        line-height: 1.8;
+      }
+
+      /* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+      @media (max-width: 991.98px) {
+        .genex-sponsor-page .gx-section {
+          padding: 65px 0;
+        }
+
+        .genex-sponsor-page .gx-sponsor-hero {
+          padding: 80px 0;
+        }
+
+        .genex-sponsor-page .gx-audience-panel {
+          padding: 22px;
+        }
+
+        .genex-sponsor-page .gx-package-top,
+        .genex-sponsor-page .gx-package-body {
+          padding: 22px;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .genex-sponsor-page .gx-container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .genex-sponsor-page .gx-section {
+          padding: 52px 0;
+        }
+
+        .genex-sponsor-page .gx-sponsor-hero {
+          padding: 65px 0;
+        }
+
+        .genex-sponsor-page .gx-hero-title {
+          letter-spacing: -1.2px;
+        }
+
+        .genex-sponsor-page .gx-hero-meta {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .genex-sponsor-page .gx-hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+          max-width: 340px;
+          margin: 0 auto;
+        }
+
+        .genex-sponsor-page .gx-btn {
+          width: 100%;
+        }
+
+        .genex-sponsor-page .gx-section-heading {
+          margin-bottom: 32px;
+        }
+
+        .genex-sponsor-page .gx-audience-panel {
+          padding: 14px;
+        }
+
+        .genex-sponsor-page .gx-benefit-card {
+          padding: 19px 16px;
+        }
+
+        .genex-sponsor-page .gx-package-top,
+        .genex-sponsor-page .gx-package-body {
+          padding: 22px;
+        }
+
+        .genex-sponsor-page .gx-reserve-section {
+          padding: 55px 0;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .genex-sponsor-page .gx-benefit-card {
+          flex-direction: column;
+          gap: 13px;
+        }
+
+        .genex-sponsor-page .gx-hero-label {
+          font-size: 10px;
+          letter-spacing: 1px;
+        }
+
+        .genex-sponsor-page .gx-package-price {
+          font-size: 26px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .genex-sponsor-page *,
+        .genex-sponsor-page *::before,
+        .genex-sponsor-page *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg gx-navbar sticky-top">
+      <div class="container">
+        <a class="gx-brand" href="index.html" aria-label="GeneX Summit home">
+          <!-- <span class="gx-brand-icon">
+            <i class="fa-solid fa-dna"></i>
+          </span>
+          <span>
+            GeneX
+            <small>COMMERCIALIZATION SUMMIT 2027</small>
+          </span> -->
+                    <span>  <img src="assets/prism_logo_dark.png" alt="" srcset="" style="width: 579%;"> </span>  
+
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#gxNavigation"
+          aria-controls="gxNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="gxNavigation">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="about.html" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chair.html">Chair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="key-topics.html">Key Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="abstract-submission.html"
+                >Abstract Submisson</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link active" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="gx-btn" href="registration_form.html">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="genex-sponsor-page">
+        <!-- =========================================
+         HERO: SPONSOR & EXHIBIT
+         ========================================= -->
+
+        <section class="gx-sponsor-hero" id="sponsor-exhibit">
+          <div class="gx-container">
+            <div class="gx-hero-content">
+              <div class="gx-hero-label">
+                <i class="fa-solid fa-handshake"></i>
+                GeneX Commercialization Summit 2027
+              </div>
+
+              <h1 class="gx-hero-title">
+                Sponsor &amp; Exhibit<br />
+                <span>at GeneX 2027</span>
+              </h1>
+
+              <p class="gx-hero-subtitle">
+                Bridge the Gap Between Academic Discovery &amp; Biopharma Scale
+              </p>
+
+              <div class="gx-hero-meta">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  September 20–22, 2027
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Parkville Biomedical Precinct, Melbourne, Australia
+                </span>
+              </div>
+
+              <div class="gx-hero-actions">
+                <a href="#gx-sponsorship-tiers" class="gx-btn gx-btn-primary">
+                  Explore Sponsorship Packages
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a
+                  href="mailto:sponsors@genexsummit.com.au"
+                  class="gx-btn gx-btn-outline"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  Contact Sponsorship Team
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+         WHY PARTNER WITH GENEX
+         ========================================= -->
+
+        <section class="gx-section" id="why-partner">
+          <div class="gx-container">
+            <div class="gx-section-heading text-center">
+              <div class="gx-eyebrow">Partnership Opportunities</div>
+
+              <h2 class="gx-section-title">Why Partner with GeneX 2027?</h2>
+
+              <p class="gx-section-description">
+                Connect your organization with the people, technologies, and
+                partnerships shaping the future of biopharma commercialization.
+              </p>
+            </div>
+
+            <div class="gx-intro-copy">
+              The <strong>GeneX Commercialization Summit 2027</strong>
+              brings together top academic researchers, biotech founders,
+              venture capitalists, CDMO executives, and biopharma leaders across
+              the Asia-Pacific region and beyond.
+
+              <br /><br />
+
+              By sponsoring or exhibiting at GeneX 2027, your organization
+              directly connects with key decision-makers who are solving
+              critical bottlenecks in
+              <strong
+                >IP protection, preclinical-to-clinical regulatory approval,
+                biomanufacturing scale-up (CMC), and health economics.</strong
+              >
+            </div>
+
+            <div class="gx-audience-panel">
+              <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                  <div class="gx-benefit-card">
+                    <div class="gx-benefit-icon">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <div>
+                      <h3>Targeted Audience</h3>
+                      <p>
+                        Place your technology, services, or platforms in front
+                        of academic spin-offs, life-science VCs,
+                        biomanufacturing leaders, and regulatory experts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="gx-benefit-card">
+                    <div class="gx-benefit-icon">
+                      <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+
+                    <div>
+                      <h3>Thought Leadership</h3>
+                      <p>
+                        Position your executive team as category experts through
+                        keynote presentations, panel discussions, and workshop
+                        hosting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                  <div class="gx-benefit-card">
+                    <div class="gx-benefit-icon">
+                      <i class="fa-solid fa-people-arrows-left-right"></i>
+                    </div>
+
+                    <div>
+                      <h3>Qualified B2B Matchmaking</h3>
+                      <p>
+                        Engage in dedicated 1-on-1 networking sessions,
+                        exhibition hall showcases, and social receptions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+         SPONSORSHIP TIER COMPARISON
+         ========================================= -->
+
+        <section class="gx-section gx-section-light" id="gx-sponsorship-tiers">
+          <div class="gx-container">
+            <div class="gx-section-heading text-center">
+              <div class="gx-eyebrow">Compare Your Benefits</div>
+
+              <h2 class="gx-section-title">Sponsorship Tier Overview</h2>
+
+              <p class="gx-section-description">
+                Compare sponsorship levels, exhibition options, delegate passes,
+                branding, and networking benefits to identify the right
+                partnership for your organization.
+              </p>
+            </div>
+
+            <div class="gx-comparison-wrap">
+              <div class="gx-table-note">
+                <i class="fa-solid fa-arrows-left-right me-2"></i>
+                On smaller screens, swipe horizontally to compare all
+                sponsorship packages.
+              </div>
+
+              <div class="gx-table-scroll">
+                <table class="gx-sponsor-table">
+                  <thead>
+                    <tr>
+                      <th>Benefit Included</th>
+
+                      <th class="gx-principal">
+                        Principal Sponsor
+                        <span class="gx-tier-price"> AUD $25,000 </span>
+                      </th>
+
+                      <th>
+                        Platinum Sponsor
+                        <span class="gx-tier-price"> AUD $15,000 </span>
+                      </th>
+
+                      <th>
+                        Gold Sponsor
+                        <span class="gx-tier-price"> AUD $10,000 </span>
+                      </th>
+
+                      <th>
+                        Silver Sponsor
+                        <span class="gx-tier-price"> AUD $6,000 </span>
+                      </th>
+
+                      <th>
+                        Exhibitor Only
+                        <span class="gx-tier-price"> AUD $3,500 </span>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Speaking &amp; Thought Leadership</td>
+                      <td>Opening Keynote / Plenary Panel</td>
+                      <td>Panelist Spot / Breakout Host</td>
+                      <td>Workshop Co-Host</td>
+                      <td><span class="gx-dash">&mdash;</span></td>
+                      <td><span class="gx-dash">&mdash;</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>Exhibition Booth Space</td>
+                      <td>Premium 6m x 3m Booth</td>
+                      <td>3m x 3m Prime Booth</td>
+                      <td>3m x 2m Standard Booth</td>
+                      <td>Trestle Table Display</td>
+                      <td>Standard Exhibition Booth</td>
+                    </tr>
+
+                    <tr>
+                      <td>Complimentary Delegate Passes</td>
+                      <td>6 All-Access Passes</td>
+                      <td>4 All-Access Passes</td>
+                      <td>3 All-Access Passes</td>
+                      <td>2 All-Access Passes</td>
+                      <td>1 All-Access Pass</td>
+                    </tr>
+
+                    <tr>
+                      <td>Branding &amp; Digital Exposure</td>
+                      <td>Hero Branding &amp; Press Release</td>
+                      <td>Premier Logo Placement</td>
+                      <td>Major Logo Placement</td>
+                      <td>Standard Logo Placement</td>
+                      <td>Listed in Directory</td>
+                    </tr>
+
+                    <tr>
+                      <td>B2B Matchmaking App Access</td>
+                      <td>VIP Priority Matchmaking</td>
+                      <td>Full App Access</td>
+                      <td>Full App Access</td>
+                      <td>Full App Access</td>
+                      <td>App Access</td>
+                    </tr>
+
+                    <tr>
+                      <td>Social Event Hosting</td>
+                      <td>Day 2 Gala Dinner Host</td>
+                      <td>Day 1 Welcome Drinks Host</td>
+                      <td>Lunch Session Host</td>
+                      <td>Coffee Break Host</td>
+                      <td><span class="gx-dash">&mdash;</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="gx-table-footnote">
+                <i class="fa-solid fa-circle-info me-1"></i>
+                Package inclusions are shown above. Refer to the detailed
+                package breakdown below for additional information.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+         TIERED PACKAGE BREAKDOWN
+         ========================================= -->
+
+        <section class="gx-section" id="gx-package-details">
+          <div class="gx-container">
+            <div class="gx-section-heading text-center">
+              <div class="gx-eyebrow">Find Your Partnership</div>
+
+              <h2 class="gx-section-title">Tiered Package Breakdown</h2>
+
+              <p class="gx-section-description">
+                Choose a sponsorship package that aligns with your visibility
+                goals, networking priorities, and commercialization objectives.
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <!-- PRINCIPAL PARTNER -->
+
+              <div class="col-lg-6">
+                <div class="gx-package-card gx-package-principal">
+                  <div class="gx-package-top">
+                    <div class="gx-package-label">
+                      <i class="fa-solid fa-crown"></i>
+                      Premier Partnership
+                    </div>
+
+                    <h3 class="gx-package-title">Principal Partner</h3>
+
+                    <div class="gx-package-price">AUD $25,000</div>
+
+                    <div class="gx-package-availability">
+                      <i class="fa-solid fa-star me-1"></i>
+                      1 Available
+                    </div>
+                  </div>
+
+                  <div class="gx-package-body">
+                    <ul class="gx-package-list">
+                      <li>
+                        <strong>Thought Leadership:</strong>
+                        Exclusive 30-minute keynote presentation or co-chairing
+                        of the Opening Plenary Panel alongside Summit
+                        Leadership.
+                      </li>
+
+                      <li>
+                        <strong>VIP Event Hosting:</strong>
+                        Premier naming rights and host opening address for the
+                        <strong>Official Summit Gala Dinner</strong> on Day 2.
+                      </li>
+
+                      <li>
+                        <strong>Exhibition:</strong>
+                        Double-width premium booth space (6m x 3m) in the
+                        central networking lounge.
+                      </li>
+
+                      <li>
+                        <strong>Passes:</strong>
+                        6 complimentary full-access delegate passes + 20%
+                        discount on additional team tickets.
+                      </li>
+
+                      <li>
+                        <strong>Branding:</strong>
+                        Premier logo placement on all mainstage backdrops,
+                        website headers, mobile app splash screens, and official
+                        media releases.
+                      </li>
+                    </ul>
+
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Principal%20Partner%20Sponsorship%20-%20GeneX%202027"
+                      class="gx-package-btn"
+                    >
+                      Enquire About This Package
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PLATINUM SPONSOR -->
+
+              <div class="col-lg-6">
+                <div class="gx-package-card">
+                  <div class="gx-package-top">
+                    <div class="gx-package-label">
+                      <i class="fa-solid fa-gem"></i>
+                      Premium Partnership
+                    </div>
+
+                    <h3 class="gx-package-title">Platinum Sponsor</h3>
+
+                    <div class="gx-package-price">AUD $15,000</div>
+
+                    <div class="gx-package-availability">
+                      <i class="fa-solid fa-users me-1"></i>
+                      2 Available
+                    </div>
+                  </div>
+
+                  <div class="gx-package-body">
+                    <ul class="gx-package-list">
+                      <li>
+                        <strong>Thought Leadership:</strong>
+                        Guaranteed panelist slot or breakout track host on a
+                        topic aligned with your domain (e.g., CMC
+                        Biomanufacturing, IP Strategy, or Regulatory Affairs).
+                      </li>
+
+                      <li>
+                        <strong>Networking Event Hosting:</strong>
+                        Exclusive naming rights and opening remarks for the
+                        <strong>Day 1 Welcome Networking Reception</strong>.
+                      </li>
+
+                      <li>
+                        <strong>Exhibition:</strong>
+                        Prime booth space (3m x 3m) in high-foot-traffic
+                        exhibition hall.
+                      </li>
+
+                      <li>
+                        <strong>Passes:</strong>
+                        4 complimentary full-access delegate passes.
+                      </li>
+
+                      <li>
+                        <strong>Branding:</strong>
+                        Prominent logo placement on event website, stage
+                        banners, and digital marketing collateral.
+                      </li>
+                    </ul>
+
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Platinum%20Sponsorship%20-%20GeneX%202027"
+                      class="gx-package-btn"
+                    >
+                      Enquire About This Package
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GOLD SPONSOR -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="gx-package-card">
+                  <div class="gx-package-top">
+                    <div class="gx-package-label">
+                      <i class="fa-solid fa-medal"></i>
+                      Gold Partnership
+                    </div>
+
+                    <h3 class="gx-package-title">Gold Sponsor</h3>
+
+                    <div class="gx-package-price">AUD $10,000</div>
+
+                    <div class="gx-package-availability">
+                      <i class="fa-solid fa-users me-1"></i>
+                      4 Available
+                    </div>
+                  </div>
+
+                  <div class="gx-package-body">
+                    <ul class="gx-package-list">
+                      <li>
+                        <strong>Thought Leadership:</strong>
+                        Interactive workshop co-host or moderator position
+                        during Day 2 or Day 3 breakout sessions.
+                      </li>
+
+                      <li>
+                        <strong>Session Branding:</strong>
+                        Exclusive sponsor branding for one official delegate
+                        lunch or morning tea networking break.
+                      </li>
+
+                      <li>
+                        <strong>Exhibition:</strong>
+                        Standard exhibition space (3m x 2m) including power,
+                        Wi-Fi, and display setup.
+                      </li>
+
+                      <li>
+                        <strong>Passes:</strong>
+                        3 complimentary full-access delegate passes.
+                      </li>
+                    </ul>
+
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Gold%20Sponsorship%20-%20GeneX%202027"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SILVER SPONSOR -->
+
+              <div class="col-lg-4 col-md-6">
+                <div class="gx-package-card">
+                  <div class="gx-package-top">
+                    <div class="gx-package-label">
+                      <i class="fa-solid fa-award"></i>
+                      Silver Partnership
+                    </div>
+
+                    <h3 class="gx-package-title">Silver Sponsor</h3>
+
+                    <div class="gx-package-price">AUD $6,000</div>
+
+                    <div class="gx-package-availability">
+                      Sponsorship Package
+                    </div>
+                  </div>
+
+                  <div class="gx-package-body">
+                    <ul class="gx-package-list">
+                      <li>
+                        <strong>Exhibition &amp; Display:</strong>
+                        Trestle table exhibition display area in the networking
+                        foyer.
+                      </li>
+
+                      <li>
+                        <strong>Branding:</strong>
+                        Silver-tier logo listing on conference program, website,
+                        and sponsor slides.
+                      </li>
+
+                      <li>
+                        <strong>Passes:</strong>
+                        2 complimentary full-access delegate passes.
+                      </li>
+                    </ul>
+
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Silver%20Sponsorship%20-%20GeneX%202027"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- EXHIBITOR PACKAGE -->
+
+              <div class="col-lg-4 col-md-12">
+                <div class="gx-package-card">
+                  <div class="gx-package-top">
+                    <div class="gx-package-label">
+                      <i class="fa-solid fa-store"></i>
+                      Exhibition Package
+                    </div>
+
+                    <h3 class="gx-package-title">Exhibitor Package</h3>
+
+                    <div class="gx-package-price">AUD $3,500</div>
+
+                    <div class="gx-package-availability">
+                      Exhibition Opportunity
+                    </div>
+                  </div>
+
+                  <div class="gx-package-body">
+                    <ul class="gx-package-list">
+                      <li>
+                        Ideal for startups, regional service providers, and
+                        specialized technology vendors seeking a direct
+                        presence.
+                      </li>
+
+                      <li>Includes 1 standard exhibition booth space.</li>
+
+                      <li>Company directory listing.</li>
+
+                      <li>1 full-access delegate pass.</li>
+                    </ul>
+
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Exhibitor%20Package%20-%20GeneX%202027"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+         TARGETED SPONSORSHIP OPPORTUNITIES
+         ========================================= -->
+
+        <section
+          class="gx-section gx-section-light"
+          id="gx-targeted-opportunities"
+        >
+          <div class="gx-container">
+            <div class="gx-section-heading text-center">
+              <div class="gx-eyebrow">Brand Visibility</div>
+
+              <h2 class="gx-section-title">
+                Targeted Sponsorship Opportunities
+              </h2>
+
+              <p class="gx-section-description">
+                Looking to maximize brand visibility around specific event
+                touchpoints?
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <!-- PITCH COMPETITION -->
+
+              <div class="col-lg-6 col-md-6">
+                <div class="gx-opportunity-card">
+                  <div class="gx-opportunity-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+
+                  <h3 class="gx-opportunity-title">
+                    Live Pitch Competition Sponsor
+                  </h3>
+
+                  <div class="gx-opportunity-price">AUD $8,000</div>
+
+                  <p>
+                    Exclusive naming rights for the
+                    <strong>Day 3 Investor Pitch Competition</strong>, where 6
+                    academic spin-offs present to global VCs.
+                  </p>
+
+                  <div class="mt-4">
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Live%20Pitch%20Competition%20Sponsorship"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DELEGATE APP -->
+
+              <div class="col-lg-6 col-md-6">
+                <div class="gx-opportunity-card">
+                  <div class="gx-opportunity-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+
+                  <h3 class="gx-opportunity-title">
+                    Delegate App &amp; Matchmaking Sponsor
+                  </h3>
+
+                  <div class="gx-opportunity-price">AUD $5,000</div>
+
+                  <p>
+                    Exclusive logo overlay on the official B2B networking mobile
+                    application used by all attendees.
+                  </p>
+
+                  <div class="mt-4">
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Delegate%20App%20Sponsorship"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- COFFEE STATION -->
+
+              <div class="col-lg-6 col-md-6">
+                <div class="gx-opportunity-card">
+                  <div class="gx-opportunity-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                  </div>
+
+                  <h3 class="gx-opportunity-title">
+                    Coffee &amp; Hydration Station Partner
+                  </h3>
+
+                  <div class="gx-opportunity-price">AUD $4,000</div>
+
+                  <p>
+                    Custom branded barista coffee station for the duration of
+                    the 3-day summit.
+                  </p>
+
+                  <div class="mt-4">
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Coffee%20and%20Hydration%20Station%20Sponsorship"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LANYARD PARTNER -->
+
+              <div class="col-lg-6 col-md-6">
+                <div class="gx-opportunity-card">
+                  <div class="gx-opportunity-icon">
+                    <i class="fa-solid fa-id-card"></i>
+                  </div>
+
+                  <h3 class="gx-opportunity-title">
+                    Delegate Lanyard &amp; Badge Partner
+                  </h3>
+
+                  <div class="gx-opportunity-price">AUD $3,500</div>
+
+                  <p>
+                    Your logo co-branded alongside GeneX on every attendee
+                    lanyard.
+                  </p>
+
+                  <div class="mt-4">
+                    <a
+                      href="mailto:sponsors@genexsummit.com.au?subject=Delegate%20Lanyard%20and%20Badge%20Sponsorship"
+                      class="gx-package-btn"
+                    >
+                      Enquire Now
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================================
+         RESERVE YOUR PACKAGE
+         ========================================= -->
+
+        <section class="gx-reserve-section" id="gx-reserve-package">
+          <div class="gx-container">
+            <div class="gx-reserve-content">
+              <div class="gx-reserve-icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+
+              <div class="gx-eyebrow" style="color: #78e7f4">
+                Become a GeneX 2027 Partner
+              </div>
+
+              <h2 class="gx-reserve-title">Reserve Your Package</h2>
+
+              <p class="gx-reserve-copy">
+                Sponsorship packages and exhibition booths are allocated on a
+                <strong>first-come, first-served basis.</strong>
+                Custom tailored packages are also available upon request.
+              </p>
+
+              <div class="gx-email-label">Sponsorship Team Email</div>
+
+              <a
+                href="mailto:sponsors@genexsummit.com.au"
+                class="gx-email-link"
+              >
+                <i class="fa-regular fa-envelope"></i>
+                sponsors@genexsummit.com.au
+              </a>
+
+              <div>
+                <a
+                  href="mailto:sponsors@genexsummit.com.au?subject=GeneX%202027%20Sponsorship%20Enquiry"
+                  class="gx-btn gx-btn-primary"
+                >
+                  Discuss Your Sponsorship
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <p class="gx-reserve-note">
+                GeneX Commercialization Summit 2027<br />
+                September 20–22, 2027 | Parkville Biomedical Precinct,
+                Melbourne, Australia
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="genex-footer">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- COLUMN 1: COMPANY INFORMATION -->
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <!-- Company Logo -->
+              <a href="https://www.scientificprism.com/" class="footer-logo">
+                <img
+                  src="assets/prism_logo_footer.png"
+                  alt="Prism"
+                  class="img-fluid"
+                />
+              </a>
+
+              <!-- <h4 class="footer-company-name">
+                        GeneX Commercialization Summit 2027
+                    </h4> -->
+
+              <p class="footer-description">
+                PRISM takes pride to connect the empirical and systematic minds
+                of both the budding researchers and the experience scientists
+                help promote change in the world for a better human welfare.
+              </p>
+
+              <ul class="footer-contact-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span> 302/480 Collins Street, Melbourne, VIC 3000 </span>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+61390163202"> +61390163202 </a>
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:writeus@scientificprism.com">
+                    writeus@scientificprism.com
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Social Links -->
+               <div class="footer-social-links">
+                <a href="https://www.linkedin.com/company/genex-commercialization-summit-2027/posts/?viewAsMember=true" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <!-- <a href="#" aria-label="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 2: QUICK LINKS -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Quick Links</h5>
+
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About GeneX</a></li>
+                <li><a href="topics.html">Key Topics</a></li>
+                <li><a href="program.html">Conference Program</a></li>
+                <li><a href="chair.html">Conference Chair</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- COLUMN 3: CONFERENCE INFORMATION -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Conference Information</h5>
+
+              <ul class="footer-links">
+                <li>
+                  <a href="registration.html"> Registration &amp; Passes </a>
+                </li>
+
+                <li>
+                  <a href="abstract-submission.html"> Abstract Submission </a>
+                </li>
+
+                <li>
+                  <a href="sponsorship.html"> Sponsorship &amp; Exhibition </a>
+                </li>
+
+                <li>
+                  <a href="venue.html"> Venue &amp; Accommodation </a>
+                </li>
+
+                <li>
+                  <a href="contact.html"> General Enquiries </a>
+                </li>
+              </ul>
+
+              <div class="footer-event-info">
+                <div class="footer-event-icon">
+                  <i class="fa-regular fa-calendar-days"></i>
+                </div>
+
+                <div>
+                  <span>Conference Dates</span>
+                  <strong>September 20–22, 2027</strong>
+                </div>
+              </div>
+
+              <div class="footer-event-info">
+                <div class="footer-event-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                  <span>Conference Location</span>
+                  <strong>Melbourne, Australia</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COLUMN 4: NEWSLETTER -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-column">
+              <h5 class="footer-heading">Stay Connected</h5>
+
+              <p class="footer-newsletter-text">
+                Stay informed about conference announcements, registration
+                deadlines, speakers, and program updates.
+              </p>
+
+              <form
+                class="footer-newsletter-form"
+                action="newsletter.php"
+                method="post"
+              >
+                <label for="footer-newsletter-email" class="visually-hidden">
+                  Email address
+                </label>
+
+                <div class="footer-input-group">
+                  <input
+                    type="email"
+                    id="footer-newsletter-email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                  />
+
+                  <button type="submit" aria-label="Subscribe to newsletter">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+
+                <div class="footer-privacy-note">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  Your email will be handled responsibly.
+                </div>
+              </form>
+
+              <div class="footer-sponsor-contact">
+                <span>Sponsorship Enquiries</span>
+                <a href="mailto:sponsors@genexsummit.com.au">
+                  sponsors@genexsummit.com.au
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <div class="row align-items-center gy-3">
+            <div class="col-md-6">
+              <p class="footer-copyright">
+                &copy; 2027 GeneX Commercialization Summit. All rights reserved.
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <div class="footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
+                <a href="#top" class="footer-back-top">
+                  Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
